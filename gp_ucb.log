@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  26 DEC 2022 15:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.9)  26 DEC 2022 15:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -703,225 +703,7 @@ Package: ocgbase 2021/06/11 v0.20 support package for ocgx2.sty
 \@anim@lineno=\count353
 \@anim@curfield=\count354
 \@anim@@resizeflags=\count355
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
- (/usr/local/texlive/2022/texmf-dist/tex/latex/logreq/logreq.sty
-Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count356
- (/usr/local/texlive/2022/texmf-dist/tex/latex/logreq/logreq.def
-File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-\c@tabx@nest=\count357
-\c@listtotal=\count358
-\c@listcount=\count359
-\c@liststart=\count360
-\c@liststop=\count361
-\c@citecount=\count362
-\c@citetotal=\count363
-\c@multicitecount=\count364
-\c@multicitetotal=\count365
-\c@instcount=\count366
-\c@maxnames=\count367
-\c@minnames=\count368
-\c@maxitems=\count369
-\c@minitems=\count370
-\c@citecounter=\count371
-\c@maxcitecounter=\count372
-\c@savedcitecounter=\count373
-\c@uniquelist=\count374
-\c@uniquename=\count375
-\c@refsection=\count376
-\c@refsegment=\count377
-\c@maxextratitle=\count378
-\c@maxextratitleyear=\count379
-\c@maxextraname=\count380
-\c@maxextradate=\count381
-\c@maxextraalpha=\count382
-\c@abbrvpenalty=\count383
-\c@highnamepenalty=\count384
-\c@lownamepenalty=\count385
-\c@maxparens=\count386
-\c@parenlevel=\count387
-\blx@tempcnta=\count388
-\blx@tempcntb=\count389
-\blx@tempcntc=\count390
-\c@blx@maxsection=\count391
-\c@blx@maxsegment@0=\count392
-\blx@notetype=\count393
-\blx@parenlevel@text=\count394
-\blx@parenlevel@foot=\count395
-\c@blx@sectionciteorder@0=\count396
-\blx@entrysetcounter=\count397
-\blx@biblioinstance=\count398
-\labelnumberwidth=\skip67
-\labelalphawidth=\skip68
-\biblabelsep=\skip69
-\bibitemsep=\skip70
-\bibnamesep=\skip71
-\bibinitsep=\skip72
-\bibparsep=\skip73
-\bibhang=\skip74
-\blx@bcfin=\read4
-\blx@bcfout=\write6
-\blx@langwohyphens=\language87
-\c@mincomprange=\count399
-\c@maxcomprange=\count400
-\c@mincompwidth=\count401
-Package biblatex Info: Trying to load biblatex default data model...
-Package biblatex Info: ... file 'blx-dm.def' found.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
-)
-Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count402
-\c@savedafterword=\count403
-\c@annotator=\count404
-\c@savedannotator=\count405
-\c@author=\count406
-\c@savedauthor=\count407
-\c@bookauthor=\count408
-\c@savedbookauthor=\count409
-\c@commentator=\count410
-\c@savedcommentator=\count411
-\c@editor=\count412
-\c@savededitor=\count413
-\c@editora=\count414
-\c@savededitora=\count415
-\c@editorb=\count416
-\c@savededitorb=\count417
-\c@editorc=\count418
-\c@savededitorc=\count419
-\c@foreword=\count420
-\c@savedforeword=\count421
-\c@holder=\count422
-\c@savedholder=\count423
-\c@introduction=\count424
-\c@savedintroduction=\count425
-\c@namea=\count426
-\c@savednamea=\count427
-\c@nameb=\count428
-\c@savednameb=\count429
-\c@namec=\count430
-\c@savednamec=\count431
-\c@translator=\count432
-\c@savedtranslator=\count433
-\c@shortauthor=\count434
-\c@savedshortauthor=\count435
-\c@shorteditor=\count436
-\c@savedshorteditor=\count437
-\c@labelname=\count438
-\c@savedlabelname=\count439
-\c@institution=\count440
-\c@savedinstitution=\count441
-\c@lista=\count442
-\c@savedlista=\count443
-\c@listb=\count444
-\c@savedlistb=\count445
-\c@listc=\count446
-\c@savedlistc=\count447
-\c@listd=\count448
-\c@savedlistd=\count449
-\c@liste=\count450
-\c@savedliste=\count451
-\c@listf=\count452
-\c@savedlistf=\count453
-\c@location=\count454
-\c@savedlocation=\count455
-\c@organization=\count456
-\c@savedorganization=\count457
-\c@origlocation=\count458
-\c@savedoriglocation=\count459
-\c@origpublisher=\count460
-\c@savedorigpublisher=\count461
-\c@publisher=\count462
-\c@savedpublisher=\count463
-\c@language=\count464
-\c@savedlanguage=\count465
-\c@origlanguage=\count466
-\c@savedoriglanguage=\count467
-\c@pageref=\count468
-\c@savedpageref=\count469
-\shorthandwidth=\skip75
-\shortjournalwidth=\skip76
-\shortserieswidth=\skip77
-\shorttitlewidth=\skip78
-\shortauthorwidth=\skip79
-\shorteditorwidth=\skip80
-\locallabelnumberwidth=\skip81
-\locallabelalphawidth=\skip82
-\localshorthandwidth=\skip83
-\localshortjournalwidth=\skip84
-\localshortserieswidth=\skip85
-\localshorttitlewidth=\skip86
-\localshortauthorwidth=\skip87
-\localshorteditorwidth=\skip88
-Package biblatex Info: Trying to load compatibility code...
-Package biblatex Info: ... file 'blx-compat.def' found.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-)
-Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex.def' found.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-\c@textcitecount=\count470
-\c@textcitetotal=\count471
-\c@textcitemaxnames=\count472
-\c@biburlbigbreakpenalty=\count473
-\c@biburlbreakpenalty=\count474
-\c@biburlnumpenalty=\count475
-\c@biburlucpenalty=\count476
-\c@biburllcpenalty=\count477
-\biburlbigskip=\muskip18
-\biburlnumskip=\muskip19
-\biburlucskip=\muskip20
-\biburllcskip=\muskip21
-\c@smartand=\count478
-)
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'standard'...
-Package biblatex Info: ... file 'standard.bbx' found.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count479
-\c@bbx:relatedtotal=\count480
-))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Trying to load configuration file...
-Package biblatex Info: ... file 'biblatex.cfg' found.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.cfg
-File: biblatex.cfg 
-)
-Package biblatex Info: Input encoding 'utf8' detected.
-Package biblatex Info: Document encoding is UTF8 ....
-Package biblatex Info: ... and expl3
-(biblatex)             2022-02-24 L3 programming layer (loader) 
-(biblatex)             is new enough (at least 2020/04/06),
-(biblatex)             setting 'casechanger=expl3'.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2022-01-12 L3 Experimental document command parser
-)
-Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
-)) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -945,7 +727,7 @@ Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count481
+\pgf@plot@mark@count=\count356
 \pgfplotmarksize=\dimen304
 )
 \tikz@lastx=\dimen305
@@ -960,17 +742,17 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@figbox@bg=\box90
 \tikz@tempbox=\box91
 \tikz@tempbox@bg=\box92
-\tikztreelevel=\count482
-\tikznumberofchildren=\count483
-\tikznumberofcurrentchild=\count484
-\tikz@fig@count=\count485
+\tikztreelevel=\count357
+\tikznumberofchildren=\count358
+\tikznumberofcurrentchild=\count359
+\tikz@fig@count=\count360
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count486
-\pgfmatrixcurrentcolumn=\count487
-\pgf@matrix@numberofcolumns=\count488
+\pgfmatrixcurrentrow=\count361
+\pgfmatrixcurrentcolumn=\count362
+\pgf@matrix@numberofcolumns=\count363
 )
-\tikz@expandcount=\count489
+\tikz@expandcount=\count364
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
@@ -978,14 +760,14 @@ File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
-\pgf@intersect@solutions=\count490
+\pgf@intersect@solutions=\count365
 )) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \arrowsize=\dimen313
 )) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymath.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex)
-\tikz@math@for@depth=\count491
+\tikz@math@for@depth=\count366
 \tikz@math@dimen=\dimen314
 \tikz@math@toks=\toks50
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
@@ -996,7 +778,7 @@ File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfdecoratedinputsegmentcompleteddistance=\dimen317
 \pgfdecoratedinputsegmentremainingdistance=\dimen318
 \pgf@decorate@distancetomove=\dimen319
-\pgf@decorate@repeatstate=\count492
+\pgf@decorate@repeatstate=\count367
 \pgfdecorationsegmentamplitude=\dimen320
 \pgfdecorationsegmentlength=\dimen321
 )
@@ -1040,35 +822,32 @@ two letters. (See Chapter 27 of The TeXbook.)
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/here/here.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count493
+\c@float@type=\count368
 \float@exts=\toks51
 \float@box=\box94
 \@float@everytoks=\toks52
 \@floatcapt=\box95
-)
-\@quotelevel=\count494
-\@quotereset=\count495
- (./gp_ucb.aux)
+) (./gp_ucb.aux)
 \openout1 = `gp_ucb.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
 
 *geometry* detected driver: dvipdfm
 *geometry* verbose mode - [ preamble ] result:
@@ -1103,7 +882,7 @@ LaTeX Font Info:    ... okay on input line 147.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 147.
+Package hyperref Info: Link coloring OFF on input line 148.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1111,13 +890,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count496
+\c@section@level=\count369
 )
-LaTeX Info: Redefining \ref on input line 147.
-LaTeX Info: Redefining \pageref on input line 147.
-LaTeX Info: Redefining \nameref on input line 147.
-\@outlinefile=\write7
-\openout7 = `gp_ucb.out'.
+LaTeX Info: Redefining \ref on input line 148.
+LaTeX Info: Redefining \pageref on input line 148.
+LaTeX Info: Redefining \nameref on input line 148.
+ (./gp_ucb.out) (./gp_ucb.out)
+\@outlinefile=\write6
+\openout6 = `gp_ucb.out'.
 
  (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -1132,101 +912,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
-)
-Package biblatex Info: Input encoding 'utf8' detected.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
-\openout6 = `gp_ucb.bcf'.
-
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'gp_ucb.bbl' not found.
-
-No file gp_ucb.bbl.
-Package biblatex Info: Reference section=0 on input line 147.
-Package biblatex Info: Reference segment=0 on input line 147.
 No file gp_ucb.nav.
-
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:153: LaTeX Error: Unicode character テ (U+30C6)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 \end{frame}
-                 
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:153: LaTeX Error: Unicode character ン (U+30F3)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 \end{frame}
-                 
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:153: LaTeX Error: Unicode character プ (U+30D7)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 \end{frame}
-                 
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:153: LaTeX Error: Unicode character レ (U+30EC)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 \end{frame}
-                 
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:153: LaTeX Error: Unicode character ー (U+30FC)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 \end{frame}
-                 
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:153: LaTeX Error: Unicode character ト (U+30C8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 \end{frame}
-                 
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
 Missing character: There is no 5 in font nullfont!
 
 Overfull \vbox (12.0pt too high) has occurred while \output is active []
@@ -1285,6 +971,10 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color push gray 1
 Non-PDF special ignored!
+<special> color push gray 1
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
 <special> color pop
 Non-PDF special ignored!
 <special> color pop
@@ -1322,133 +1012,7 @@ Non-PDF special ignored!
 <special> color pop
 Non-PDF special ignored!
 <special> color pop
-]
-No file gp_ucb.toc.
-[2
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push gray 1
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push rgb 0.2 0.2 0.7
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push rgb 0.2 0.2 0.7
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push gray 1
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push rgb 0.68 0.68 0.88
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push gray 1
-Non-PDF special ignored!
-<special> color push rgb 0.2 0.2 0.7
-Non-PDF special ignored!
-<special> color push rgb 0.2 0.2 0.7
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color push gray 1
-Non-PDF special ignored!
-<special> color push gray 1
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color push gray 0
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color pop
-]
-No file gp_ucb.toc.
-[3
+] (./gp_ucb.toc) [2
 Non-PDF special ignored!
 <special> color push gray 0
 Non-PDF special ignored!
@@ -1553,6 +1117,212 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color push gray 0
 Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color push gray 1
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color push gray 1
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+] (./gp_ucb.toc) [3
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 1
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 1
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push rgb 0.68 0.68 0.88
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 1
+Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 1
+Non-PDF special ignored!
+<special> color push gray 1
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color push gray 1
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color push rgb 0.84 0.84 0.94
+Non-PDF special ignored!
+<special> color push rgb 0.84 0.84 0.94
+Non-PDF special ignored!
+<special> color push gray 1
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
 <special> color push gray 0
 Non-PDF special ignored!
 <special> color push gray 0
@@ -1572,197 +1342,197 @@ Non-PDF special ignored!
 <special> color pop
 ]
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character ブ (U+30D6)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character ブ (U+30D6)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character ロ (U+30ED)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character ロ (U+30ED)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character ッ (U+30C3)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character ッ (U+30C3)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character ク (U+30AF)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character ク (U+30AF)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character こ (U+3053)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character こ (U+3053)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character ん (U+3093)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character ん (U+3093)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character な (U+306A)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character な (U+306A)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character 感 (U+611F)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character 感 (U+611F)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character じ (U+3058)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character じ (U+3058)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 0 in font nullfont!
-LaTeX Font Info:    Trying to load font information for U+msa on input line 169.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 170.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 169.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 170.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 169.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 170.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character こ (U+3053)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character こ (U+3053)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character ん (U+3093)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character ん (U+3093)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character な (U+306A)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character な (U+306A)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character 感 (U+611F)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character 感 (U+611F)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:169: LaTeX Error: Unicode character じ (U+3058)
+/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex:170: LaTeX Error: Unicode character じ (U+3058)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \end{frame}
+l.170 \end{frame}
                  
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2035,9 +1805,7 @@ Non-PDF special ignored!
 <special> color pop
 Non-PDF special ignored!
 <special> color pop
-]
-No file gp_ucb.toc.
-[6
+] (./gp_ucb.toc) [6
 Non-PDF special ignored!
 <special> color push gray 0
 Non-PDF special ignored!
@@ -2135,6 +1903,58 @@ Non-PDF special ignored!
 <special> color pop
 Non-PDF special ignored!
 <special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color push rgb 0.84 0.84 0.94
+Non-PDF special ignored!
+<special> color push rgb 0.84 0.84 0.94
+Non-PDF special ignored!
+<special> color push gray 1
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color push rgb 0.2 0.2 0.7
+Non-PDF special ignored!
+<special> color push gray 1
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
 Non-PDF special ignored!
 <special> color pop
 Non-PDF special ignored!
@@ -2526,18 +2346,42 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color pop
 ]
-\tf@nav=\write8
-\openout8 = `gp_ucb.nav'.
+\tf@nav=\write7
+\openout7 = `gp_ucb.nav'.
 
-\tf@toc=\write9
-\openout9 = `gp_ucb.toc'.
+\tf@toc=\write8
+\openout8 = `gp_ucb.toc'.
 
-\tf@snm=\write10
-\openout10 = `gp_ucb.snm'.
+\tf@snm=\write9
+\openout9 = `gp_ucb.snm'.
 
- (./gp_ucb.aux)
+ [10
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+] (./gp_ucb.aux
+./gp_ucb.aux:67: Extra }, or forgotten \endgroup.
+l.67 {6}{9}}
+            }
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-LaTeX Warning: There were undefined references.
+./gp_ucb.aux:67: Extra }, or forgotten \endgroup.
+l.67 {6}{9}}}
+             
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+)
+
+LaTeX Warning: Temporary extra page added at the end. Rerun to get it removed.
 
 
 Package rerunfilecheck Warning: File `gp_ucb.out' has changed.
@@ -2545,30 +2389,22 @@ Package rerunfilecheck Warning: File `gp_ucb.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `gp_ucb.out':
-(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
 (rerunfilecheck)             After:  1A73195A719B7053C23C8B8128719E88;614.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                gp_ucb
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'gp_ucb.run.xml'.
-\openout1 = `gp_ucb.run.xml'.
-
  ) 
 Here is how much of TeX's memory you used:
- 35409 strings out of 478268
- 734211 string characters out of 5846348
- 1393000 words of memory out of 5000000
- 52915 multiletter control sequences out of 15000+600000
- 484935 words of font info for 69 fonts, out of 8000000 for 9000
+ 28675 strings out of 478268
+ 598421 string characters out of 5846348
+ 843798 words of memory out of 5000000
+ 46219 multiletter control sequences out of 15000+600000
+ 485229 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,11n,122p,835b,848s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on gp_ucb.pdf (9 pages, 47796 bytes).
+ 128i,11n,122p,531b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on gp_ucb.pdf (10 pages, 63172 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  25 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
