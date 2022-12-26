@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  26 DEC 2022 14:40
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  26 DEC 2022 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**beamer_template.tex
-(./beamer_template.tex
+**gp_ucb.tex
+(./gp_ucb.tex
 pLaTeX2e <2021-11-15> (based on LaTeX2e <2021-11-15> patch level 1)
 L3 programming layer <2022-02-24>
 (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamer.cls
@@ -786,8 +786,8 @@ File: l3backend-dvipdfmx.def 2022-02-07 L3 backend support: dvipdfmx
 \g__pdf_backend_annotation_int=\count342
 \g__pdf_backend_link_int=\count343
 )
-No file beamer_template.aux.
-\openout1 = `beamer_template.aux'.
+No file gp_ucb.aux.
+\openout1 = `gp_ucb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
@@ -861,7 +861,7 @@ LaTeX Info: Redefining \ref on input line 68.
 LaTeX Info: Redefining \pageref on input line 68.
 LaTeX Info: Redefining \nameref on input line 68.
 \@outlinefile=\write5
-\openout5 = `beamer_template.out'.
+\openout5 = `gp_ucb.out'.
 
 
 
@@ -892,7 +892,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 tionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-No file beamer_template.nav.
+No file gp_ucb.nav.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 5.76599pt on input line 68.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
@@ -909,7 +909,7 @@ Missing character: There is no 5 in font nullfont!
 [1
 
 ]
-No file beamer_template.toc.
+No file gp_ucb.toc.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 78.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
@@ -921,7 +921,7 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 [2
 
 ]
-No file beamer_template.toc.
+No file gp_ucb.toc.
 [3
 
 ]
@@ -949,7 +949,7 @@ thkerncmss.
 ] [5
 
 ]
-No file beamer_template.toc.
+No file gp_ucb.toc.
 [6
 
 ] [7
@@ -960,31 +960,31 @@ No file beamer_template.toc.
 
 ]
 \tf@nav=\write6
-\openout6 = `beamer_template.nav'.
+\openout6 = `gp_ucb.nav'.
 
 \tf@toc=\write7
-\openout7 = `beamer_template.toc'.
+\openout7 = `gp_ucb.toc'.
 
 \tf@snm=\write8
-\openout8 = `beamer_template.snm'.
+\openout8 = `gp_ucb.snm'.
 
- (./beamer_template.aux)
+ (./gp_ucb.aux)
 
-Package rerunfilecheck Warning: File `beamer_template.out' has changed.
+Package rerunfilecheck Warning: File `gp_ucb.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `beamer_template.out':
+Package rerunfilecheck Info: Checksums for `gp_ucb.out':
 (rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  1738F8806F627E15D49774E224F1BEC4;380.
  ) 
 Here is how much of TeX's memory you used:
  22460 strings out of 478724
- 441991 string characters out of 5858393
- 685404 words of memory out of 5000000
+ 441856 string characters out of 5858393
+ 685386 words of memory out of 5000000
  40399 multiletter control sequences out of 15000+600000
  522130 words of font info for 104 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 128i,11n,122p,444b,558s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,11n,122p,435b,558s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on beamer_template.dvi (9 pages, 28312 bytes).
+Output written on gp_ucb.dvi (9 pages, 28312 bytes).
