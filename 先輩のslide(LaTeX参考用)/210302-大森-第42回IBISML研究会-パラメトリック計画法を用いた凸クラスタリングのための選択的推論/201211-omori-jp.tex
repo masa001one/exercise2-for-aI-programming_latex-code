@@ -1,0 +1,1007 @@
+\documentclass[dvipdfmx, 10pt]{beamer}
+%%%% 和文用 %%%%%
+\usepackage{bxdpx-beamer}
+\usepackage{pxjahyper}
+\usepackage{minijs}%和文用
+\renewcommand{\kanjifamilydefault}{\gtdefault}%和文用
+\usepackage{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% usepackage 群
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath,bm} %多次元空間ベクトルRを表記するのに必要
+\usepackage{amsfonts}
+\usepackage{ascmac} %枠付き文章を表記するのに必
+\usepackage{amssymb}
+%\usepackage[dvipdfmx]{animate}
+%\usepackage[dvipdfmx]{graphicx}
+% \mathbb{R}^{l} %表記例
+\usepackage{algorithm}
+\usepackage{algorithmic}
+% \usepackage{algpseudocode}
+\usepackage{animate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% bibtex 群
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% biblatex．標準のバックエンドはbiber
+\usepackage{biblatex}
+% bibtexのファイル
+\addbibresource{mybib.bib}
+% 参考文献のインデックスを文字列で表示
+\setbeamertemplate{bibliography item}[text]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% tikz 群
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\usetikzlibrary{calc, intersections, arrows, math}
+\usetikzlibrary{arrows, positioning, shapes.callouts}
+\usetikzlibrary{decorations,decorations.pathreplacing}
+
+\graphicspath{{./fig/}}
+
+%%%% スライドの見た目 %%%%%
+\usetheme{Madrid}
+\usefonttheme{professionalfonts}
+
+%%%% metropolisの設定 %%%%%
+% \metroset{block=fill}
+
+
+%\useoutertheme[subsection=false]{smoothbars}%ヘッダーにセクション表示
+\useinnertheme{circles} % 箇条書きをシンプルに
+
+% \setbeamercovered{transparent}%消えている文字をうっすらと表示
+\setbeamertemplate{footline}[frame number]%フッターをページ番号だけに
+\setbeamerfont{footline}{size=\scriptsize}%ページ番号小さく
+\setbeamerfont{frametitle}{size=\large}%フレームタイトルちょい小さく
+\setbeamercolor{footline}{bg=black}%ページ番号を太く
+\setbeamersize{text margin left=.75zw, text margin right=.75zw}%スライドの横の空白を調節
+
+\setbeamertemplate{enumerate items}[default]%enumerate環境のitemを見やすくする
+\setbeamertemplate{section in toc}[square]%outlineのボールを四角に
+\setbeamertemplate{navigation symbols}{}%右下のアイコンを消す
+
+% blockの色定義
+\definecolor{BlueTOL}{HTML}{222288}
+\definecolor{BrownTOL}{HTML}{666633}
+\definecolor{GreenTOL}{HTML}{228822}
+\definecolor{RedTOL}{HTML}{882222}
+
+\setbeamercolor{block title}{fg=white, bg=BlueTOL}
+\setbeamercolor{block body}{fg=black, bg=BlueTOL!10!white}
+\setbeamercolor{block title alerted}{fg=white, bg=RedTOL}
+\setbeamercolor{block body alerted}{fg=black, bg=RedTOL!10!white}
+\setbeamercolor{block title example}{fg=white, bg=GreenTOL}
+\setbeamercolor{block body example}{fg=black, bg=GreenTOL!10!white}
+
+%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%いろいろ便利なもの
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{here} %[hbtp]の代わりに[H]と書きこむと強制的にその場所に図や表を挿入する
+\usepackage{bm}
+\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%newcommand群
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\argmax}{\mathop{\rm arg~max}\limits}
+\newcommand{\argmin}{\mathop{\rm arg~min}\limits}
+
+\newcommand{\EE}{{\mathbb E}} % 期待値のE (追加)
+\newcommand{\cN}{{\cal N}}
+% \newcommand{\a}{\bm{a}}
+% \newcommand{\b}{\bm{b}}
+% \newcommand{\c}{\bm{c}}
+% \newcommand{\d}{\bm{d}}
+% \newcommand{\e}{\bm{e}}
+% \newcommand{\f}{\bm{f}}
+% \newcommand{\g}{\bm{g}}
+% \newcommand{\h}{\bm{h}}
+% \newcommand{\i}{\bm{i}}
+% \newcommand{\j}{\bm{j}}
+% \newcommand{\k}{\bm{k}}
+% \newcommand{\l}{\bm{l}}
+% \newcommand{\m}{\bm{m}}
+% \newcommand{\n}{\bm{n}}
+% \newcommand{\o}{\bm{o}}
+% \newcommand{\p}{\bm{p}}
+% \newcommand{\q}{\bm{q}}
+% \newcommand{\r}{\bm{r}}
+% \newcommand{\s}{\bm{s}}
+% \newcommand{\t}{\bm{t}}
+% \newcommand{\u}{\bm{u}}
+% \newcommand{\v}{\bm{v}}
+% \newcommand{\w}{\bm{w}}
+% \newcommand{\x}{\bm{x}}
+% \newcommand{\y}{\bm{y}}
+% \newcommand{\z}{\bm{z}}
+\newcommand{\ul}{\underline}
+\newcommand{\us}{\underset}
+
+\newcommand{\zl}{\rightarrow}
+\newcommand{\zh}{\leftarrow}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%本文
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{パラメトリック計画法を用いた\\凸クラスタリングのための選択的推論}
+\subtitle{第42回IBISML研究会}
+\author[]{\underline{大森夢拓}$^{\dag}$, 稲津佑$^{\dag}$, 竹内一郎$^{\dag,\dag\dag}$}
+\date[]{2021/3/2}
+\institute[]{$\dag$: 名古屋工業大学\\
+			   $\dag\dag$: 理化学研究所}
+
+% 目次スライド
+\AtBeginSection[noframenumbering]{
+  \begin{frame}[noframenumbering]{Next Section}
+	  \tableofcontents[currentsection, hidesubsections]%目次本体
+	\thispagestyle{empty}%ヘッダーフッター表示なし
+	\end{frame}
+}
+
+\begin{document}
+
+%-------------------
+
+%タイトル
+\begin{frame}[plain, noframenumbering]
+  \titlepage
+\end{frame}
+
+%-------------------
+
+%目次
+\begin{frame}[noframenumbering]{目次}
+    \tableofcontents[hideallsubsections]
+    \thispagestyle{empty}%ヘッダーフッター表示なし
+\end{frame}
+
+%-------------------
+
+\section{はじめに}
+
+%-------------------
+
+\begin{frame}{クラスタリングの信頼性}
+
+    クラスタリングは幅広い分野において, パターン認識に用いられる
+    \begin{itemize}
+        \item[※] 実際に得られた結果が必ずしも真のクラスタ構造とは限らない
+    \end{itemize}
+
+    \begin{figure}
+        \begin{tabular}{c}
+            \begin{minipage}{0.5\hsize}
+                \centering
+                \includegraphics[width=0.9\linewidth]{label.pdf}
+            \end{minipage}
+            \begin{minipage}{0.5\hsize}
+                \centering
+                \includegraphics[width=0.9\linewidth]{clustering.pdf}
+            \end{minipage}
+        \end{tabular}
+        \caption{i.i.d.である標本集合(左)に, 凸クラスタリングを適用(右)}
+    \end{figure}
+    
+    クラスタリングの結果が\alert{意図する結果かどうか}判別したい
+
+    $\zl$ クラスタリングで得られるクラスタ間の\ul{統計的有意性の評価}を行う
+
+\end{frame}
+
+%-------------------
+
+\begin{frame}{統計的有意性の評価}
+    観測データ $\bm{X}_{obs} \in \mathbb{R}^{n \times p}$ に凸クラスタリング (Hocking et al. 2011 \cite{hocking2011clusterpath})を適用
+    \begin{itemize}
+        \item $n$: データ数, $p$: 特徴数
+    \end{itemize}
+    \begin{exampleblock}{検定問題}
+        任意のクラスタ間における任意の特徴量の母平均の差の検定
+        \[
+            \text{H}_0: \mu_{\mathcal{C}_a, k} = \mu_{\mathcal{C}_b, k} \quad \text{vs.} \quad \text{H}_1: \mu_{\mathcal{C}_a, k} \neq \mu_{\mathcal{C}_b, k}
+        \]
+        \begin{itemize}
+            \item $\mu_{\mathcal{C}_a, k}$, $\mu_{\mathcal{C}_b, k}$ はクラスタ $\mathcal{C}_a$, $\mathcal{C}_b$ における $k$ 番目の特徴量の母平均
+        \end{itemize}
+    \end{exampleblock}
+    \begin{exampleblock}{検定統計量}
+        \[
+            \tau = \bar{x}_{\mathcal{C}_a, k} - \bar{x}_{\mathcal{C}_b, k} = \bm{\eta}^{\top} \mathrm{vec}(\bm{X}_{obs})
+        \]
+        \begin{itemize}  
+            \item $\bar{x}_{\mathcal{C}_a, k}$, $\bar{x}_{\mathcal{C}_b, k}$ はクラスタ $\mathcal{C}_a$, $\mathcal{C}_b$ における $k$ 番目の特徴量の標本平均
+        \end{itemize}
+    \end{exampleblock}
+\end{frame}
+
+%-------------------
+
+\begin{frame}{クラスタリングの統計的評価における問題点}
+    古典的な統計手法では\alert{選択バイアス}の発生を考慮できていない
+    \begin{itemize}
+        \item 選択バイアス: アルゴリズムに基づいた選択によって生じるバイアス
+    \end{itemize}
+    \begin{alertblock}{クラスタリングにおける選択バイアスの問題}
+        クラスタ間の差が大きくなるようにクラスタリングされるバイアスが発生
+        
+        $\zl$ 検定統計量の分布が一般的な分布(正規分布など)に従わない
+        
+        $\zl$ FPRを有意水準以下に制御できず検定としての \ul{妥当性を失う}
+        \begin{itemize}
+        \item FPR: 帰無仮説が正しいときに, 帰無仮説を誤って棄却する割合
+        \end{itemize}
+    \end{alertblock}
+    \centering ↓
+    \begin{block}{提案手法}
+        parametric Selective Inference (pSI) (Duy et al. 2020 \cite{duy2020parametric})の枠組みを適用
+    \end{block}
+\end{frame}
+
+%-------------------
+
+\section{凸クラスタリング}
+
+%-------------------
+
+\begin{frame}{凸クラスタリング}
+
+    凸クラスタリングでは, 次の最適化問題を各特徴(次元)毎に解く
+    \begin{block}{凸クラスタリングの最適化問題}
+        \[
+            \hat{\bm{\beta}} = \argmin_{\bm{\beta} \in \mathbb{R}^{n}} \frac{1}{2} \|\bm{x} - \bm{\beta} \|_2^2 + \lambda \sum_{i<j} \|\bm{\beta}_{i} - \bm{\beta}_{j}\|_1
+        \]
+        $\zl$ 一般化 lasso で定式化可能
+        \begin{itemize}
+            \item $\bm{x}$: $\bm{X}$ の特徴ベクトル
+            \item $\bm{\beta}_i$: $x_i$ が所属するクラスタの中心
+            \item $\lambda$: 正則化パラメータ
+            \begin{itemize}
+                \item クラスタリングの強さを調整する役割
+            \end{itemize}
+        \end{itemize}
+    \end{block}
+    \begin{itemize}
+        \item クラスタ内のメンバー同士が $\bm{\beta}_i = \bm{\beta}_j$ を満たすようにクラスタリング
+        % \item $\lambda$ を $\lambda_{max} \zl 0$ まで動かしながら $\hat{\bm{\beta}}$ を更新
+        % \begin{itemize}
+        %     \item 分割型クラスタリング
+        % \end{itemize}
+    \end{itemize}
+    
+\end{frame}
+
+%-------------------
+
+\begin{frame}{一般化 lasso と双対問題}
+
+    \begin{block}{一般化 lasso}
+        行列 $\bm{D}$ を用いて様々な正則化項を一般化したもの
+        \[
+            \hat{\bm{\beta}} = \argmin_{\bm{\beta} \in \mathbb{R}^{n}} \frac{1}{2} \|\bm{x} - \bm{\beta} \|_2^2 + \lambda \|\bm{D} \bm{\beta}\|_1
+        \]
+    \end{block}
+
+    一般化 lasso は双対問題で最適化できることが知られている
+    \begin{block}{双対問題}
+        \[
+            \hat{\bm{\beta}} = \bm{x} - \bm{D}^{\top} \hat{\bm{u}}
+        \]
+        \[
+            \underset{\bm{u} \in \mathbb{R}^{\binom{n}{2} \times n}}{\min} \frac{1}{2} \|\bm{x} - \bm{D}^{\top} \bm{u}\|_2^2 \quad \mathrm{subject\ to}\ \|\bm{u}\|_{\infty} \le \lambda
+        \]
+    \end{block}
+    
+\end{frame}
+
+%-------------------
+
+\begin{frame}{凸クラスタリングにおける 一般化 lasso}
+
+    \begin{itemize}
+        \item 凸クラスタリングにおける $\bm{D}$
+        \begin{itemize}
+            \item 各行が $1 \le i < j \le n$ における任意の組み合わせ $(i, j)$ に対して, 
+            
+            $i$ 列目が $1$, $j$ 列目が $-1$ となるように設定
+        \end{itemize}
+        \[
+            \bm{D} \in \mathbb{R}^{\binom{n}{2} \times n} = \left(
+                \begin{array}{cccccccc}
+                1 & -1 & 0 & 0 & \ldots & 0 & 0 & 0\\
+                1 & 0 & -1 & 0 & \ldots & 0 & 0 & 0\\
+                1 & 0 & 0 & -1 & \ldots & 0 & 0 & 0\\
+                \vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots & \vdots\\
+                0 & 0 & 0 & 0 & \ldots & 1 & -1 & 0\\
+                0 & 0 & 0 & 0 & \ldots & 1 & 0 & -1\\
+                0 & 0 & 0 & 0 & \ldots & 0 & 1 & -1
+                \end{array}
+            \right)
+        \]
+        \item $\mathcal{A}$: アクティブ集合
+        \begin{itemize}
+            \item $\bm{\beta}_{i} \neq \bm{\beta}_{j}$ となる $(i, j)$ に対応する $\bm{D}$ の行インデックスの集合
+        \end{itemize}
+
+        % \item $\mathcal{A}$ によって, クラスタリング結果が決定
+        % \begin{itemize}
+        %     \item アルゴリズムでは $\mathcal{A}$ が変化する時点での $\lambda$ を解析的に導出して更新
+        %     \item クラスタリングが収束するまでの $\lambda$ の更新回数は高々 $\binom{n}{2}$ 回
+        %     \item $|\mathcal{A}|_{\lambda_{max}} = 0$ であり, 単調増加しながら $|\mathcal{A}|_{\lambda_{min}} = \binom{n}{2}$ となる $\lambda_{min}$ で収束
+        % \end{itemize}
+    \end{itemize}
+    
+\end{frame}
+
+%-------------------
+
+\section{parametric Selective Inference}
+
+%-----------------------
+
+\begin{frame}{凸クラスタリングにおけるSelective Inference}
+
+    \begin{block}{Selective Inference (SI) (Lee et al. 2016\cite{lee2016exact})}
+        選択されたモデルで条件付けた推論
+        \begin{itemize}
+            \item 選択イベント: モデル選択の条件付けに必要なイベント
+            \item 選択イベントの条件付けにより適切な帰無仮説の分布(帰無分布)を導出
+            \begin{itemize}
+                \item \alert{【注意】} 選択されたモデルを直接条件付けしているわけではない
+            \end{itemize}
+        \end{itemize}
+        $\zl$ 選択バイアスの問題に対処可能
+    \end{block}
+
+    凸クラスタリングにおけるSIでは
+    \begin{itemize}
+        \item 選択されたモデル: $\bm{X}_{obs}$ から得られた凸クラスタリング結果
+        \item 選択イベント: 凸クラスタリングの最適化問題から得られた $\mathcal{A}$
+        \item 帰無分布: ベクトル $\bm{\eta}$ 上の正規分布 $\mathrm{N}(0, \bm{\eta}^{\top} \bm{\Sigma} \bm{\eta})$を, 選択イベントによって得られる区間 $\mathcal{Z}$ で切断した切断正規分布$\mathrm{T}\mathrm{N}(0, \bm{\eta}^{\top} \bm{\Sigma} \bm{\eta}, \mathcal{Z})$
+    \end{itemize}
+
+\end{frame}
+
+%-------------------
+
+\begin{frame}{Selective Inference の問題}
+
+    選択されたモデルに対して, 選択イベントによる条件付けが必要十分でない
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|c|} \hline
+            検定統計量 & $\mathcal{A}$ & クラスタリング結果 \\\hline
+            -2.0 & ($\bm{u}_1$, $\bm{u}_3$, $\bm{u}_4$, $\bm{u}_5$)* & $(C_1, C_2, C_3, C_3)$* \\\hline \hline
+            -2.61 $\sim$ -2.54& ($\bm{u}_1$, $\bm{u}_2$, $\bm{u}_3$, $\bm{u}_4$, $\bm{u}_5$, $\bm{u}_6$) & $(C_1, C_2, C_3, C_4)$ \\\hline
+            -2.54 $\sim$ -2.37& ($\bm{u}_1$, $\bm{u}_3$, $\bm{u}_4$, $\bm{u}_5$, $\bm{u}_6$) & $(C_1, C_2, C_3, C_3)$* \\\hline
+            -2.37 $\sim$ -1.61& ($\bm{u}_1$, $\bm{u}_3$, $\bm{u}_4$, $\bm{u}_5$)* & $(C_1, C_2, C_3, C_3)$* \\\hline
+            -1.61 $\sim$ -1.44& ($\bm{u}_1$, $\bm{u}_4$, $\bm{u}_5$) & $(C_1, C_2, C_3, C_3)$* \\\hline
+            -1.44 $\sim$ -1.37& ($\bm{u}_1$, $\bm{u}_2$, $\bm{u}_4$, $\bm{u}_5$) & $(C_1, C_2, C_3, C_4)$ \\\hline
+            -1.37 $\sim$ -0.20& ($\bm{u}_1$, $\bm{u}_2$, $\bm{u}_4$, $\bm{u}_5$, $\bm{u}_6$) & $(C_1, C_2, C_3, C_4)$ \\\hline
+        \end{tabular}
+        \caption{$\mathcal{A}$ とクラスタリング結果の対応表}
+    \end{table}
+
+    \begin{itemize}
+        \item 選択されたモデルの条件付けによって得られる区間: -2.54 $\sim$ -1.44
+        \item 選択イベントの条件付けによって得られる区間: -2.37 $\sim$ -1.61
+        \begin{itemize}
+            \item SI が導出する区間
+        \end{itemize}
+    \end{itemize}
+    
+    $\zl$ 選択されたモデルに対して選択イベントによる条件付けが\ul{過剰}になる
+
+    $\zl$ \alert{検出力低下}の原因となる！
+
+\end{frame}
+
+%-------------------
+
+\begin{frame}{parametric Selective Inference}
+
+    pSI: parametric計画法により, 適切な帰無分布を\ul{過剰な条件付けなく}導出するSI
+    \begin{itemize}
+        \item $\bm{X}$ をパラメータ $z$ を用いて $\mathrm{vec}(\bm{X}(z)) = \bm{a} + \bm{b} z$ と表現
+        \begin{itemize}
+            \item $\bm{a} = (\bm{I} - \bm{b} \bm{\eta}^{\top}) \mathrm{vec}(\bm{X}_{obs})$
+            \item $\bm{b} = \bm{\Sigma} \bm{\eta} (\bm{\eta}^{\top} \bm{\Sigma} \bm{\eta})^{-1}$
+            \item $\bm{\Sigma}$: $\mathrm{vec}(\bm{X}_{obs})$ の分散共分散行列
+        \end{itemize}
+        \item  $z$ 軸上において, 選択されたモデルの区間 $\mathcal{Z}$ から帰無分布を構築
+        \item 帰無分布からselective-$p$ を以下のように構築
+        \[
+            \mathrm{selective-}p = 2 \min \{
+                F_{0, \bm{\eta} \bm{\Sigma} \bm{\eta}}^{\mathcal{Z}} (\bm{\eta}^{\top} \mathrm{vec}(\bm{X}_{obs})),
+                1 - F_{0, \bm{\eta} \bm{\Sigma} \bm{\eta}}^{\mathcal{Z}} (\bm{\eta}^{\top} \mathrm{vec}(\bm{X}_{obs})
+            \}
+        \]
+        \begin{itemize}
+            \item $F_{\mu, \sigma^2}^{\mathcal{Z}}(x)$ : $\mathrm{T}\mathrm{N}(\mu, \sigma^2, \mathcal{Z})$ の累積分布関数
+        \end{itemize}
+    \end{itemize}
+
+\end{frame}
+
+%-------------------
+
+\begin{frame}{凸クラスタリングにおける parametric Selective Inference}
+    例として, $\bm{X}_{obs} \in \mathbb{R}^{3 \times 1}$, クラスタリング結果を $(C_1, C_2, C_1)^{\top}$ とする
+    \begin{itemize}
+        \item $\bm{X}_{obs}$ のクラスタリング結果と $\bm{X}(z)$ のクラスタリング結果が\\同じとなるような $z$ 軸上の区間から切断正規分布を構築
+    \end{itemize}
+    \begin{figure}[H]
+        \centering
+        \begin{tikzpicture}[rotate=5]
+            % 引数の構造体
+            \tikzset{
+                SFSvec/.style={rounded corners, inner xsep=1pt, fill=red!5, below=0.35cm, fill opacity=0.75},
+                Comment/.style={align=center, rectangle callout, rounded corners, draw}
+            }
+            \draw[->, >=latex, name path=z_line] (-5, 0) -- (5, 0)node[right]{$z$}; % z軸
+            \fill (-1, 0) coordinate (X_obs) circle (2pt) node [above] {$\bm{X}_{obs}$}; % 観測X_obs
+            \node[SFSvec] at (X_obs) {\textcolor<18->{red}{\scriptsize $\begin{pmatrix} C_1 \\ C_2 \\ C_1 \\ \end{pmatrix}$}};
+        
+            \coordinate (A4) at (-1.6, 0.5);
+            \coordinate (B4) at ($(A4)+(0.3, -1)$);
+            \coordinate (C4) at ($(B4)+(0.9, -0.25)$);
+            \coordinate (D4) at ($(C4)+(0.5, 0.45)$);
+            \coordinate (E4) at ($(D4)+(-0.45, 1.1)$);
+        
+            % z1
+            \fill<2-3> (-4.8, 0) circle (1.5pt) node [below] {$z$};
+            % polytope1
+            \onslide<3->{
+                \fill (-5, 1) coordinate (A1) circle (0pt);
+                \fill ($(A1)+(1.5, -0.8)$) coordinate (B1) circle (0pt);
+                \fill ($(B1)+(-0.1, -1)$) coordinate (C1) circle (0pt);
+                \fill (-5, -0.9) coordinate (D1) circle (0pt);
+                \path[name path=polytope1] (A1) -- (B1) -- (C1) -- (D1);
+                \coordinate (L1) at (-5, 0);
+                \path[name intersections={of= z_line and polytope1, by={U1}}];
+                % \draw[red] ($(U1)+(0,0.1)$) -- ($(U1)-(0,0.1)$);
+                \tikzmath{
+                    coordinate \c;
+                    \c{L1} = (-5, 0);
+                    \c{U1} = (U1);
+                    coordinate \cbase;
+                    \cbase = (1,1);
+                    \cx{L1} = \cx{L1} / \cbasex;
+                    \cy{L1} = \cy{L1} / \cbasey;
+                    \cx{U1} = \cx{U1} / \cbasex;
+                    \cy{U1} = \cy{U1} / \cbasey;
+                }
+                % \draw ($(L1)!0.5!(U1)$) node[SFSvec] {\textcolor<18->{red}{\scriptsize $\begin{pmatrix} C_1 \\ C_2 \\ C_1 \\ \end{pmatrix}$}};
+            }
+        
+            % z2
+            \fill<4-5> (\cx{U1}+0.2, \cy{U1}) circle (1.5pt) node [below] {$z$};
+            % polytope2
+            \onslide<5->{
+                \fill ($(B1)!-0.5!(C1)$) coordinate (A2) circle (0pt);
+                \fill ($(A2)+(0.75, 0.05)$) coordinate (B2) circle (0pt);
+                \fill ($(B2)+(0.4, -0.4)$) coordinate (C2) circle (0pt);
+                \fill ($(C2)+(0.1, -1.1)$) coordinate (D2) circle (0pt);
+                \fill ($(D2)+(-0.8, -0.25)$) coordinate (E2) circle (0pt);
+                \fill ($(B1)!0.8!(C1)$) coordinate (F2) circle (0pt);
+                \path[name path=polytope2] (A2) -- (B2) -- (C2) -- (D2) -- (E2) -- (F2) -- cycle;
+                \path[name intersections={of= z_line and polytope2, by={U2, L2}}];
+                % \draw[red] ($(L2)+(0,0.1)$) -- ($(L2)-(0,0.1)$);
+                \draw[red] ($(U2)+(0,0.1)$) -- ($(U2)-(0,0.1)$);
+                \tikzmath{
+                    \c{L2} = (L2);
+                    \c{U2} = (U2);
+                    \cx{L2} = \cx{L2} / \cbasex;
+                    \cy{L2} = \cy{L2} / \cbasey;
+                    \cx{U2} = \cx{U2} / \cbasex;
+                    \cy{U2} = \cy{U2} / \cbasey;
+                }
+                \draw ($(L1)!0.5!(U2)$) node[SFSvec] {\textcolor<18->{red}{\scriptsize $\begin{pmatrix} C_1 \\ C_2 \\ C_1 \\ \end{pmatrix}$}};
+            }
+        
+            % z3
+            \fill<6-7> (\cx{U2}+0.2, \cy{U2}) circle (1.5pt) node [below] {$z$};
+            % polytope3
+            \onslide<7->{
+                \fill ($(C2)!0.1!(D2)$) coordinate (A3) circle (0pt);
+                \fill ($(A4)!0.25!(B4)$) coordinate (B3) circle (0pt);
+                \fill ($(A4)!1.4!(B4)$) coordinate (C3) circle (0pt);
+                \fill ($(C3)+(-0.7, -0.1)$) coordinate (D3) circle (0pt);
+                \fill ($(C2)!0.9!(D2)$) coordinate (E3) circle (0pt);
+                \path[name path=polytope3] (A3) -- (B3) -- (C3) -- (D3) -- (E3) -- cycle;
+                \path[name intersections={of= z_line and polytope3, by={U3, L3}}];
+                \draw[red] ($(L3)+(0,0.1)$) -- ($(L3)-(0,0.1)$);
+                \draw[red] ($(U3)+(0,0.1)$) -- ($(U3)-(0,0.1)$);
+                \tikzmath{
+                    \c{L3} = (L3);
+                    \c{U3} = (U3);
+                    \cx{L3} = \cx{L3} / \cbasex;
+                    \cy{L3} = \cy{L3} / \cbasey;
+                    \cx{U3} = \cx{U3} / \cbasex;
+                    \cy{U3} = \cy{U3} / \cbasey;
+                }
+                \draw ($(L3)!0.5!(U3)$) node[SFSvec] {\scriptsize $\begin{pmatrix} C_2 \\ C_2 \\ C_1 \\ \end{pmatrix}$};
+            }
+        
+            % z4, z_obs
+            \fill<8-9> (\cx{U3}+0.2, \cy{U3}) circle (1.5pt) node [below] {$z$};
+            \onslide<9->{
+                \fill (A4) circle (0pt);
+                \fill (B4) circle (0pt);
+                \fill (C4) circle (0pt);
+                \fill (D4) circle (0pt);
+                \fill (E4) circle (0pt);
+                \path[name path=polytope4] (A4) -- (B4) -- (C4) -- (D4) -- (E4) -- cycle;
+                \path[name intersections={of= z_line and polytope4, by={L4, U4}}];
+                \draw[red] ($(L4)+(0,0.1)$) -- ($(L4)-(0,0.1)$);
+                \draw[red] ($(U4)+(0,0.1)$) -- ($(U4)-(0,0.1)$);
+                \tikzmath{
+                    \c{L4} = (L4);
+                    \c{U4} = (U4);
+                    \cx{L4} = \cx{L4} / \cbasex;
+                    \cy{L4} = \cy{L4} / \cbasey;
+                    \cx{U4} = \cx{U4} / \cbasex;
+                    \cy{U4} = \cy{U4} / \cbasey;
+                }
+            }
+        
+            % z5
+            \fill<10-11> (\cx{U4}+0.2, \cy{U4}) circle (1.5pt) node [below] {$z$};
+            \onslide<11->{
+                \fill ($(D4)!0.6!(E4)$) coordinate (A5) circle (0pt);
+                \fill ($(A5)+(0.75, 0.1)$) coordinate (B5) circle (0pt);
+                \fill ($(B5)+(0.1, -0.8)$) coordinate (C5) circle (0pt);
+                \fill ($(D4)!-0.3!(E4)$) coordinate (D5) circle (0pt);
+                \path[name path=polytope5] (A5) -- (B5) -- (C5) -- (D5) -- cycle;
+                \path[name intersections={of= z_line and polytope5, by={U5, L5}}];
+                \draw[red] ($(L5)+(0,0.1)$) -- ($(L5)-(0,0.1)$);
+                \draw[red] ($(U5)+(0,0.1)$) -- ($(U5)-(0,0.1)$);
+                \tikzmath{
+                    \c{L5} = (L5);
+                    \c{U5} = (U5);
+                    \cx{L5} = \cx{L5} / \cbasex;
+                    \cy{L5} = \cy{L5} / \cbasey;
+                    \cx{U5} = \cx{U5} / \cbasex;
+                    \cy{U5} = \cy{U5} / \cbasey;
+                }
+                \draw ($(L5)!0.5!(U5)$) node[SFSvec] {\scriptsize $\begin{pmatrix} C_1 \\ C_1 \\ C_1 \\ \end{pmatrix}$};
+            }
+        
+            % z6
+            \fill<12-13> (\cx{U5}+0.2, \cy{U5}) circle (1.5pt) node [below] {$z$};
+            \onslide<13->{
+                \fill ($(B5)!-0.1!(C5)$) coordinate (A6) circle (0pt);
+                \fill ($(A6)+(0.2, 0.5)$) coordinate (B6) circle (0pt);
+                \fill ($(B6)+(0.5, -0.2)$) coordinate (C6) circle (0pt);
+                \fill ($(C6)+(0.35, -0.45)$) coordinate (D6) circle (0pt);
+                \fill ($(D6)+(-0.2, -1)$) coordinate (E6) circle (0pt);
+                \fill ($(E6)+(-0.5, -0.1)$) coordinate (F6) circle (0pt);
+                \fill ($(B5)!1.25!(C5)$) coordinate (G6) circle (0pt);
+                \path[name path=polytope6] (A6) -- (B6) -- (C6) -- (D6) -- (E6) -- (F6) -- (G6) -- cycle;
+                \path[name intersections={of= z_line and polytope6, by={U6, L6}}];
+                \draw[red] ($(L6)+(0,0.1)$) -- ($(L6)-(0,0.1)$);
+                \draw[red] ($(U6)+(0,0.1)$) -- ($(U6)-(0,0.1)$);
+                \tikzmath{
+                    \c{L6} = (L6);
+                    \c{U6} = (U6);
+                    \cx{L6} = \cx{L6} / \cbasex;
+                    \cy{L6} = \cy{L6} / \cbasey;
+                    \cx{U6} = \cx{U6} / \cbasex;
+                    \cy{U6} = \cy{U6} / \cbasey;
+                }
+                \draw ($(L6)!0.5!(U6)$) node[SFSvec] {\textcolor<18->{red}{\scriptsize $\begin{pmatrix} C_1 \\ C_2 \\ C_1 \\ \end{pmatrix}$}};
+            }
+        
+            % z7
+            \fill<14-15> (\cx{U6}+0.2, \cy{U6}) circle (1.5pt) node [below] {$z$};
+            \onslide<15->{
+                \fill ($(D6)!0.05!(E6)$) coordinate (A7) circle (0pt);
+                \fill ($(A7)+(0.95, 0.25)$) coordinate (B7) circle (0pt);
+                \fill ($(B7)+(0.2, -0.1)$) coordinate (C7) circle (0pt);
+                \fill ($(C7)+(-0.45, -1.5)$) coordinate (D7) circle (0pt);
+                \fill ($(D6)!1!(E6)$) coordinate (E7) circle (0pt);
+                \path[name path=polytope7] (A7) -- (B7) -- (C7) -- (D7) -- (E7) -- cycle;
+                \path[name intersections={of= z_line and polytope7, by={U7, L7}}];
+                \draw[red] ($(L7)+(0,0.1)$) -- ($(L7)-(0,0.1)$);
+                \draw[red] ($(U7)+(0,0.1)$) -- ($(U7)-(0,0.1)$);
+                \tikzmath{
+                    \c{L7} = (L7);
+                    \c{U7} = (U7);
+                    \cx{L7} = \cx{L7} / \cbasex;
+                    \cy{L7} = \cy{L7} / \cbasey;
+                    \cx{U7} = \cx{U7} / \cbasex;
+                    \cy{U7} = \cy{U7} / \cbasey;
+                }
+                \draw ($(L7)!0.5!(U7)$) node[SFSvec] {\scriptsize $\begin{pmatrix} C_1 \\ C_2 \\ C_2 \\ \end{pmatrix}$};
+            }
+        
+            % z8
+            \fill<16-17> (\cx{U7}+0.2, \cy{U7}) circle (1.5pt) node [below] {$z$};
+            \onslide<17->{
+                \fill ($(C7)!-0.25!(D7)$) coordinate (B8) circle (0pt);
+                \fill ($(C7)!0.45!(D7)$) coordinate (C8) circle (0pt);
+                \fill ($(C8)+(0.4, -0.4)$) coordinate (D8) circle (0pt);
+                \fill (5, -0.9) coordinate (E8) circle (0pt);
+                \fill (5, 1.45) coordinate (A8) circle (0pt);
+                \path[name path=polytope8] (A8) -- (B8) -- (C8) -- (D8) -- (E8);
+                \path[name intersections={of= z_line and polytope8, by={L8}}];
+                \coordinate (U8) at (5, 0);
+                \draw[red] ($(L8)+(0,0.1)$) -- ($(L8)-(0,0.1)$);
+                \tikzmath{
+                    \c{L8} = (L8);
+                    \c{U8} = (5, 0);
+                    \cx{L8} = \cx{L8} / \cbasex;
+                    \cy{L8} = \cy{L8} / \cbasey;
+                    \cx{U8} = \cx{U8} / \cbasex;
+                    \cy{U8} = \cy{U8} / \cbasey;
+                }
+                \draw ($(L8)!0.5!(U8)$) node[SFSvec] {\textcolor<18->{red}{\scriptsize $\begin{pmatrix} C_1 \\ C_2 \\ C_1 \\ \end{pmatrix}$}};
+            }
+        
+            % parametric interval
+            \onslide<18->{
+                \draw[red, very thick] (L1) -- (U1);
+                \draw[red, very thick] (L2) -- (U2);
+                \draw[red, very thick] (L4) -- (U4);
+                \draw[red, very thick] (L6) -- (U6);
+                \draw[red, very thick] (L8) -- (U8);
+                \tikzmath{
+                    % PDF of Normal Distribution N(\m, (\s)^2)
+                    function Normal(\x, \m, \s) {
+                        return (4 / (sqrt(2*pi)*\s)) * exp( -pow((\x-\m)/\s, 2) / 2);
+                    };
+                    real \m;
+                    real \s;
+                    \m = -0.25;
+                    \s = 0.75;
+                    \c{NL1} = (\cx{L1}, {Normal(\cx{L1}, -0.25, 0.75) + 0.1});
+                    \c{NU1} = (\cx{U1}, {Normal(\cx{U1}, \m, \s) + 0.1});
+                    \c{NL2} = (\cx{L2}, {Normal(\cx{L2}, \m, \s) + 0.1});
+                    \c{NU2} = (\cx{U2}, {Normal(\cx{U2}, \m, \s) + 0.1});
+                    \c{NL4} = (\cx{L4}, {Normal(\cx{L4}, \m, \s) + 0.1});
+                    \c{NU4} = (\cx{U4}, {Normal(\cx{U4}, \m, \s) + 0.1});
+                    \c{NL6} = (\cx{L6}, {Normal(\cx{L6}, \m, \s) + 0.1});
+                    \c{NU6} = (\cx{U6}, {Normal(\cx{U6}, \m, \s) + 0.1});
+                    \c{NL8} = (\cx{L8}, {Normal(\cx{L8}, \m, \s) + 0.1});
+                    \c{NU8} = (\cx{U8}, {Normal(\cx{U8}, \m, \s) + 0.1});
+                }
+            }
+        
+            % % truncated normal distribution
+            \onslide<19->{
+                %% normal distribution
+                \draw[densely dashed, samples=100, domain=-5:5, color=purple, name path=norm_dist] plot(\x, {Normal(\x, \m, \s) + 0.1});
+                %% truncated
+                \draw[samples=100, domain=\cx{L1}:\cx{U2}, color=purple, ultra thick] plot(\x, {Normal(\x, \m, \s) + 0.1});
+                \draw[samples=100, domain=\cx{L4}:\cx{U4}, color=purple, ultra thick] plot(\x, {Normal(\x, \m, \s) + 0.1});
+                \draw[samples=100, domain=\cx{L6}:\cx{U6}, color=purple, ultra thick] plot(\x, {Normal(\x, \m, \s) + 0.1});
+                \draw[samples=100, domain=\cx{L8}:\cx{U8}, color=purple, ultra thick] plot(\x, {Normal(\x, \m, \s) + 0.1});
+                %% correspond line
+                % \draw[dashed, color=red, ultra thin] (\c{U1}) -- (\c{NU1});
+                % \draw[dashed, color=red, ultra thin] (\c{L2}) -- (\c{NL2});
+                \draw[dashed, color=red, ultra thin] (\c{U2}) -- (\c{NU2});
+                \draw[dashed, color=red, ultra thin] (\c{L4}) -- (\c{NL4});
+                \draw[dashed, color=red, ultra thin] (\c{U4}) -- (\c{NU4});
+                \draw[dashed, color=red, ultra thin] (\c{L6}) -- (\c{NL6});
+                \draw[dashed, color=red, ultra thin] (\c{U6}) -- (\c{NU6});
+                \draw[dashed, color=red, ultra thin] (\c{L8}) -- (\c{NL8});
+            }
+        \end{tikzpicture}
+    \end{figure}
+    この切断正規分布の累積分布関数から selective-$p$ 値を計算
+\end{frame}
+
+%-------------------
+
+\begin{frame}{$z$ の解パスアルゴリズムの設定}
+
+
+    pSIにて, クラスタリング結果が変化する $z$ を解析的に導出する解パスを提案する
+    \begin{itemize}
+        \item 一般化 lasso の $\lambda$ の解パスを基に, $z$ の解パスとして定式化
+    \end{itemize}
+
+    表記
+    \begin{itemize}
+        \item $\bm{D}_{\mathcal{A}}$: $\mathcal{A}$ に含まれる行インデックスから構成される $\bm{D}$ の部分行列
+        \item $\bm{s}$: $\mathcal{A}$ の符号集合ベクトル
+        \item $z_h$: $\mathcal{A}$ に新たなメンバーが加わる時点の $z$
+        \begin{itemize}
+            \item $i_h$: 新たに加わる $\bm{D}$ の行インデックス
+        \end{itemize} 
+        \item $z_l$: $\mathcal{A}$からあるメンバーが脱ける時点の $z$
+        \begin{itemize}
+            \item $i_l$: 新たに脱ける $\bm{D}$ の行インデックス
+        \end{itemize}
+        % \item $\bm{a}, \bm{b} \in \mathbb{R}^{n}$: $\bm{A}, \bm{B}$ の任意の特徴ベクトル$\bm{A}_{:, k}, \bm{B}_{:, k}$
+    \end{itemize}
+
+\end{frame}
+  
+%---------------
+
+\begin{frame}{$z$ の解パスアルゴリズム}
+    初期条件: $z = -\infty$, $\mathcal{A} = \mathcal{A} \mathrm{\ of\ Convex\ Clustering}(\bm{a} + \bm{b} z)$
+    
+    以下の手順を $z = \infty$ となるまで繰り返しながら $z$ を更新
+    \begin{enumerate}
+        \item $z_h, i_h$ を導出
+
+        \[
+            z_h, i_h = \min_i \frac{
+                [(\bm{D}_{\bar{\mathcal{A}}} \bm{D}_{\bar{\mathcal{A}}}^{\top})^+ \bm{D}_{\bar{\mathcal{A}}} (\lambda \bm{D}_{\mathcal{A}}^{\top} \bm{s} - \bm{a})]_i \pm \lambda
+            }{
+                [(\bm{D}_{\bar{\mathcal{A}}} \bm{D}_{\bar{\mathcal{A}}}^{\top})^+ \bm{D}_{\bar{\mathcal{A}}} \bm{b}]_i
+            }
+        \]
+        \item $z_l, i_l$ を導出
+
+        \[
+            z_l, i_l = \min_i \frac{
+                [\bm{D}_{\mathcal{A}} (\bm{I} - \bm{D}_{\bar{\mathcal{A}}}^{\top}(\bm{D}_{\bar{\mathcal{A}}} \bm{D}_{\bar{\mathcal{A}}}^{\top})^+ \bm{D}_{\bar{\mathcal{A}}}) (\lambda \bm{D}_{\mathcal{A}}^{\top} \bm{s} - \bm{a})]_i
+            }{
+                [\bm{D}_{\mathcal{A}} (\bm{I} - \bm{D}_{\bar{\mathcal{A}}}^{\top}(\bm{D}_{\bar{\mathcal{A}}} \bm{D}_{\bar{\mathcal{A}}}^{\top})^+ \bm{D}_{\bar{\mathcal{A}}}) \bm{b}]_i
+            }
+        \]
+        \item $z = \min\{z_h, z_l\}$ とし, $\mathcal{A}$ の変化を適用
+        
+        \[
+            \begin{cases}
+                z = z_h : \mathcal{A} = \mathcal{A} \cup \{i_h\} \\
+                z = z_l : \mathcal{A} = \mathcal{A} \setminus \{i_l\}
+            \end{cases}
+        \]
+
+    \end{enumerate}
+\end{frame}
+  
+%-------------------
+
+\section{計算機実験}
+
+%-------------------
+
+\begin{frame}{人工データを用いたFPR実験}
+    \begin{itemize}
+    \item $\bm{X} \in \mathbb{R}^{4 \times 2}$とし, 各要素を$\mathrm{N}(0, 1)$から独立に生成
+    \item 凸クラスタリングの結果からランダムに2クラスタを選択して検定を試行
+    \item 選択バイアスを考慮しない検定(naive)と比較
+    
+    \end{itemize}
+    \begin{figure}[htb]
+        \begin{tabular}{cc}
+        %---- 最初の図 ---------------------------
+        \begin{minipage}[t]{0.45\hsize}
+            \centering
+            \includegraphics[width=1.0\textwidth]{parametoricZLambda04.pdf}
+            \caption{$\lambda = 0.4$の場合の$p$値の分布}
+        \end{minipage} &
+        %---- 2番目の図 --------------------------
+        \begin{minipage}[t]{0.45\hsize}
+            \centering
+            \includegraphics[width=1.0\textwidth]{parametoricZLambda07.pdf}
+            \caption{$\lambda = 0.7$の場合の$p$値の分布}
+        \end{minipage}
+        %---- 図はここまで ----------------------
+        \end{tabular}
+    \end{figure}
+    selective-$p$の分布が一様分布 $\zl$ \underline{FPR の制御に成功}
+\end{frame}
+
+%-------------------
+
+\begin{frame}{人工データを用いた検出力実験}
+    \begin{itemize}
+        \item $\bm{X} = (\bm{x}_{1}, \bm{x}_{2}, \bm{x}_{3}, \bm{x}_{4})^{\top} \in \mathbb{R}^{4 \times 2}$とする
+        \item 真のクラスタリング結果を $(C_1, C_1, C_2, C_2)$ とする
+        \begin{itemize}
+            \item $\bm{x}_{1}, \bm{x}_{2}$ の各要素は$\mathrm{N}(0, 1)$から, $\bm{x}_{3}, \bm{x}_{4}$ の各要素は $\mathrm{N}(\mu, 1)$ から独立に生成
+        \end{itemize}
+    \end{itemize}
+    \begin{figure}
+        \includegraphics[width=0.5\linewidth]{oc-n12-n22-p2.pdf}
+        \caption{SIとpSIとの検出力の比較}
+    \end{figure}
+
+    pSI は SI に比べて\ul{検出力が向上}していることを確認
+\end{frame}
+
+%-------------------
+
+
+\begin{frame}{irisデータを用いた実データ実験}
+    \begin{itemize}
+        \item 150 個の標本からランダムに50 個を選択し, $\bm{X} \in \mathbb{R}^{50 \times 4}$とする
+        \item クラスタ数が9となるような $\lambda$ に設定
+    \end{itemize}
+    \begin{figure}[htb]
+        \begin{tabular}{cc}
+        %---- 最初の図 ---------------------------
+        \begin{minipage}[t]{0.45\hsize}
+            \centering
+            \includegraphics[width=1.0\textwidth]{iris_label.pdf}
+            \caption{$\bm{X}$の分布}
+        \end{minipage} &
+        %---- 2番目の図 --------------------------
+        \begin{minipage}[t]{0.45\hsize}
+            \centering
+            \includegraphics[width=1.0\textwidth]{iris_clustering_13.pdf}
+            \caption{凸クラスタリング結果}
+        \end{minipage}
+        %---- 図はここまで ----------------------
+        \end{tabular}
+    \end{figure}
+    \begin{table}[tb]
+        \centering
+        \caption{pSI，SI (Conditional SI) による $p$ 値の結果．}
+        \begin{tabular}{|c|c|c|} \hline
+          検定問題 & pSI-$p$ & SI-$p$ \\\hline
+          p3: $C_{1}$ vs $C_{2}$ & \alert{0.004} & 0.060 \\\hline
+          p3: $C_{1}$ vs $C_{6}$ & \alert{0.027} & \alert{0.047} \\\hline
+        \end{tabular}
+        \label{tab:iris_p}
+    \end{table}
+\end{frame}
+
+%-------------------
+
+\section{まとめと今後の課題}
+
+%-------------------
+
+\begin{frame}{まとめと今後の課題}
+    \begin{itemize}
+      \item まとめ
+      \begin{itemize}
+        \item クラスタリング後の任意の2クラスタ間の検定問題をpSIの枠組みで定式化
+        \item 選択バイアスを考慮した妥当な検定が行えることを確認
+      \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+      \item 今後の課題
+      \begin{itemize}
+        \item さらなる実データ実験の実施
+      \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%-------------------
+
+% 参考文献
+\begin{frame}[allowframebreaks, noframenumbering]{参考文献}
+    \printbibliography
+\end{frame}
+
+%-------------------
+\begin{frame}[noframenumbering]{irisデータでクラスタリング}
+    \begin{itemize}
+      \item データ数: 30, 得られたクラスタ数: 6（橙\alert{10}, 青11, 紫6, 赤1, 黄1, 緑1）
+      \item 設定した$\lambda$で収束した特徴量(1, 2, 4)
+    \end{itemize}
+    特徴3以外の組み合わせ
+    \begin{figure}
+      \begin{tabular}{c}
+        \begin{minipage}{0.3\hsize}
+          \includegraphics[width=1.0\linewidth]{clustering12.pdf}
+          \includegraphics[width=1.0\linewidth]{label12.pdf}
+        \end{minipage}
+        \begin{minipage}{0.3\hsize}
+          \includegraphics[width=1.0\linewidth]{clustering14.pdf}
+          \includegraphics[width=1.0\linewidth]{label14.pdf}
+        \end{minipage}
+        \begin{minipage}{0.3\hsize}
+          \includegraphics[width=1.0\linewidth]{clustering24.pdf}
+          \includegraphics[width=1.0\linewidth]{label24.pdf}
+        \end{minipage}
+      \end{tabular}
+    \end{figure}
+    
+\end{frame}
+
+%-------------------
+
+\begin{frame}[noframenumbering]{irisデータでクラスタリング}
+    特徴3を含む組み合わせ
+    \begin{itemize}
+        \item この$\lambda$以降はクラスタ中心(星)が近いものから順に統合される
+        
+        → 青に対して黄や緑よりも先に紫が統合されてしまう
+    \end{itemize}
+    \begin{figure}
+        \begin{tabular}{c}
+        \begin{minipage}{0.3\hsize}
+            \includegraphics[width=1.0\linewidth]{clustering13.pdf}
+            \includegraphics[width=1.0\linewidth]{label13.pdf}
+        \end{minipage}
+        \begin{minipage}{0.3\hsize}
+            \includegraphics[width=1.0\linewidth]{clustering23.pdf}
+            \includegraphics[width=1.0\linewidth]{label23.pdf}
+        \end{minipage}
+        \begin{minipage}{0.3\hsize}
+            \includegraphics[width=1.0\linewidth]{clustering34.pdf}
+            \includegraphics[width=1.0\linewidth]{label34.pdf}
+        \end{minipage}
+        \end{tabular}
+    \end{figure}
+
+\end{frame}
+
+%-------------------
+
+% \begin{frame}[noframenumbering]{クラスタパス}
+
+%     クラスタパス: $\lambda: 0 \zl \lambda_{max}$ に対する $\bm{\beta}$ の推移
+%     \begin{itemize}
+%         \item $X \in \mathbb{R}^{8 \times 2}$
+%     \end{itemize}
+%     \begin{figure}[htb]
+%         \includegraphics[width=0.5\linewidth]{fusedLassoClusterPath_init.pdf}
+%         \caption{1. 初期クラスタの生成}
+%     \end{figure}
+%     \begin{itemize}
+%         \item 各データを中心とする初期クラスタを$n$個生成
+%         \item クラスタ数: $8$
+%     \end{itemize}
+
+% \end{frame}
+
+%-------------------
+
+\begin{frame}[noframenumbering]{クラスタパス}
+
+    クラスタパス: $\lambda: \lambda_{max} \zl 0$ に対する $\bm{\beta}$ の推移
+    \begin{itemize}
+        \item $X \in \mathbb{R}^{8 \times 2}$
+    \end{itemize}
+    \begin{figure}[htb]
+        \includegraphics[width=0.5\linewidth]{fusedLassoClusterPath_final.pdf}
+    \end{figure}
+    \begin{itemize}
+        \item クラスタ数: $1$
+    \end{itemize}
+
+\end{frame}
+
+%-------------------
+
+\begin{frame}[noframenumbering]{クラスタパス}
+
+    クラスタパス: $\lambda: \lambda_{max} \zl 0$ に対する $\bm{\beta}$ の推移
+    \begin{itemize}
+        \item $X \in \mathbb{R}^{8 \times 2}$
+    \end{itemize}
+    \begin{figure}[htb]
+        \includegraphics[width=0.5\linewidth]{fusedLassoClusterPath_merged.pdf}
+    \end{figure}
+    \begin{itemize}
+        \item クラスタ数: $5$
+    \end{itemize}
+
+\end{frame}
+
+%-------------------
+
+\begin{frame}[noframenumbering]{クラスタパス}
+
+    クラスタパス: $\lambda: \lambda_{max} \zl 0$ に対する $\bm{\beta}$ の推移
+    \begin{itemize}
+        \item $X \in \mathbb{R}^{8 \times 2}$
+    \end{itemize}
+    \begin{figure}[htb]
+        \includegraphics[width=0.5\linewidth]{fusedLassoClusterPath_update.pdf}
+    \end{figure}
+    \begin{itemize}
+        \item クラスタ数: $8$
+    \end{itemize}
+
+\end{frame}
+
+%-------------------
+\end{document}
