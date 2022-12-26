@@ -4,22 +4,52 @@
 \usepackage{pxjahyper}
 \usepackage{minijs}%和文用
 \renewcommand{\kanjifamilydefault}{\gtdefault}%和文用
+\usepackage{comment} %コメントアウト用
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %% usepackage 群
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{amsmath,bm} %多次元空間ベクトルRを表記するのに必要
 \usepackage{amsfonts}
-\usepackage{ascmac} %枠付き文章を表記するのに必
+\usepackage{ascmac} %枠付き文章を表記するのに必要
 \usepackage{amssymb}
+% \usepackage[dvipdfmx]{animate} %アニメーション
+% \usepackage[dvipdfmx]{graphicx} %画像挿入
 % \mathbb{R}^{l} %表記例
 % \usepackage{algorithm}
 % \usepackage{algorithmicx}
 % \usepackage{algpseudocode}
+\usepackage{animate} %アニメーション
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% bibtex 群
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% biblatex．標準のバックエンドはbiber
+\usepackage{biblatex}
+% bibtexのファイル
+\addbibresource{mybib.bib}
+% 参考文献のインデックスを文字列で表示
+\setbeamertemplate{bibliography item}[text]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% tikz 群
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\usetikzlibrary{calc, intersections, arrows, math}
+\usetikzlibrary{arrows, positioning, shapes.callouts}
+\usetikzlibrary{decorations,decorations.pathreplacing}
+
+\graphicspath{{./fig/}}
 
 %%%% スライドの見た目 %%%%%
 \usetheme{Madrid}
 \usefonttheme{professionalfonts}
+
+%%%% metropolisの設定 %%%%%
+% \metroset{block=fill}
+
 
 %\useoutertheme[subsection=false]{smoothbars}%ヘッダーにセクション表示
 \useinnertheme{circles} % 箇条書きをシンプルに
@@ -34,6 +64,20 @@
 \setbeamertemplate{enumerate items}[default]%enumerate環境のitemを見やすくする
 \setbeamertemplate{section in toc}[square]%outlineのボールを四角に
 \setbeamertemplate{navigation symbols}{}%右下のアイコンを消す
+
+% blockの色定義
+\definecolor{BlueTOL}{HTML}{222288}
+\definecolor{BrownTOL}{HTML}{666633}
+\definecolor{GreenTOL}{HTML}{228822}
+\definecolor{RedTOL}{HTML}{882222}
+
+\setbeamercolor{block title}{fg=white, bg=BlueTOL}
+\setbeamercolor{block body}{fg=black, bg=BlueTOL!10!white}
+\setbeamercolor{block title alerted}{fg=white, bg=RedTOL}
+\setbeamercolor{block body alerted}{fg=black, bg=RedTOL!10!white}
+\setbeamercolor{block title example}{fg=white, bg=GreenTOL}
+\setbeamercolor{block body example}{fg=black, bg=GreenTOL!10!white}
+
 %%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -47,6 +91,41 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\argmax}{\mathop{\rm arg~max}\limits}
 \newcommand{\argmin}{\mathop{\rm arg~min}\limits}
+
+\newcommand{\EE}{{\mathbb E}} % 期待値のE (追加)
+\newcommand{\cN}{{\cal N}}
+% \newcommand{\a}{\bm{a}}
+% \newcommand{\b}{\bm{b}}
+% \newcommand{\c}{\bm{c}}
+% \newcommand{\d}{\bm{d}}
+% \newcommand{\e}{\bm{e}}
+% \newcommand{\f}{\bm{f}}
+% \newcommand{\g}{\bm{g}}
+% \newcommand{\h}{\bm{h}}
+% \newcommand{\i}{\bm{i}}
+% \newcommand{\j}{\bm{j}}
+% \newcommand{\k}{\bm{k}}
+% \newcommand{\l}{\bm{l}}
+% \newcommand{\m}{\bm{m}}
+% \newcommand{\n}{\bm{n}}
+% \newcommand{\o}{\bm{o}}
+% \newcommand{\p}{\bm{p}}
+% \newcommand{\q}{\bm{q}}
+% \newcommand{\r}{\bm{r}}
+% \newcommand{\s}{\bm{s}}
+% \newcommand{\t}{\bm{t}}
+% \newcommand{\u}{\bm{u}}
+% \newcommand{\v}{\bm{v}}
+% \newcommand{\w}{\bm{w}}
+% \newcommand{\x}{\bm{x}}
+% \newcommand{\y}{\bm{y}}
+% \newcommand{\z}{\bm{z}}
+\newcommand{\ul}{\underline}
+\newcommand{\us}{\underset}
+
+\newcommand{\zl}{\rightarrow}
+\newcommand{\zh}{\leftarrow}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%本文
