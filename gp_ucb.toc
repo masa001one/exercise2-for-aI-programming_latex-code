@@ -1,6 +1,0 @@
-\beamer@sectionintoc {1}{section1}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{subsection1}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{subsection2}{5}{0}{1}
-\beamer@sectionintoc {2}{section2}{6}{0}{2}
-\beamer@subsectionintoc {2}{1}{subsection1}{7}{0}{2}
-\beamer@subsectionintoc {2}{2}{subsection2}{9}{0}{2}
