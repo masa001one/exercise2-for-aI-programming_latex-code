@@ -1,0 +1,121 @@
+\documentclass[dvipdfmx, 10.5pt]{beamer}
+%%%% 和文用 %%%%%
+\usepackage{bxdpx-beamer}
+\usepackage{pxjahyper}
+\usepackage{minijs}%和文用
+\renewcommand{\kanjifamilydefault}{\gtdefault}%和文用
+\usepackage{comment}%追加
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% usepackage 群
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath,bm} %多次元空間ベクトルRを表記するのに必要
+\usepackage{amsfonts}
+\usepackage{ascmac} %枠付き文章を表記するのに必要
+\usepackage{amssymb}
+% \usepackage[dvipdfmx]{animate} %アニメーションを作るのに必要
+%\usepackage[dvipdfmx]{graphicx} %図を挿入するのに必要
+% \mathbb{R}^{l} %表記例
+% \usepackage{algorithm} %アルゴリズムを書くのに必要
+% \usepackage{algorithmicx}
+% \usepackage{algpseudocode}
+\usepackage{animate} %アニメーションを作るのに必要
+
+%%%% スライドの見た目 %%%%%
+\usetheme{Madrid} %テーマ
+\usefonttheme{professionalfonts} %フォント
+
+%\useoutertheme[subsection=false]{smoothbars}%ヘッダーにセクション表示
+\useinnertheme{circles} % 箇条書きをシンプルに
+
+\setbeamercovered{transparent}%消えている文字をうっすらと表示
+\setbeamertemplate{footline}[frame number]%フッターをページ番号だけに
+\setbeamerfont{footline}{size=\scriptsize}%ページ番号小さく
+\setbeamerfont{frametitle}{size=\large}%フレームタイトルちょい小さく
+\setbeamercolor{footline}{bg=black}%ページ番号を太く
+\setbeamersize{text margin left=.75zw, text margin right=.75zw}%スライドの横の空白を調節
+
+\setbeamertemplate{enumerate items}[default]%enumerate環境のitemを見やすくする
+\setbeamertemplate{section in toc}[square]%outlineのボールを四角に
+\setbeamertemplate{navigation symbols}{}%右下のアイコンを消す
+%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%いろいろ便利なもの
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{here} %[hbtp]の代わりに[H]と書きこむと強制的にその場所に図や表を挿入する
+\usepackage{bm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%newcommand群
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\argmax}{\mathop{\rm arg~max}\limits}
+\newcommand{\argmin}{\mathop{\rm arg~min}\limits}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%本文
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[]{テンプレート}
+\author[S.Takeno]{B4 S.Takeno}
+\date[\today]{\today}
+\institute[NIT]{Nagoya Institute of Technology \\ Takeuchi \& Karasuyama Lab}
+% [..]に省略名が書ける
+
+%目次スライド
+\AtBeginSection[]{
+    \begin{frame}{Next Section}
+	\tableofcontents[currentsection, hidesubsections]%目次本体
+	%\thispagestyle{empty}%ヘッダーフッター表示なし
+	\end{frame}
+}
+
+\begin{document}
+%タイトル
+\begin{frame}{}
+\maketitle%タイトル本体
+\thispagestyle{empty}%ヘッダーフッター表示なし
+\addtocounter{framenumber}{-1}%ページ数カウンタしない
+\end{frame}
+%目次
+\begin{frame}{Outline}
+\tableofcontents[hideallsubsections]
+\end{frame}
+
+%以降\sectionごとに目次表示
+\section{section1}
+\subsection{subsection1}
+\begin{frame}{\insertsubsection}
+\begin{block}{ブロック}
+こんな感じ
+\end{block}
+\begin{itemize}
+\item こんな感じ
+\end{itemize}
+\end{frame}
+\subsection{subsection2}
+\begin{frame}{\insertsubsection}
+
+\end{frame}
+
+\section{section2}
+\subsection{subsection1}
+\begin{frame}{\insertsubsection}
+
+\end{frame}
+
+\begin{frame}{\insertsubsection}
+
+\end{frame}
+\subsection{subsection2}
+\begin{frame}{\insertsubsection}
+
+\end{frame}
+\end{document}
+
+
+
+
+
+
+
+
