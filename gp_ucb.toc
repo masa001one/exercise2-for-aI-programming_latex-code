@@ -8,10 +8,10 @@
 \beamer@subsectionintoc {2}{2}{ベイズ最適化2}{10}{0}{2}
 \beamer@sectionintoc {3}{GP-UCB}{11}{0}{3}
 \beamer@subsectionintoc {3}{1}{GP-UCB1}{12}{0}{3}
-\beamer@subsectionintoc {3}{2}{GP-UCB2}{13}{0}{3}
+\beamer@subsectionintoc {3}{2}{GP-UCBのアルゴリズム}{13}{0}{3}
 \beamer@sectionintoc {4}{実験}{14}{0}{4}
-\beamer@subsectionintoc {4}{1}{実験1}{15}{0}{4}
-\beamer@subsectionintoc {4}{2}{実験2}{16}{0}{4}
+\beamer@subsectionintoc {4}{1}{実験設定}{15}{0}{4}
+\beamer@subsectionintoc {4}{2}{実験結果}{16}{0}{4}
 \beamer@sectionintoc {5}{まとめ}{17}{0}{5}
 \beamer@subsectionintoc {5}{1}{まとめ1}{18}{0}{5}
 \beamer@subsectionintoc {5}{2}{まとめ2}{19}{0}{5}

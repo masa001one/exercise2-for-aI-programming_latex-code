@@ -176,6 +176,19 @@ $\dag\dag\dag$: Saarland University}
 
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
+		\item 本研究の目的
+		\begin{itemize}
+			\item 
+			\item 
+		\end{itemize}
+		\item 本研究の意義
+		\begin{itemize}
+			\item 
+			\item 
+		\end{itemize}
+	\end{itemize}
+
+	\begin{itemize}
 		\item 計算機科学や統計学において，最適化問題は非常に重要であることを強調する
 		\item ガウス過程を用いた最適化は，複雑で非線形な関数を扱う場合に有用であることを紹介する
 		\item バンディット設定において，最適な決定をすることが重要であることを紹介する
@@ -190,8 +203,10 @@ $\dag\dag\dag$: Saarland University}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
 		\item 序論として，ガウス過程について説明する(前提知識の提供)
-		\item ガウス過程は，確率分布を用いた複雑で非線形な関数を扱うためのモデルである．
-		\item このような複雑で非線形な関数を扱う場合には，一般的な最適化手法では，解決が困難になることがある．
+		\begin{itemize}
+			\item ガウス過程は，確率分布を用いた複雑で非線形な関数を扱うためのモデルである．
+			\item このような複雑で非線形な関数を扱う場合には，一般的な最適化手法では，解決が困難になることがある．
+		\end{itemize}
 	\end{itemize}
 
 %-------------------
@@ -201,11 +216,13 @@ $\dag\dag\dag$: Saarland University}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
 		\item 序論として，ベイズ最適化について説明する(前提知識の提供)
-		\item ベイズ最適化は，確率論的アプローチを用いた最適化手法である
-		\item そのため，不確実性を含む問題を解決するために用いらていることが多い
-		\item そのような問題を扱うために，事前分布を用いて事後分布を求めることができる
-		\item 論文中では，このようなベイズ最適化を用いて，ガウス過程を用いた最適化問題を解決するアルゴリズムを提案している．
-		\item また，そのアルゴリズムがバンディット設定でも有効であることを示している．
+		\begin{itemize}
+			\item ベイズ最適化は，確率論的アプローチを用いた最適化手法である
+			\item そのため，不確実性を含む問題を解決するために用いらていることが多い
+			\item そのような問題を扱うために，事前分布を用いて事後分布を求めることができる
+			\item 論文中では，このようなベイズ最適化を用いて，ガウス過程を用いた最適化問題を解決するアルゴリズムを提案している．
+			\item また，そのアルゴリズムがバンディット設定でも有効であることを示している．
+		\end{itemize}
 	\end{itemize}
 
 \end{frame}
@@ -216,9 +233,11 @@ $\dag\dag\dag$: Saarland University}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
 		\item 序論として，バンディット問題について説明する(前提知識の提供)
-		\item バンディット設定とは，決定をする際に報酬を得ることができるが，そのためには，その決定をする前にその詳細を知ることができない設定を指す
-		\item このような設定では，報酬を最大化することを目的として，決定をする場所を最適に選択することが重要になる
-		\item バンディット問題の具体例:投資をする場合は，商品を購入する場合など．このような場面では，最適な決定をすることで，最大の報酬を得ることができるため，重要である．
+		\begin{itemize}
+			\item バンディット設定とは，決定をする際に報酬を得ることができるが，そのためには，その決定をする前にその詳細を知ることができない設定を指す
+			\item このような設定では，報酬を最大化することを目的として，決定をする場所を最適に選択することが重要になる
+			\item バンディット問題の具体例:投資をする場合や，商品を購入する場合など．このような場面では，最適な決定をすることで，最大の報酬を得ることができるため，重要である．
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
@@ -265,10 +284,17 @@ $\dag\dag\dag$: Saarland University}
 \end{frame}
 %-------------------
 
-\subsection{GP-UCB2}
+\subsection{GP-UCBのアルゴリズム}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item テスト
+		\item 初期化: 最初に，fの予測分布を設定する．これはfの予測分布を表すカーネルを選択し，そのカーネルに対応するガウス過程を設定することで行われる．
+		\item アクションの選択: 次に，fの予測分布から，次のような式を用いてアクションを選択する
+		\begin{itemize}
+			\item $a_t = argmax_{a \in D} (\mu_t(a) + \beta_t \sigma_t(a))$
+		\end{itemize}
+		ここで、$\mu_t(a)$ は、時刻 t において、a が選択されると予測される f の平均値を表します。$\sigma_t(a)$ は、時刻 t において、a が選択されると予測される f の不確実性を表します。$\beta_t$ は、時刻 t においてのアクションの選択におけるリスク係数を表します
+		\item 報酬の観測: 選択したアクション$a_t$に対して報酬$r_t$を観測する．
+		\item 予測分布の更新: 次に，最新のアクション$a_t$を使用してfの予測分布を更新する.これは，ガウス過程のアップデートによって行われる．
 	\end{itemize}
 
 \end{frame}
@@ -278,19 +304,31 @@ $\dag\dag\dag$: Saarland University}
 \section{実験}
 %-------------------
 
-\subsection{実験1}
+\subsection{実験設定}
 
 %-------------------
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item テスト
+		\item 人工的に作成した合成データ
+		\begin{itemize}
+			\item 長さスケールパラメータ0.2の二乗指数カーネルからランダムな関数をサンプリング
+			\item サンプリングノイズ分散
+		\end{itemize}
+		\item 46個のセンサーを用いて5日間に渡って収集された温度データ(Intel Research Berkeley)
+		\begin{itemize}
+			\item 具体的に説明
+		\end{itemize}
+		\item カリフォルニア州 I-880 South 高速道路に設置された交通センサーのデータ
+		\begin{itemize}
+			\item 具体的に説明
+		\end{itemize}
 	\end{itemize}
 
 \end{frame}
 
 %-------------------
 
-\subsection{実験2}
+\subsection{実験結果}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
 		\item テスト
