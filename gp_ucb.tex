@@ -186,21 +186,31 @@ $\dag\dag\dag$: Saarland University}
 \end{frame}
 %-------------------
 
-\subsection{ベイズ最適化}
-\begin{frame}{\insertsubsection}
-	\begin{itemize}
-		\item 序論として，ベイズ最適化について説明する(前提知識の提供)
-	\end{itemize}
-
-\end{frame}
-
 \subsection{ガウス過程}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
 		\item 序論として，ガウス過程について説明する(前提知識の提供)
+		\item ガウス過程は，確率分布を用いた複雑で非線形な関数を扱うためのモデルである．
+		\item このような複雑で非線形な関数を扱う場合には，一般的な最適化手法では，解決が困難になることがある．
+	\end{itemize}
+
+%-------------------
+
+\end{frame}
+\subsection{ベイズ最適化}
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item 序論として，ベイズ最適化について説明する(前提知識の提供)
+		\item ベイズ最適化は，確率論的アプローチを用いた最適化手法である
+		\item そのため，不確実性を含む問題を解決するために用いらていることが多い
+		\item そのような問題を扱うために，事前分布を用いて事後分布を求めることができる
+		\item 論文中では，このようなベイズ最適化を用いて，ガウス過程を用いた最適化問題を解決するアルゴリズムを提案している．
+		\item また，そのアルゴリズムがバンディット設定でも有効であることを示している．
 	\end{itemize}
 
 \end{frame}
+
+%-------------------
 
 \subsection{バンディット問題}
 \begin{frame}{\insertsubsection}

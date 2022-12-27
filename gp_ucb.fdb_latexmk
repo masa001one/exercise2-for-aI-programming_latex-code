@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1672122862 "/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex" "gp_ucb.pdf" "gp_ucb" 1672122862
-  "/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex" 1672122857 10149 0a51bab2a4eba759e73da7eb3474960b ""
+["pdflatex"] 1672123259 "/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex" "gp_ucb.pdf" "gp_ucb" 1672123259
+  "/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex" 1672123254 11077 0dec1172d5fd2ed5f24cc6d7160a9634 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -210,7 +210,6 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty" 1636758526 4009 187ea2dc3194cd5a76cd99a8d7a6c4d0 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/here/here.sty" 1258935436 439 d908692e0f19922874ccfe2bf35addc7 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty" 1580250785 17914 4c28a13fc3d975e6e81c9bea1d697276 ""
-  "/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hdvipdfm.def" 1645564115 43325 3c582e51971f24936be8d7b89f4d6963 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def" 1645564115 49029 7c9e5115b2217efbeb7828ac0d1bf1a0 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty" 1645564115 220999 6145ea83914c186e178d1d31c50b37df ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty" 1612734870 13242 133e617c5eebffdd05e421624022b267 ""
@@ -264,10 +263,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1649471458 2826427 11d650003d576f6dbf127bba416322d0 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "gp_ucb.aux" 0 -1 0 "pdflatex"
-  "gp_ucb.nav" 0 -1 0 "pdflatex"
+  "gp_ucb.aux" 1672123259 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "gp_ucb.out" 0 -1 0 "pdflatex"
-  "gp_ucb.tex" 1672122857 10149 0a51bab2a4eba759e73da7eb3474960b ""
+  "gp_ucb.tex" 1672123254 11077 0dec1172d5fd2ed5f24cc6d7160a9634 ""
   "gp_ucb.toc" 0 -1 0 "pdflatex"
   (generated)
   "gp_ucb.aux"
