@@ -85,6 +85,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{here} %[hbtp]の代わりに[H]と書きこむと強制的にその場所に図や表を挿入する
 \usepackage{bm}
+\usepackage{amsmath}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%newcommand群
@@ -140,54 +141,182 @@ $\dag\dag\dag$: Saarland University}
 % [..]に省略名が書ける
 
 %目次スライド
-\AtBeginSection[]{
-    \begin{frame}{Next Section}
+\AtBeginSection[noframenumbering]{
+    \begin{frame}[noframenumbering]{Next Section}
 	\tableofcontents[currentsection, hidesubsections]%目次本体
-	%\thispagestyle{empty}%ヘッダーフッター表示なし
+	\thispagestyle{empty}%ヘッダーフッター表示なし
 	\end{frame}
 }
 
 \begin{document}
+
+%-------------------
+
 %タイトル
-\begin{frame}{}
+\begin{frame}[plain, noframenumbering]
 \maketitle%タイトル本体
 \thispagestyle{empty}%ヘッダーフッター表示なし
-\addtocounter{framenumber}{-1}%ページ数カウンタしない
+% \addtocounter{framenumber}{-1}%ページ数カウンタしない
 \end{frame}
+
+%-------------------
+
+
 %目次
-\begin{frame}{Outline}
-\tableofcontents[hideallsubsections]
+\begin{frame}[noframenumbering]{目次}
+	\tableofcontents[hideallsubsections]
+	\thispagestyle{empty} %ページ番号なし
 \end{frame}
+
+%-------------------
+\section{はじめに}
+%-------------------
+
+\subsection{導入}
+
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item 計算機科学や統計学において，最適化問題は非常に重要であることを強調する
+		\item ガウス過程を用いた最適化は，複雑で非線形な関数を扱う場合に有用であることを紹介する
+		\item バンディット設定において，最適な決定をすることが重要であることを紹介する
+		\item 今までにバンディット設定でのガウス過程最適化については，リグレット制限が証明されていなかった
+		\item 本論文では，バンディット設定におけるガウス過程最適化において，リグレット制限を証明することで，最適な決定をするアルゴリズムを提案する
+	\end{itemize}
+
+\end{frame}
+%-------------------
+
+\subsection{ベイズ最適化}
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item 序論として，ベイズ最適化について説明する(前提知識の提供)
+	\end{itemize}
+
+\end{frame}
+
+\subsection{ガウス過程}
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item 序論として，ガウス過程について説明する(前提知識の提供)
+	\end{itemize}
+
+\end{frame}
+
+\subsection{バンディット問題}
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item 序論として，バンディット問題について説明する(前提知識の提供)
+		\item バンディット設定とは，決定をする際に報酬を得ることができるが，そのためには，その決定をする前にその詳細を知ることができない設定を指す
+		\item このような設定では，報酬を最大化することを目的として，決定をする場所を最適に選択することが重要になる
+		\item バンディット問題の具体例:投資をする場合は，商品を購入する場合など．このような場面では，最適な決定をすることで，最大の報酬を得ることができるため，重要である．
+	\end{itemize}
+\end{frame}
+
+%-------------------
 
 %以降\sectionごとに目次表示
-\section{section1}
-\subsection{subsection1}
+\section{ベイズ最適化}
+%-------------------
+
+\subsection{ベイズ最適化1}
 \begin{frame}{\insertsubsection}
-\begin{block}{ブロック}
-こんな感じ
-\end{block}
-\begin{itemize}
-\item こんな感じ
-\end{itemize}
+	\begin{block}{ブロック}
+		a
+	\end{block}
+	\begin{itemize}
+		\item テスト
+	\end{itemize}
 \end{frame}
-\subsection{subsection2}
+%-------------------
+
+\subsection{ベイズ最適化2}
 \begin{frame}{\insertsubsection}
-
-\end{frame}
-
-\section{section2}
-\subsection{subsection1}
-\begin{frame}{\insertsubsection}
-
-\end{frame}
-
-\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item テスト
+	\end{itemize}
 
 \end{frame}
-\subsection{subsection2}
+
+%-------------------
+
+\section{GP-UCB}
+%-------------------
+
+\subsection{GP-UCB1}
+
 \begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item GP-UCBは，バンディット設定でのガウス過程最適化において用いられるアルゴリズムである．
+		\item バンディット設定では，報酬を最大化することを目的として，決定をする場所を最適に選択することが重要である．
+		\item GP-UCBはこのような場合に，ガウス過程を用いて最適な決定をするためのアルゴリズムである
+		\item 
+	\end{itemize}
 
 \end{frame}
+%-------------------
+
+\subsection{GP-UCB2}
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item テスト
+	\end{itemize}
+
+\end{frame}
+
+%-------------------
+
+\section{実験}
+%-------------------
+
+\subsection{実験1}
+
+%-------------------
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item テスト
+	\end{itemize}
+
+\end{frame}
+
+%-------------------
+
+\subsection{実験2}
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item テスト
+	\end{itemize}
+
+\end{frame}
+
+%-------------------
+\section{まとめ}
+
+%-------------------
+
+\subsection{まとめ1}
+
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item We analyze GP-UCB, an intuitive algorithm for GP optimization, when the function is either sampled from a known GP, or has low RKHS norm.
+		\item We bound the cumulative regret for GP-UCB in terms of the information gain due to sampling, establishing a novel connection between experimental design and GP optimization.
+		\item By bounding the information gain for popular classes of kernels, we establish sublinear regret bounds for GP optimization for the first time. Our bounds depend on kernel choice and parameters in a fine-grained fashion.
+		\item We evaluate GP-UCB on sensor network data, demonstrating that it compares favorably to ex- isting algorithms for GP optimization.
+	\end{itemize}
+
+\end{frame}
+
+%-------------------
+
+\subsection{まとめ2}
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item テスト
+	\end{itemize}
+
+\end{frame}
+
+%-------------------
+
 \end{document}
 
 
