@@ -172,31 +172,19 @@ $\dag\dag\dag$: Saarland University}
 \section{はじめに}
 %-------------------
 
-\subsection{導入}
-
+\subsection{ブラックボックス関数}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item 本研究の目的
+		\item 序論として，ブラックボックス関数について説明する(前提知識の提供)
+		\item 多くの実問題は，目的関数に対する最適変数探索問題として定式化できる
+		\item 実応用で扱う対象はブラックボックス関数であることが多い
 		\begin{itemize}
-			\item 
-			\item 
-		\end{itemize}
-		\item 本研究の意義
-		\begin{itemize}
-			\item 
-			\item 
+			\item 関数の具体的な形状が不明
+			\item 各入力における関数値を得るために，\alert{大きなコストを要する}
 		\end{itemize}
 	\end{itemize}
-
-	\begin{itemize}
-		\item 計算機科学や統計学において，最適化問題は非常に重要であることを強調する
-		\item ガウス過程を用いた最適化は，複雑で非線形な関数を扱う場合に有用であることを紹介する
-		\item バンディット設定において，最適な決定をすることが重要であることを紹介する
-		\item 今までにバンディット設定でのガウス過程最適化については，リグレット制限が証明されていなかった
-		\item 本論文では，バンディット設定におけるガウス過程最適化において，リグレット制限を証明することで，最適な決定をするアルゴリズムを提案する
-	\end{itemize}
-
 \end{frame}
+
 %-------------------
 
 \subsection{ガウス過程}
@@ -243,11 +231,52 @@ $\dag\dag\dag$: Saarland University}
 
 %-------------------
 
+\subsection{導入}
+
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item 本研究の目的
+		\begin{itemize}
+			\item 
+			\item 
+		\end{itemize}
+		\item 本研究の意義
+		\begin{itemize}
+			\item 
+			\item 
+		\end{itemize}
+	\end{itemize}
+
+	\begin{itemize}
+		\item 計算機科学や統計学において，最適化問題は非常に重要であることを強調する
+		\item ガウス過程を用いた最適化は，複雑で非線形な関数を扱う場合に有用であることを紹介する
+		\item バンディット設定において，最適な決定をすることが重要であることを紹介する
+		\item 今までにバンディット設定でのガウス過程最適化については，リグレット制限が証明されていなかった
+		\item 本論文では，バンディット設定におけるガウス過程最適化において，リグレット制限を証明することで，最適な決定をするアルゴリズムを提案する
+	\end{itemize}
+
+\end{frame}
+%-------------------
+
 %以降\sectionごとに目次表示
 \section{ベイズ最適化}
 %-------------------
 
+
 \subsection{ベイズ最適化1}
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item fにガウス過程事前分布を仮定する
+		\item 訓練データに基づき，fの事後分布を求める
+		\item 事後分布に基づき\alert{最も最大値となりそうな点}を次に観測する
+		\item 観測した$(x_{next}, y_{next})$を訓練データに追加し，再び事後分布を求める
+	\end{itemize}
+
+\end{frame}
+
+%-------------------
+
+\subsection{ベイズ最適化2}
 \begin{frame}{\insertsubsection}
 	\begin{block}{ブロック}
 		a
@@ -258,7 +287,7 @@ $\dag\dag\dag$: Saarland University}
 \end{frame}
 %-------------------
 
-\subsection{ベイズ最適化2}
+\subsection{ベイズ最適化3}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
 		\item テスト

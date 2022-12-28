@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  27 DEC 2022 16:51
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  28 DEC 2022 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1187,13 +1187,13 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 199.
+(Font)              scaled to size 9.60999pt on input line 186.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 199.
+(Font)              scaled to size 9.60999pt on input line 186.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 3.844pt on input line 199.
+(Font)              scaled to size 3.844pt on input line 186.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 3.844pt on input line 199.
+(Font)              scaled to size 3.844pt on input line 186.
  [4
 
 ] [5
@@ -1202,34 +1202,38 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 
 ] [7
 
-] (./gp_ucb.toc)
-[8
+] [8
 
-]
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no 1 in font nullfont!
+] (./gp_ucb.toc)
 [9
 
 ] [10
 
-] (./gp_ucb.toc) [11
+]
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+[11
 
 ] [12
 
-] [13
+] (./gp_ucb.toc) [13
 
-] (./gp_ucb.toc) [14
+] [14
 
 ] [15
 
-] [16
+] (./gp_ucb.toc) [16
 
-]
-(./gp_ucb.toc) [17
+] [17
 
 ] [18
 
-] [19
+]
+(./gp_ucb.toc) [19
+
+] [20
+
+] [21
 
 ]
 \tf@nav=\write7
@@ -1243,15 +1247,15 @@ Missing character: There is no 1 in font nullfont!
 
  (./gp_ucb.aux)
 Package rerunfilecheck Info: File `gp_ucb.out' has not changed.
-(rerunfilecheck)             Checksum: 8E742C7B35603996FD6E103DC5DB7E22;1062.
+(rerunfilecheck)             Checksum: 9F217B1EEAD9E15009A44C79BC7B4320;1213.
  ) 
 Here is how much of TeX's memory you used:
- 29555 strings out of 478724
- 610667 string characters out of 5858393
- 860522 words of memory out of 5000000
- 47325 multiletter control sequences out of 15000+600000
+ 29569 strings out of 478724
+ 610909 string characters out of 5858393
+ 860703 words of memory out of 5000000
+ 47339 multiletter control sequences out of 15000+600000
  530525 words of font info for 130 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  128i,11n,122p,435b,614s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on gp_ucb.dvi (19 pages, 73080 bytes).
+Output written on gp_ucb.dvi (21 pages, 79460 bytes).
