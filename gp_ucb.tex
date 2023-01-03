@@ -187,16 +187,32 @@ $\dag\dag\dag$: Saarland University}
 
 \subsection{ブラックボックス関数}
 \begin{frame}{\insertsubsection}
+	$\ast$ 本スライドでは，ブラックボックス関数について説明する(前提知識の提供)
+
 	\begin{itemize}
-		\item[$\ast$] 本スライドでは，ブラックボックス関数について説明する(前提知識の提供)
-		\item[$\square$] 本スライドに，ブラックボックス関数の最適化の図を示す
+		\item ブラックボックス関数 $f$
+		\begin{align*}
+			y_i = f(\bm x_i) + \varepsilon_i
+		\end{align*}
+		\begin{center}
+			入力：$\bm x_i$,\quad
+			出力：$y_i$,\quad
+			誤差：$\varepsilon_i$
+		\end{center}
+	\end{itemize}
+
+	\begin{center}
+		\includegraphics[width=0.50\textwidth]{./Fig/blackbox.pdf}
+	\end{center}
+
+	\begin{itemize}
 		\item 実応用で扱う対象はブラックボックス関数であることが多い
 		\item ブラックボックス関数は，主に以下の2つの性質を持つ
 		\begin{itemize}
 			\item 関数の具体的な形状が不明
 			\item 各入力における関数値を得るには，大きなコストがかかる
 		\end{itemize}
-		
+
 	\end{itemize}
 \end{frame}
 
@@ -209,7 +225,7 @@ $\dag\dag\dag$: Saarland University}
 	\begin{itemize}
 		\item[$\ast$] 本スライドでは，ベイズ最適化について説明する(前提知識の提供)
 		\begin{itemize}
-			\item[$\circ$] 初めに前スライドで説明したブラックボックス関数の最適化を行うための手法として，ベイズ最適化があることを述べる
+			\item[$\square$] 初めに前スライドで説明したブラックボックス関数の最適化を行うための手法として，ベイズ最適化があることを述べる
 		\end{itemize}
 		\item[$\square$] 本スライドに，ベイズ最適化のフローに関する図を示す
 		\item 多くの実問題は，ブラックボックス関数最適化と等価
@@ -247,7 +263,7 @@ $\dag\dag\dag$: Saarland University}
 
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item[$\ast$] 本論文の貢献として，ベイズ最適化の一つの手法であるGP-UCBを提案したことを説明する
+		\item[$\ast$] 本スライドでは，本論文の貢献として，ベイズ最適化の一つの手法であるGP-UCBを提案したことを示す
 		\item[$\ast$] また，その手法が，探索や活用のバランスが取れた手法であり，実験的に良い性能を示すことを述べる
 		\item 本研究の目的
 		\begin{itemize}
@@ -275,11 +291,41 @@ $\dag\dag\dag$: Saarland University}
 %以降\sectionごとに目次表示
 \section{ベイズ最適化}
 %-------------------
+% \subsection{ブラックボックス関数の定式化}
+% \begin{frame}{\insertsubsection}
+% 	\begin{itemize}
+% 		\item[$\ast$] 本スライドでは，一章で述べたブラックボックス関数を定式化して説明する
+% 		\item ブラックボックス関数
+% 		\begin{align*}
+% 			y_i = f(\bm x_i) + \varepsilon_i
+% 		\end{align*}
+% 		\begin{center}
+% 			入力：$\bm x_i \in \mathcal{X} \subseteq \mathbb{R}^d$,\quad
+% 			出力：$y_i \in \mathbb{R}$,\quad
+% 			誤差：$\varepsilon_i \in \mathbb{R}$
+% 		\end{center}
+% 	\end{itemize}
 
-\subsection{ガウス過程}
+% 	\begin{center}
+% 		\includegraphics[width=0.80\textwidth]{./Fig/blackbox.pdf}
+% 	\end{center}
+
+% \end{frame}
+
+%-------------------
+
+\subsection{問題設定}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item[$\ast$] 序論として，ガウス過程について説明する(前提知識の提供)
+		\item[$\ast$] 本スライドでは，問題設定を定式化して示す
+		\item 候補入力$\mathcal{X} = \{ \bm x_1, \ldots, \bm x_n \}$が与えられている
+
+		\item 関数$f$を評価して出力$y_i = f(\bm x_i)$を得るにはコストがかかる
+
+		\item できるだけ少ないコストで関数$f$を最大化するパラメータ$\bm x$を求めたい
+		\begin{align*}
+			\bm x_i^* = \arg \max_{\bm x \in \mathcal{X}} ~ f(\bm x)
+		\end{align*}
 		\begin{itemize}
 			\item ガウス過程は，確率分布を用いた複雑で非線形な関数を扱うためのモデルである．
 			\item このような複雑で非線形な関数を扱う場合には，一般的な最適化手法では，解決が困難になることがある．
@@ -289,12 +335,25 @@ $\dag\dag\dag$: Saarland University}
 
 %-------------------
 
+\subsection{ガウス過程}
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item[$\ast$] 本スライドでは，ガウス過程の定義を示す(前提知識の提供)
+	\end{itemize}
+	\begin{block}{ガウス過程}
+		$\ast$ ガウス過程の定義を記述する
+	\end{block}
+\end{frame}
+
+%-------------------
+
 
 \subsection{ベイズ最適化1}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item fにガウス過程事前分布を仮定する
-		\item 訓練データに基づき，fの事後分布を求める
+		\item[$\ast$] 本スライドでは，(ガウス過程を用いた)ベイズ最適化のアルゴリズムを示す
+		\item $f$にガウス過程事前分布を仮定する
+		\item 訓練データに基づき，$f$の事後分布を求める
 		\item 事後分布に基づき\alert{最も最大値となりそうな点}を次に観測する
 		\item 観測した$(x_{next}, y_{next})$を訓練データに追加し，再び事後分布を求める
 	\end{itemize}
@@ -303,34 +362,35 @@ $\dag\dag\dag$: Saarland University}
 
 %-------------------
 
-\subsection{ベイズ最適化2}
+
+\subsection{獲得関数}
 \begin{frame}{\insertsubsection}
-	\begin{block}{ブロック}
-		a
-	\end{block}
 	\begin{itemize}
-		\item テスト
+		\item[$\ast$] 本スライドでは，獲得関数とは何かについて示す
 	\end{itemize}
+
 \end{frame}
+
 %-------------------
 
-\subsection{ベイズ最適化3}
+
+\subsection{従来の獲得関数}
 \begin{frame}{\insertsubsection}
+
 	\begin{itemize}
-		\item テスト
+		\item[$\ast$] 本スライドでは，従来の獲得関数について示す(探索重視のものと活用重視のもの)
 	\end{itemize}
-
 \end{frame}
-
 %-------------------
 
 \section{GP-UCB}
 %-------------------
 
-\subsection{GP-UCB1}
+\subsection{提案手法}
 
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
+		\item[$\ast$] 本スライドでは，GP-UCBの定義を示す
 		\item GP-UCBは，バンディット設定でのガウス過程最適化において用いられるアルゴリズムである．
 		\item バンディット設定では，報酬を最大化することを目的として，決定をする場所を最適に選択することが重要である．
 		\item GP-UCBはこのような場合に，ガウス過程を用いて最適な決定をするためのアルゴリズムである
@@ -343,8 +403,9 @@ $\dag\dag\dag$: Saarland University}
 \subsection{GP-UCBのアルゴリズム}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item 初期化: 最初に，fの予測分布を設定する．これはfの予測分布を表すカーネルを選択し，そのカーネルに対応するガウス過程を設定することで行われる．
-		\item アクションの選択: 次に，fの予測分布から，次のような式を用いてアクションを選択する
+		\item[$\ast$] 本スライドでは，GP-UCBのアルゴリズムを示す
+		\item 初期化: 最初に，$f$の予測分布を設定する．これは$f$の予測分布を表すカーネルを選択し，そのカーネルに対応するガウス過程を設定することで行われる．
+		\item アクションの選択: 次に，$f$の予測分布から，次のような式を用いてアクションを選択する
 		\begin{itemize}
 			\item $a_t = argmax_{a \in D} (\mu_t(a) + \beta_t \sigma_t(a))$
 		\end{itemize}
@@ -360,11 +421,20 @@ $\dag\dag\dag$: Saarland University}
 \section{実験}
 %-------------------
 
-\subsection{実験設定}
 
-%-------------------
+
+\subsection{実験手法}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
+		\item[$\ast$] 本スライドでは，実験手法を示す(性能を比較する手法やregretの簡単な説明)
+	\end{itemize}
+\end{frame}
+
+%-------------------
+\subsection{実験対象データ}
+\begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\item[$\ast$] 本スライドでは，実験設定(実験を行うデータセット)を示す
 		\item 人工的に作成した合成データ
 		\begin{itemize}
 			\item 長さスケールパラメータ0.2の二乗指数カーネルからランダムな関数をサンプリング
@@ -387,7 +457,8 @@ $\dag\dag\dag$: Saarland University}
 \subsection{実験結果}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item テスト
+		\item[$\ast$] 本スライドでは，実験結果を示す
+		\item[$\square$] 本スライドに，論文中の Figure4の図を挿入する
 	\end{itemize}
 
 \end{frame}
@@ -397,29 +468,30 @@ $\dag\dag\dag$: Saarland University}
 
 %-------------------
 
-\subsection{まとめ1}
+\subsection{結論}
 
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item We analyze GP-UCB, an intuitive algorithm for GP optimization, when the function is either sampled from a known GP, or has low RKHS norm.
-		\item We bound the cumulative regret for GP-UCB in terms of the information gain due to sampling, establishing a novel connection between experimental design and GP optimization.
-		\item By bounding the information gain for popular classes of kernels, we establish sublinear regret bounds for GP optimization for the first time. Our bounds depend on kernel choice and parameters in a fine-grained fashion.
-		\item We evaluate GP-UCB on sensor network data, demonstrating that it compares favorably to ex- isting algorithms for GP optimization.
+		\item[$\ast$] 本スライドでは，論文のまとめを行う
+		% \item We analyze GP-UCB, an intuitive algorithm for GP optimization, when the function is either sampled from a known GP, or has low RKHS norm.
+		% \item We bound the cumulative regret for GP-UCB in terms of the information gain due to sampling, establishing a novel connection between experimental design and GP optimization.
+		% \item By bounding the information gain for popular classes of kernels, we establish sublinear regret bounds for GP optimization for the first time. Our bounds depend on kernel choice and parameters in a fine-grained fashion.
+		% \item We evaluate GP-UCB on sensor network data, demonstrating that it compares favorably to ex- isting algorithms for GP optimization.
 	\end{itemize}
 
 \end{frame}
 
 %-------------------
 
-\subsection{まとめ2}
-\begin{frame}{\insertsubsection}
-	\begin{itemize}
-		\item テスト
-	\end{itemize}
+% \subsection{まとめ2}
+% \begin{frame}{\insertsubsection}
+% 	\begin{itemize}
+% 		\item テスト
+% 	\end{itemize}
 
-\end{frame}
+% \end{frame}
 
-%-------------------
+% %-------------------
 
 \end{document}
 

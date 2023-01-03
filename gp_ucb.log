@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  3 JAN 2023 13:28
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  3 JAN 2023 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1193,10 +1193,12 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
  [4
 
 ]
+File: ./Fig/blackbox.pdf Graphic file (type pdf)
+<./Fig/blackbox.pdf>
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 201.
+(Font)              scaled to size 9.60999pt on input line 217.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 201.
+(Font)              scaled to size 9.60999pt on input line 217.
  [5
 
 ] [6
@@ -1208,33 +1210,35 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 
 ] [9
 
-] [10
-
 ]
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
-[11
+[10
+
+] [11
 
 ] [12
 
-] (./gp_ucb.toc) [13
+] [13
 
-] [14
+] (./gp_ucb.toc) [14
 
 ] [15
 
-] (./gp_ucb.toc) [16
+] [16
 
-] [17
+] (./gp_ucb.toc) [17
 
 ] [18
 
 ]
-(./gp_ucb.toc) [19
+[19
 
 ] [20
 
-] [21
+] (./gp_ucb.toc) [21
+
+] [22
 
 ]
 \tf@nav=\write7
@@ -1248,15 +1252,15 @@ Missing character: There is no 1 in font nullfont!
 
  (./gp_ucb.aux)
 Package rerunfilecheck Info: File `gp_ucb.out' has not changed.
-(rerunfilecheck)             Checksum: 03C29B298BF51C69812EFE61EFC41B58;1207.
+(rerunfilecheck)             Checksum: C5F18282FF2974EB0A64402AB14C93C6;1277.
  ) 
 Here is how much of TeX's memory you used:
- 29569 strings out of 478724
- 610907 string characters out of 5858393
- 860701 words of memory out of 5000000
- 47339 multiletter control sequences out of 15000+600000
+ 29586 strings out of 478724
+ 611246 string characters out of 5858393
+ 860782 words of memory out of 5000000
+ 47352 multiletter control sequences out of 15000+600000
  530525 words of font info for 130 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 128i,11n,122p,435b,614s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,11n,122p,435b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on gp_ucb.dvi (21 pages, 78012 bytes).
+Output written on gp_ucb.dvi (22 pages, 81816 bytes).
