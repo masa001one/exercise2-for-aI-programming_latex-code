@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1672989457 "/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex" "gp_ucb.pdf" "gp_ucb" 1672989457
-  "/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex" 1672989452 18204 cb500d50afdb705658c8e0901a2481a5 ""
+["pdflatex"] 1672990384 "/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex" "gp_ucb.pdf" "gp_ucb" 1672990384
+  "/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex" 1672990378 17766 9fac96e6a42c396bf9b61d1b25d26f26 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -276,10 +276,10 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1649471458 2826427 11d650003d576f6dbf127bba416322d0 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "Fig/blackbox.pdf" 1672727481 6145 bd2c2ce37c3ad808da17e35389eba851 ""
-  "gp_ucb.aux" 1672989457 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "gp_ucb.aux" 1672990384 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "gp_ucb.nav" 0 -1 0 "pdflatex"
   "gp_ucb.out" 0 -1 0 "pdflatex"
-  "gp_ucb.tex" 1672989452 18204 cb500d50afdb705658c8e0901a2481a5 ""
+  "gp_ucb.tex" 1672990378 17766 9fac96e6a42c396bf9b61d1b25d26f26 ""
   "gp_ucb.toc" 0 -1 0 "pdflatex"
   (generated)
   "gp_ucb.aux"
