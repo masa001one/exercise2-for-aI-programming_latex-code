@@ -326,8 +326,14 @@ $\dag\dag\dag$: Saarland University}
 \subsection{ガウス過程}
 \begin{frame}{\insertsubsection}
 	\begin{block}{ガウス過程}
-		$\ast$ ガウス過程の定義を記述する
+		任意の入力$\{ \bm x_1, \ldots, \bm x_n \}$に対して$\{f(\bm x_1), \ldots, f(\bm x_n)\}$がn次元正規分布に従うなら，$f$はガウス過程に従う．
 	\end{block}
+
+\begin{itemize}
+	\item 関数$f$がガウス過程に従うことを$f(\bm x) \sim \mathcal{GP}(\mu(\bm x), k(\bm x, \bm x'))$
+	\item 平均関数: $\mu(\bm x) = \mathbb{E}[f(\bm x)]$
+	\item 共分散関数(カーネル関数): $k(\bm x, \bm x') = \mathbb{E}[(f(\bm x) - \mu(\bm x))(f(\bm x') - \mu(\bm x'))]$
+\end{itemize}
 \end{frame}
 
 %-------------------
@@ -360,7 +366,16 @@ $\dag\dag\dag$: Saarland University}
 
 \subsection{従来の獲得関数}
 \begin{frame}{\insertsubsection}
-
+	\begin{block}{variance only}
+		\begin{align*}
+			\bm x = \arg \max_{\bm x} ~ \sigma_T^2(\bm x)
+		\end{align*}
+	\end{block}
+	\begin{block}{mean only}
+		\begin{align*}
+			\bm x = \arg \max_{\bm x} ~ \mu_T(\bm x)
+		\end{align*}
+	\end{block}
 	\begin{itemize}
 		\item 
 	\end{itemize}
@@ -374,7 +389,19 @@ $\dag\dag\dag$: Saarland University}
 
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item 
+		\item 探索・活用に特化した
+	\end{itemize}
+	\begin{block}{GP-UCB: Gaussian Process Upper Confidence Bound}
+		\begin{align*}
+			\bm x_t = \arg \max_{\bm x} ~ \mu_{t-1}(\bm x) + \beta_t^{1/2} \sigma_{t-1}(\bm x).
+		\end{align*}
+	\end{block}
+	\begin{itemize}
+		\item $\beta_t$は，探索の度合いを表す定数
+		\begin{itemize}
+			\item $\beta_t$が小さい $\rightarrow$ 探索　
+			\item $\beta_t$が大きい
+		\end{itemize}
 	\end{itemize}
 
 \end{frame}
