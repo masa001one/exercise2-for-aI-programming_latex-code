@@ -1639,6 +1639,10 @@ INPUT ./Fig/blackbox.pdf
 INPUT ./Fig/blackbox.pdf
 INPUT ./Fig/blackbox.pdf
 INPUT extractbb -B cropbox -O ./Fig/blackbox.pdf
+INPUT ./Fig/BO.pdf
+INPUT ./Fig/BO.pdf
+INPUT ./Fig/BO.pdf
+INPUT extractbb -B cropbox -O ./Fig/BO.pdf
 OUTPUT gp_ucb.nav
 OUTPUT gp_ucb.toc
 OUTPUT gp_ucb.snm
