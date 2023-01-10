@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  9 JAN 2023 14:43
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  10 JAN 2023 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -751,7 +751,44 @@ Package: tascmac 2020/01/15 v2.1 ascmac package (community edition)
 \@bcal=\count335
 \shaderule=\dimen313
 ))
-(/usr/local/texlive/2022/texmf-dist/tex/latex/animate/animate.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count336
+\float@exts=\toks47
+\float@box=\box103
+\@float@everytoks=\toks48
+\@floatcapt=\box104
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks49
+\c@algorithm=\count337
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count338
+\c@ALG@rem=\count339
+\c@ALG@nested=\count340
+\ALG@tlm=\skip64
+\ALG@thistlm=\skip65
+\c@ALG@Lnr=\count341
+\c@ALG@blocknr=\count342
+\c@ALG@storecount=\count343
+\c@ALG@tmpcounter=\count344
+\ALG@tmplength=\skip66
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/animate/animate.sty
 Package: animate 2022/02/21 PDF & SVG animations from files and inline graphics
 
 
@@ -760,30 +797,27 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks47
-\XKV@tempa@toks=\toks48
+\XKV@toks=\toks50
+\XKV@tempa@toks=\toks51
 )
-\XKV@depth=\count336
+\XKV@depth=\count345
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/oberdiek/ifdraft.sty
 Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count337
-\calc@Bcount=\count338
+\calc@Acount=\count346
+\calc@Bcount=\count347
 \calc@Adimen=\dimen314
 \calc@Bdimen=\dimen315
-\calc@Askip=\skip64
-\calc@Bskip=\skip65
+\calc@Askip=\skip67
+\calc@Bskip=\skip68
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count339
-\calc@Cskip=\skip66
+\calc@Ccount=\count348
+\calc@Cskip=\skip69
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/zref/zref-abspage.sty
 Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
@@ -794,7 +828,7 @@ Package zref Info: New property list: main on input line 764.
 Package zref Info: New property: default on input line 765.
 Package zref Info: New property: page on input line 766.
 )
-\c@abspage=\count340
+\c@abspage=\count349
 Package zref Info: New property: abspage on input line 66.
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/media9/pdfbase.sty
@@ -806,44 +840,44 @@ Package: expl3 2022-02-24 L3 programming layer (loader)
 File: l3backend-dvipdfmx.def 2022-02-07 L3 backend support: dvipdfmx
 
 (|extractbb --version)
-\c__kernel_sys_dvipdfmx_version_int=\count341
-\l__color_backend_stack_int=\count342
-\g__color_backend_stack_int=\count343
-\g__graphics_track_int=\count344
-\l__pdf_internal_box=\box103
-\g__pdf_backend_object_int=\count345
-\g__pdf_backend_annotation_int=\count346
-\g__pdf_backend_link_int=\count347
+\c__kernel_sys_dvipdfmx_version_int=\count350
+\l__color_backend_stack_int=\count351
+\g__color_backend_stack_int=\count352
+\g__graphics_track_int=\count353
+\l__pdf_internal_box=\box105
+\g__pdf_backend_object_int=\count354
+\g__pdf_backend_annotation_int=\count355
+\g__pdf_backend_link_int=\count356
 ))
 Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 )
 Package: pdfbase 2022/03/18 v0.54 driver independent access to low-level PDF fe
 atures
-\g_pbs_page_int=\count348
-\g_pbs_obj_int=\count349
-\g_pbs_oc_int=\count350
+\g_pbs_page_int=\count357
+\g_pbs_obj_int=\count358
+\g_pbs_oc_int=\count359
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/ocgx2/ocgbase.sty
 Package: ocgbase 2021/06/11 v0.20 support package for ocgx2.sty
-\g_ocgbase_nd_int=\count351
+\g_ocgbase_nd_int=\count360
 )
-\@anim@box=\box104
-\@anim@measbox=\box105
+\@anim@box=\box106
+\@anim@measbox=\box107
 \@anim@tmpdima=\dimen316
 \@anim@tmpdimb=\dimen317
-\@anim@num=\count352
-\@anim@curframe=\count353
-\@anim@curframe@zb=\count354
-\@anim@resizeflags=\count355
-\@anim@skipfram=\count356
-\@anim@mulframecnt=\count357
+\@anim@num=\count361
+\@anim@curframe=\count362
+\@anim@curframe@zb=\count363
+\@anim@resizeflags=\count364
+\@anim@skipfram=\count365
+\@anim@mulframecnt=\count366
 \@anim@@tmlnfile=\read3
-\@anim@tmpcnt=\count358
-\c@@anim@ltxcnt=\count359
-\@anim@curlayer=\count360
-\@anim@lineno=\count361
-\@anim@curfield=\count362
-\@anim@@resizeflags=\count363
+\@anim@tmpcnt=\count367
+\c@@anim@ltxcnt=\count368
+\@anim@curlayer=\count369
+\@anim@lineno=\count370
+\@anim@curfield=\count371
+\@anim@@resizeflags=\count372
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -852,7 +886,7 @@ Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box106
+\pgfnodeparttextbox=\box108
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -875,8 +909,8 @@ Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen320
 \pgffor@skip=\dimen321
-\pgffor@stack=\toks49
-\pgffor@toks=\toks50
+\pgffor@stack=\toks52
+\pgffor@toks=\toks53
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -885,7 +919,7 @@ Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count364
+\pgf@plot@mark@count=\count373
 \pgfplotmarksize=\dimen322
 )
 \tikz@lastx=\dimen323
@@ -896,23 +930,23 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@lastmovetoy=\dimen328
 \tikzleveldistance=\dimen329
 \tikzsiblingdistance=\dimen330
-\tikz@figbox=\box107
-\tikz@figbox@bg=\box108
-\tikz@tempbox=\box109
-\tikz@tempbox@bg=\box110
-\tikztreelevel=\count365
-\tikznumberofchildren=\count366
-\tikznumberofcurrentchild=\count367
-\tikz@fig@count=\count368
+\tikz@figbox=\box109
+\tikz@figbox@bg=\box110
+\tikz@tempbox=\box111
+\tikz@tempbox@bg=\box112
+\tikztreelevel=\count374
+\tikznumberofchildren=\count375
+\tikznumberofcurrentchild=\count376
+\tikz@fig@count=\count377
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count369
-\pgfmatrixcurrentcolumn=\count370
-\pgf@matrix@numberofcolumns=\count371
+\pgfmatrixcurrentrow=\count378
+\pgfmatrixcurrentcolumn=\count379
+\pgf@matrix@numberofcolumns=\count380
 )
-\tikz@expandcount=\count372
+\tikz@expandcount=\count381
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -932,7 +966,7 @@ s/tikzlibraryintersections.code.tex
 ctions.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
 e.tex)
-\pgf@intersect@solutions=\count373
+\pgf@intersect@solutions=\count382
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryarrows.code.tex
@@ -947,9 +981,9 @@ File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 s/tikzlibrarymath.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryfpu.code.tex)
-\tikz@math@for@depth=\count374
+\tikz@math@for@depth=\count383
 \tikz@math@dimen=\dimen332
-\tikz@math@toks=\toks51
+\tikz@math@toks=\toks54
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshapes.callouts.code.tex
@@ -968,11 +1002,11 @@ s.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen335
 \pgfdecoratedinputsegmentremainingdistance=\dimen336
 \pgf@decorate@distancetomove=\dimen337
-\pgf@decorate@repeatstate=\count375
+\pgf@decorate@repeatstate=\count384
 \pgfdecorationsegmentamplitude=\dimen338
 \pgfdecorationsegmentlength=\dimen339
 )
-\tikz@lib@dec@box=\box111
+\tikz@lib@dec@box=\box113
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.pathreplacing.code.tex
@@ -991,79 +1025,71 @@ sty))
 lfonts.sty)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamerinnerthemecircles.st
 y) (/usr/local/texlive/2022/texmf-dist/tex/latex/here/here.sty)
-(/usr/local/texlive/2022/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count376
-\float@exts=\toks52
-\float@box=\box112
-\@float@everytoks=\toks53
-\@floatcapt=\box113
-)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 136.
+(hyperref)                removing `math shift' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 136.
+(hyperref)                removing `superscript' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 136.
+(hyperref)                removing `math shift' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 136.
+(hyperref)                removing `math shift' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 136.
+(hyperref)                removing `superscript' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 136.
+(hyperref)                removing `math shift' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 136.
+(hyperref)                removing `math shift' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 136.
+(hyperref)                removing `superscript' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 136.
+(hyperref)                removing `math shift' on input line 141.
 
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 151.
+(Font)              scaled to size 10.52292pt on input line 156.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 151.
+(Font)              scaled to size 10.52292pt on input line 156.
 (./gp_ucb.aux)
 \openout1 = `gp_ucb.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
 
 *geometry* detected driver: dvipdfm
 *geometry* verbose mode - [ preamble ] result:
@@ -1098,7 +1124,7 @@ LaTeX Font Info:    ... okay on input line 151.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 151.
+Package hyperref Info: Link coloring OFF on input line 156.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1109,11 +1135,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count377
+\c@section@level=\count385
 )
-LaTeX Info: Redefining \ref on input line 151.
-LaTeX Info: Redefining \pageref on input line 151.
-LaTeX Info: Redefining \nameref on input line 151.
+LaTeX Info: Redefining \ref on input line 156.
+LaTeX Info: Redefining \pageref on input line 156.
+LaTeX Info: Redefining \nameref on input line 156.
  (./gp_ucb.out) (./gp_ucb.out)
 \@outlinefile=\write6
 \openout6 = `gp_ucb.out'.
@@ -1144,32 +1170,32 @@ tionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (./gp_ucb.nav)
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 151.
+(Font)              scaled to size 5.76599pt on input line 156.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 151.
+(Font)              scaled to size 5.76599pt on input line 156.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 151.
+(Font)              scaled to size 7.68799pt on input line 156.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 151.
+(Font)              scaled to size 7.68799pt on input line 156.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 160.
+(Font)              scaled to size 13.83836pt on input line 165.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 160.
+(Font)              scaled to size 13.83836pt on input line 165.
 
 Missing character: There is no 5 in font nullfont!
-LaTeX Font Info:    Trying to load font information for U+msa on input line 160
+LaTeX Font Info:    Trying to load font information for U+msa on input line 165
 .
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 160
+LaTeX Font Info:    Trying to load font information for U+msb on input line 165
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 160.
+ut line 165.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -1178,22 +1204,22 @@ thkerncmss.
 
 ] (./gp_ucb.toc)
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 169.
+(Font)              scaled to size 11.53198pt on input line 174.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 169.
+(Font)              scaled to size 11.53198pt on input line 174.
  [2
 
 ] (./gp_ucb.toc) [3
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 183.
+(Font)              scaled to size 9.60999pt on input line 188.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 183.
+(Font)              scaled to size 9.60999pt on input line 188.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 3.844pt on input line 183.
+(Font)              scaled to size 3.844pt on input line 188.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 3.844pt on input line 183.
+(Font)              scaled to size 3.844pt on input line 188.
  [4
 
 ]
@@ -1236,7 +1262,29 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 [15
 
-] [16
+]
+LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <10.95> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 435.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 10.52292pt on input line 435.
+LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <10.95> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 435.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 10.52292pt on input line 435.
+
+! Undefined control sequence.
+\beamer@doifinframe ... 0$, $\sigma _0$, $k$ \FOR 
+                                                  {$t = 1, 2,\ldots $} \Stat...
+l.435 \end{frame}
+                 
+? 
+! Undefined control sequence.
+\beamer@doifinframe ...te $t \gets t + 1$ \EndFOR 
+                                                  \end {algorithmic} \end {a...
+l.435 \end{frame}
+                 
+? 
+[16
 
 ] (./gp_ucb.toc) [17
 
@@ -1260,18 +1308,17 @@ Missing character: There is no 6 in font nullfont!
 \tf@snm=\write9
 \openout9 = `gp_ucb.snm'.
 
-
-(./gp_ucb.aux)
+ (./gp_ucb.aux)
 Package rerunfilecheck Info: File `gp_ucb.out' has not changed.
 (rerunfilecheck)             Checksum: C5F18282FF2974EB0A64402AB14C93C6;1277.
  ) 
 Here is how much of TeX's memory you used:
- 29597 strings out of 478724
- 611587 string characters out of 5858393
- 862782 words of memory out of 5000000
- 47362 multiletter control sequences out of 15000+600000
- 530525 words of font info for 130 fonts, out of 8000000 for 9000
+ 30150 strings out of 478724
+ 620688 string characters out of 5858393
+ 870709 words of memory out of 5000000
+ 47903 multiletter control sequences out of 15000+600000
+ 530819 words of font info for 131 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  128i,12n,122p,435b,614s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on gp_ucb.dvi (22 pages, 92224 bytes).
+Output written on gp_ucb.dvi (22 pages, 91120 bytes).

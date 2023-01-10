@@ -16,9 +16,9 @@
 % \usepackage[dvipdfmx]{animate} %アニメーション
 % \usepackage[dvipdfmx]{graphicx} %画像挿入
 % \mathbb{R}^{l} %表記例
-% \usepackage{algorithm}
+\usepackage{algorithm}
 % \usepackage{algorithmicx}
-% \usepackage{algpseudocode}
+\usepackage{algpseudocode}
 \usepackage{animate} %アニメーション
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -126,6 +126,11 @@
 
 \newcommand{\zl}{\rightarrow}
 \newcommand{\zh}{\leftarrow}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%追加
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -412,16 +417,20 @@ $\dag\dag\dag$: Saarland University}
 
 \subsection{GP-UCBのアルゴリズム}
 \begin{frame}{\insertsubsection}
-	\begin{itemize}
-		\item 初期化: 最初に，$f$の予測分布を設定する．これは$f$の予測分布を表すカーネルを選択し，そのカーネルに対応するガウス過程を設定することで行われる．
-		\item アクションの選択: 次に，$f$の予測分布から，次のような式を用いてアクションを選択する
-		\begin{itemize}
-			\item $a_t = argmax_{a \in D} (\mu_t(a) + \beta_t \sigma_t(a))$
-		\end{itemize}
-		ここで、$\mu_t(a)$ は、時刻 t において、a が選択されると予測される f の平均値を表します。$\sigma_t(a)$ は、時刻 t において、a が選択されると予測される f の不確実性を表します。$\beta_t$ は、時刻 t においてのアクションの選択におけるリスク係数を表します
-		\item 報酬の観測: 選択したアクション$a_t$に対して報酬$r_t$を観測する．
-		\item 予測分布の更新: 次に，最新のアクション$a_t$を使用してfの予測分布を更新する.これは，ガウス過程のアップデートによって行われる．
-	\end{itemize}
+\begin{algorithm}[H]
+	\caption{The GP-UCB algorithm.}
+	\label{alg:gpucb}
+	\begin{algorithmic}
+		\Require Input space $\mathcal{D}$; GP Prior $\mu_0 = 0$, $\sigma_0$, $k$
+		\FOR{$t = 1, 2,\ldots $}
+			\State $\bm x_t \gets \arg \max_{\bm x} ~ \mu_{t-1}(\bm x) + \beta_t^{1/2} \sigma_{t-1}(\bm x)$
+			\State $y_t \gets f(\bm x_t)$
+			\State $(\bm x_1, \ldots, \bm x_n, \bm x_t)$を訓練データとする．
+			\State $t \gets t + 1$
+		\EndFOR
+	\end{algorithmic}
+\end{algorithm}
+
 
 \end{frame}
 
