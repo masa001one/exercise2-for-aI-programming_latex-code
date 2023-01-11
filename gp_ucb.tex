@@ -211,11 +211,7 @@ $\dag\dag\dag$: Saarland University}
 
 	\begin{itemize}
 		\item 実応用で扱う対象はブラックボックス関数であることが多い
-		\item ブラックボックス関数は，主に以下の2つの性質を持つ
-		\begin{itemize}
-			\item 関数の具体的な形状が不明
-			\item 各入力における関数値を得るには，大きなコストがかかる
-		\end{itemize}
+		\item ブラックボックス関数は，具体的な形状が不明
 
 	\end{itemize}
 \end{frame}
@@ -238,6 +234,7 @@ $\dag\dag\dag$: Saarland University}
 	\end{center}
 	\begin{itemize}
 		\item 多くの実問題は，ブラックボックス関数最適化と等価
+		\item 各入力における関数値を得るには，大きなコストがかかる
 		\item できるだけ少ない関数評価回数で最適化を見つけたい
 		\item 有効な手法として\alert{ベイズ最適化}がある
 	\end{itemize}
@@ -422,14 +419,14 @@ $\dag\dag\dag$: Saarland University}
 	\label{alg:gpucb}
 	\begin{algorithmic}
 		\Require Input space $\mathcal{D}$; GP Prior $\mu_0 = 0$, $\sigma_0$, $k$
-		\FOR{$t = 1, 2,\ldots $}
-			\State $\bm x_t \gets \arg \max_{\bm x} ~ \mu_{t-1}(\bm x) + \beta_t^{1/2} \sigma_{t-1}(\bm x)$
-			\State $y_t \gets f(\bm x_t)$
-			\State $(\bm x_1, \ldots, \bm x_n, \bm x_t)$を訓練データとする．
-			\State $t \gets t + 1$
-		\EndFOR
+		\For{\texttt{$t = 1, 2,\ldots $}}			\State Choose $\bm x_t = \arg \max_{\bm x \in \mathcal{D}} ~ \mu_{t-1}(\bm x) + \sqrt{\beta_t} \sigma_{t-1}(\bm x)$
+			\State Sample $y_t \gets f(\bm x_t) + \varepsilon_t$
+			\State Perform Bayesian update to obtaion $\mu_t$ and $\sigma_t$
+		\EndFor
 	\end{algorithmic}
 \end{algorithm}
+
+
 
 
 \end{frame}
@@ -444,29 +441,32 @@ $\dag\dag\dag$: Saarland University}
 \subsection{実験手法}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item 
+		\item variance only
+		\item maximum mean
+		\item Expected Improvement(EI)
+		\item Most Probable Improvement(MPI)
+		\item GP-UCB
 	\end{itemize}
 \end{frame}
 
 %-------------------
 \subsection{実験対象データ}
 \begin{frame}{\insertsubsection}
-	\begin{itemize}
-		\item 人工的に作成した合成データ
+	\begin{enumerate}
+		\item 合成データ
 		\begin{itemize}
 			\item 長さスケールパラメータ0.2の二乗指数カーネルからランダムな関数をサンプリング
 			\item サンプリングノイズ分散
 		\end{itemize}
-		\item 46個のセンサーを用いて5日間に渡って収集された温度データ(Intel Research Berkeley)
+		\item 温度データ
 		\begin{itemize}
 			\item 具体的に説明
 		\end{itemize}
-		\item カリフォルニア州 I-880 South 高速道路に設置された交通センサーのデータ
+		\item 交通センサーのデータ
 		\begin{itemize}
 			\item 具体的に説明
 		\end{itemize}
-	\end{itemize}
-
+	\end{enumerate}
 \end{frame}
 
 %-------------------

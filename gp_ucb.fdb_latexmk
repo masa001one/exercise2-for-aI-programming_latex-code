@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1673318445 "/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex" "gp_ucb.pdf" "gp_ucb" 1673318445
-  "/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex" 1673318445 16286 41350aec06b2faf797ca3dbceed819f7 ""
+["pdflatex"] 1673425920 "/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex" "gp_ucb.pdf" "gp_ucb" 1673425920
+  "/Users/masa/Library/CloudStorage/OneDrive-NITech/GitHub/exercise2-for-aI-programming_latex-code/gp_ucb.tex" 1673425919 16306 6b027c438d0a76e494dcdc42e5dab620 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -40,6 +40,7 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm" 1254269338 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi10.tfm" 1336178347 1696 aaa5bbd1f47f001247d42218ce371101 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm" 1336178347 1676 fb6c6a335484692abff897d6e8965829 ""
@@ -146,6 +147,7 @@
   "/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex" 1605910342 19231 3cbf682090baecad8e17a66b7a271ed1 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex" 1605910342 7677 cf3e6aa6a8d444f55327f61df80bfa0c ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty" 1160617237 26750 ce139c05a983e19ddca355b43e29c395 ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty" 1160617237 3457 d9077efe6b74c5a094199256af8d7d9a ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/algorithms/algorithm.sty" 1251330371 3249 15763257e50278eef5db1952ccde229c ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty" 1591045760 12594 0d51ac3a545aaaa555021326ff22a6cc ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1359763108 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
@@ -284,11 +286,11 @@
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "Fig/BO.pdf" 1673242920 49135 d365ab7a68eaea065958c25cceb34f89 ""
   "Fig/blackbox.pdf" 1673137403 6145 bd2c2ce37c3ad808da17e35389eba851 ""
-  "gp_ucb.aux" 1673318425 9120 a934fd046d3ddaa54d3e1fb394c59057 "pdflatex"
-  "gp_ucb.nav" 1673318425 5000 29033d830c46e8f5f348ae19329adef4 "pdflatex"
-  "gp_ucb.out" 1673318425 1900 fa8aa28e24b7d2603bc6a5cbb4c6c9a9 "pdflatex"
-  "gp_ucb.tex" 1673318445 16286 41350aec06b2faf797ca3dbceed819f7 ""
-  "gp_ucb.toc" 1673318425 1115 a1dfac232637c5c3ff0f422d19cc0d58 "pdflatex"
+  "gp_ucb.aux" 1673425630 9592 0bca320edda1b19abe6d7b37dd268533 "pdflatex"
+  "gp_ucb.nav" 1673425630 5043 9687b5dbe350df62d5c244696324c833 "pdflatex"
+  "gp_ucb.out" 1673425630 1900 f97717536daebd2324bfde7c05b04ea6 "pdflatex"
+  "gp_ucb.tex" 1673425919 16306 6b027c438d0a76e494dcdc42e5dab620 ""
+  "gp_ucb.toc" 1673425630 1115 a1dfac232637c5c3ff0f422d19cc0d58 "pdflatex"
   (generated)
   "gp_ucb.aux"
   "gp_ucb.log"
