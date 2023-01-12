@@ -373,16 +373,25 @@ $\dag\dag\dag$: Saarland University}
 \begin{frame}{\insertsubsection}
 	\begin{block}{variance only}
 		\begin{align*}
-			\bm x = \arg \max_{\bm x} ~ \sigma_T^2(\bm x)
-		\end{align*}
-	\end{block}
-	\begin{block}{mean only}
-		\begin{align*}
-			\bm x = \arg \max_{\bm x} ~ \mu_T(\bm x)
+			\bm x_t = \arg \max_{\bm x} ~ \alert{\sigma}_{t-1}^{\alert{2}}(\bm x)
 		\end{align*}
 	\end{block}
 	\begin{itemize}
-		\item 
+		\item 予測分散が最大となる$\bm x$を選択
+		\begin{itemize}
+			\item[$\Rightarrow$] \alert{探索}中心
+		\end{itemize}
+	\end{itemize}
+	\begin{block}{mean only}
+		\begin{align*}
+			\bm x_t = \arg \max_{\bm x} ~ \alert{\mu}_{t-1}(\bm x)
+		\end{align*}
+	\end{block}
+	\begin{itemize}
+		\item 予測平均が最大となる$\bm x$を選択
+		\begin{itemize}
+			\item[$\Rightarrow$] \alert{活用}中心
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 %-------------------
