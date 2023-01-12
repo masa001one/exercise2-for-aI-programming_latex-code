@@ -394,18 +394,21 @@ $\dag\dag\dag$: Saarland University}
 
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item 探索・活用に特化した
+		\item 探索・活用に特化した手法では最適化がうまくいかない場合が多い
+		\begin{itemize}
+			\item[$\Rightarrow$] 探索と活用のバランスが取れるような手法を提案
+		\end{itemize}
 	\end{itemize}
 	\begin{block}{GP-UCB: Gaussian Process Upper Confidence Bound}
 		\begin{align*}
-			\bm x_t = \arg \max_{\bm x} ~ \mu_{t-1}(\bm x) + \beta_t^{1/2} \sigma_{t-1}(\bm x).
+			\bm x_t = \arg \max_{\bm x \in \mathcal{D}} ~ \mu_{t-1}(\bm x) + \beta_t^{1/2} \sigma_{t-1}(\bm x).
 		\end{align*}
 	\end{block}
 	\begin{itemize}
 		\item $\beta_t$は，探索の度合いを表す定数
 		\begin{itemize}
-			\item $\beta_t$が小さい $\rightarrow$ 探索　
-			\item $\beta_t$が大きい
+			\item $\beta_t$が小さい $\Rightarrow$ 予測平均の比重が大きくなる $\Rightarrow$ 活用重視
+			\item $\beta_t$が大きい $\Rightarrow$ 予測分散の比重が大きくなる $\Rightarrow$ 探索重視
 		\end{itemize}
 	\end{itemize}
 
