@@ -441,11 +441,20 @@ $\dag\dag\dag$: Saarland University}
 \subsection{実験手法}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item variance only
-		\item maximum mean
-		\item Expected Improvement(EI)
-		\item Most Probable Improvement(MPI)
-		\item GP-UCB
+		\item 実験手法
+		\begin{itemize}
+			\item variance only
+			\item maximum mean
+			\item Expected Improvement(EI)
+			\item Most Probable Improvement(MPI)
+			\item GP-UCB
+		\end{itemize}
+		\item \alert{Mean Average Regret} を用いた評価
+		\begin{itemize}
+			\item Regret = (真の関数の最大値) - (観測済みデータの最大値)
+			\item Average Regret : 1回の試行中のRegretの平均
+			\item Mean Average Regret : 全試行のAverage Regretの平均
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
@@ -455,16 +464,20 @@ $\dag\dag\dag$: Saarland University}
 	\begin{enumerate}
 		\item 合成データ
 		\begin{itemize}
-			\item 長さスケールパラメータ0.2の二乗指数カーネルからランダムな関数をサンプリング
-			\item サンプリングノイズ分散
+			\item $\mathcal{D} \in [0,1]$の範囲を一様に1000点で区切った点を候補点とする
+			\item $T = 1000$, $\sigma^2 = 0.025$, $\delta = 0.1$
+			\item 30回試行
 		\end{itemize}
 		\item 温度データ
 		\begin{itemize}
-			\item 具体的に説明
+			\item 46個のセンサーから1分間隔で5日以上計測された気温
+			\item $T = 46$, $\sigma^2 = 0.5$, $\delta = 0.1$
+			\item 2000回試行
 		\end{itemize}
-		\item 交通センサーのデータ
+		\item 交通データ
 		\begin{itemize}
-			\item 具体的に説明
+			\item 357個のセンサーから1ヶ月，午前6時から午前までに通過する車の速度
+			\item $T = 357$, $\sigma^2 = 4.78$, $\delta = 0.1$
 		\end{itemize}
 	\end{enumerate}
 \end{frame}
