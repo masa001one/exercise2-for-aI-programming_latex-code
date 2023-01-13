@@ -1580,10 +1580,10 @@ INPUT ./gp_ucb.out
 INPUT gp_ucb.out
 INPUT ./gp_ucb.out
 INPUT gp_ucb.out
-OUTPUT gp_ucb.pdf
 INPUT ./gp_ucb.out
 INPUT ./gp_ucb.out
 OUTPUT gp_ucb.out
+OUTPUT gp_ucb.pdf
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
@@ -1608,9 +1608,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-theorem
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
-INPUT ./gp_ucb.nav
-INPUT gp_ucb.nav
-INPUT gp_ucb.nav
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
@@ -1690,6 +1687,10 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssxi10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssxi8.tfm
+INPUT ./Fig/Robot.pdf
+INPUT ./Fig/Robot.pdf
+INPUT ./Fig/Robot.pdf
+INPUT extractbb -B cropbox -O ./Fig/Robot.pdf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT ./Fig/blackbox.pdf
 INPUT ./Fig/blackbox.pdf
