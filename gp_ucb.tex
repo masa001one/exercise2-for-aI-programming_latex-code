@@ -183,7 +183,7 @@ $\dag\dag\dag$: Saarland University}
 \subsection{背景}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item 多くの実問題は，目的関数に対する最適変数探索問題として定式化できる
+		\item 多くの実問題は目的関数に対する最適変数探索問題として定式化できる
 		\begin{itemize}
 			\item 耐久性の高いロボットの開発
 		\end{itemize}
@@ -217,7 +217,7 @@ $\dag\dag\dag$: Saarland University}
 
 	\begin{itemize}
 		\item 実応用で扱う対象はブラックボックス関数であることが多い
-		\item ブラックボックス関数は，具体的な形状が不明
+		\item ブラックボックス関数は具体的な形状が不明
 
 	\end{itemize}
 \end{frame}
@@ -239,8 +239,8 @@ $\dag\dag\dag$: Saarland University}
 		\includegraphics[width=0.80\textwidth]{./Fig/BO.pdf}
 	\end{center}
 	\begin{itemize}
-		\item 多くの実問題は，ブラックボックス関数最適化と等価
-		\item 各入力における関数値を得るには，大きなコストがかかる
+		\item 多くの実問題はブラックボックス関数最適化と等価
+		\item 各入力における関数値を得るには大きなコストがかかる
 		\item できるだけ少ない関数評価回数で最適化を見つけたい
 		\item 有効な手法として\alert{ベイズ最適化}がある
 	\end{itemize}
@@ -270,7 +270,7 @@ $\dag\dag\dag$: Saarland University}
 
 		\begin{block}{貢献}
 			\begin{itemize}
-				\item ガウス過程を用いた最適化問題を解決するためのアルゴリズムを提案する
+				\item ガウス過程を用いた最適化問題を解決するためのアルゴリズムを提案
 				\item 実データ実験において優れた性能を発揮
 			\end{itemize}
 		\end{block}
@@ -325,8 +325,8 @@ $\dag\dag\dag$: Saarland University}
 			\bm x^* = \arg \max_{\bm x \in \mathcal{X}} ~ f(\bm x)
 		\end{align*}
 		\begin{itemize}
-			\item ガウス過程は，確率分布を用いた複雑で非線形な関数を扱うためのモデルである．
-			\item このような複雑で非線形な関数を扱う場合には，一般的な最適化手法では，解決が困難になることがある．
+			\item ガウス過程は確率分布を用いた複雑で非線形な関数を扱うためのモデルである
+			\item このような複雑で非線形な関数を扱う場合には一般的な最適化手法では解決が困難になることがある
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -336,7 +336,7 @@ $\dag\dag\dag$: Saarland University}
 \subsection{ガウス過程}
 \begin{frame}{\insertsubsection}
 	\begin{block}{ガウス過程}
-		任意の入力$\{ \bm x_1, \ldots, \bm x_n \}$に対して$\{f(\bm x_1), \ldots, f(\bm x_n)\}$がn次元正規分布に従うなら，$f$はガウス過程に従う．
+		任意の入力$\{ \bm x_1, \ldots, \bm x_n \}$に対して$\{f(\bm x_1), \ldots, f(\bm x_n)\}$がn次元正規分布に従うなら$f$はガウス過程に従う
 	\end{block}
 
 \begin{itemize}
@@ -353,9 +353,9 @@ $\dag\dag\dag$: Saarland University}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
 		\item $f$にガウス過程事前分布を仮定する
-		\item 訓練データに基づき，$f$の事後分布を求める
+		\item 訓練データに基づき$f$の事後分布を求める
 		\item 事後分布に基づき\alert{最も最大値となりそうな点}を次に観測する
-		\item 観測した$(x_{next}, y_{next})$を訓練データに追加し，再び事後分布を求める
+		\item 観測した$(x_{next}, y_{next})$を訓練データに追加し再び事後分布を求める
 	\end{itemize}
 
 \end{frame}
@@ -493,7 +493,7 @@ $\dag\dag\dag$: Saarland University}
 		\end{itemize}
 		\item 交通データ
 		\begin{itemize}
-			\item 357個のセンサーから1ヶ月，午前6時から午前までに通過する車の速度
+			\item 357個のセンサーから1ヶ月間午前6時から午前までに通過する車の速度
 			\item $T = 357$, $\sigma^2 = 4.78$, $\delta = 0.1$
 		\end{itemize}
 	\end{enumerate}
