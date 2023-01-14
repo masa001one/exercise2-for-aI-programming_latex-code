@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  13 JAN 2023 15:31
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  14 JAN 2023 13:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1145,10 +1145,6 @@ LaTeX Info: Redefining \nameref on input line 159.
 \openout6 = `gp_ucb.out'.
 
 
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
-
 (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -1311,22 +1307,16 @@ File: ./Fig/Figure4.pdf Graphic file (type pdf)
 
 
 (./gp_ucb.aux)
-
-Package rerunfilecheck Warning: File `gp_ucb.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `gp_ucb.out':
-(rerunfilecheck)             Before: FA8AA28E24B7D2603BC6A5CBB4C6C9A9;1900
-(rerunfilecheck)             After:  C5F18282FF2974EB0A64402AB14C93C6;1277.
+Package rerunfilecheck Info: File `gp_ucb.out' has not changed.
+(rerunfilecheck)             Checksum: C5F18282FF2974EB0A64402AB14C93C6;1277.
  ) 
 Here is how much of TeX's memory you used:
- 30205 strings out of 478724
- 622211 string characters out of 5858393
- 873140 words of memory out of 5000000
- 47955 multiletter control sequences out of 15000+600000
+ 30198 strings out of 478724
+ 622125 string characters out of 5858393
+ 872668 words of memory out of 5000000
+ 47948 multiletter control sequences out of 15000+600000
  530987 words of font info for 132 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  128i,13n,122p,435b,662s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on gp_ucb.dvi (22 pages, 109320 bytes).
+Output written on gp_ucb.dvi (22 pages, 108952 bytes).
