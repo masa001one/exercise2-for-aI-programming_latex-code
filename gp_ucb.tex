@@ -354,7 +354,7 @@ $\dag\dag\dag$: Saarland University}
 	\begin{itemize}
 		\item $f$にガウス過程事前分布$\mathcal{GP}(0, k(\bm x, \bm x'))$を仮定する
 		\item 訓練データ$(X, \bm y) = \left\{ (\bm x_i, y_i) \right\}_{i=1}^t$に基づき$f$の事後分布を求める
-		\item 事後分布に基づき\alert{最も最大値となりそうな点}を次に観測する
+		\item 事後分布に基づき\alert{最適な点}を次に観測する
 		\item 観測した$(x_{next}, y_{next})$を訓練データに追加し再び事後分布を求める
 	\end{itemize}
 
@@ -366,7 +366,16 @@ $\dag\dag\dag$: Saarland University}
 \subsection{獲得関数}
 \begin{frame}{\insertsubsection}
 	\begin{block}{獲得関数}
-		
+		探索する点を選択するために使用される関数 % \iffalse$\bm x_t$\fi，　\iffalse$\alpha$\fi
+	\end{block}
+	\begin{itemize}
+		\item 獲得関数をを$\alpha(\bm x_{t-1})$とすると次に観測する点$\bm x_t$は以下のように決定
+	\end{itemize}
+	\begin{align*}
+		\bm x_t = \arg \max_{\bm x} ~ \alpha(\bm x_{t-1})
+	\end{align*}
+	\begin{block}{獲得関数の設計指針}
+
 	\end{block}
 
 \end{frame}
