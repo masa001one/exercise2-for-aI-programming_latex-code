@@ -6,7 +6,7 @@
 \beamer@sectionintoc {2}{ベイズ最適化}{8}{0}{2}
 \beamer@subsectionintoc {2}{1}{問題設定}{9}{0}{2}
 \beamer@subsectionintoc {2}{2}{ガウス過程}{10}{0}{2}
-\beamer@subsectionintoc {2}{3}{ベイズ最適化1}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{ガウス過程を用いたベイズ最適化}{11}{0}{2}
 \beamer@subsectionintoc {2}{4}{獲得関数}{12}{0}{2}
 \beamer@subsectionintoc {2}{5}{従来の獲得関数}{13}{0}{2}
 \beamer@sectionintoc {3}{GP-UCB}{14}{0}{3}

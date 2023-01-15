@@ -7,7 +7,7 @@
 \BOOKMARK [2][]{Outline0.2}{ベイズ最適化}{}% 6
 \BOOKMARK [3][]{Outline0.2.1.9}{問題設定}{Outline0.2}% 7
 \BOOKMARK [3][]{Outline0.2.2.10}{ガウス過程}{Outline0.2}% 8
-\BOOKMARK [3][]{Outline0.2.3.11}{ベイズ最適化1}{Outline0.2}% 9
+\BOOKMARK [3][]{Outline0.2.3.11}{ガウス過程を用いたベイズ最適化}{Outline0.2}% 9
 \BOOKMARK [3][]{Outline0.2.4.12}{獲得関数}{Outline0.2}% 10
 \BOOKMARK [3][]{Outline0.2.5.13}{従来の獲得関数}{Outline0.2}% 11
 \BOOKMARK [2][]{Outline0.3}{GP-UCB}{}% 12

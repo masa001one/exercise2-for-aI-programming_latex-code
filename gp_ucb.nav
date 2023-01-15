@@ -37,8 +37,8 @@
 \headcommand {\slideentry {2}{2}{1}{10/10}{ガウス過程}{0}}
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{11}{ベイズ最適化1}}
-\headcommand {\slideentry {2}{3}{1}{11/11}{ベイズ最適化1}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{11}{ガウス過程を用いたベイズ最適化}}
+\headcommand {\slideentry {2}{3}{1}{11/11}{ガウス過程を用いたベイズ最適化}{0}}
 \headcommand {\beamer@framepages {11}{11}}
 \headcommand {\beamer@subsectionpages {11}{11}}
 \headcommand {\beamer@subsectionentry {0}{2}{4}{12}{獲得関数}}

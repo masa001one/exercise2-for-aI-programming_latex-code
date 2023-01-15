@@ -349,7 +349,7 @@ $\dag\dag\dag$: Saarland University}
 %-------------------
 
 
-\subsection{ベイズ最適化1}
+\subsection{ガウス過程を用いたベイズ最適化}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
 		\item $f$にガウス過程事前分布$\mathcal{GP}(0, k(\bm x, \bm x'))$を仮定する
@@ -421,8 +421,12 @@ $\dag\dag\dag$: Saarland University}
 		\bm x_t = \arg \max_{\bm x} ~ \alpha(\bm x_{t-1})
 	\end{align*}
 	\begin{block}{獲得関数の設計指針}
-
+		活用と探索のバランスを考慮して設計する
 	\end{block}
+	\begin{itemize}
+		\item 活用: 既知の領域を活用し既知の最適解を超える解を見つけること
+		\item 探索: 未知の領域を探査し新たな最適解を見つけること
+	\end{itemize}
 
 \end{frame}
 
