@@ -357,6 +357,52 @@ $\dag\dag\dag$: Saarland University}
 		\item 事後分布に基づき\alert{最適な点}を次に観測する
 		\item 観測した$(x_{next}, y_{next})$を訓練データに追加し再び事後分布を求める
 	\end{itemize}
+	\begin{align*}
+		f({\bm x}_\ast) \mid \mathcal{D}
+		 \sim
+		 N \left(
+		 \underbrace{
+		 \bm k_{\mathcal{D}, {\bm x}_\ast   }^\top
+		 K_{\mathcal{D} \mathcal{D}}^{-1}
+		 {\bm y}}_{\text{posterior mean}},
+		 \underbrace{
+		 k_{{\bm x}_\ast {\bm x}_\ast}
+		 -
+		 \bm k_{\mathcal{D} , {\bm x}_\ast}^\top
+		 K_{\mathcal{D} \mathcal{D}}^{-1}
+		 \bm k_{\mathcal{D} , {\bm x}_\ast}}_{\text{posterior variance}}
+		 \right)
+		\end{align*}
+
+		\begin{tiny}
+			\begin{align*}
+			 \hspace*{-15mm}
+			 K_{\mathcal{D} \mathcal{D}}
+			 =
+		\begin{pmatrix}
+			 k(\bm x_{ 1}, \bm x_{ 1}) &
+			 \cdots &
+			 k(\bm x_{ 1}, \bm x_{ t}) \\
+			 \vdots &
+			 \ddots &
+			 \vdots \\ 	 
+			 k(\bm x_{ t}, \bm x_{ 1}) &
+			 \cdots &
+			 k(\bm x_{ t}, \bm x_{t}) 
+		\end{pmatrix},
+			 \bm k_{\mathcal{D} ,{\bm x}_\ast}
+			 =
+		\begin{pmatrix}
+			 k(\bm x_{ 1}, \bm x_\ast) \\
+			 \vdots \\
+			 k(\bm x_{ t}, \bm x_\ast) 
+		\end{pmatrix},
+			 %
+			 k_{{\bm x}_\ast, {\bm x}_\ast}
+			 =
+			 k(\bm x_{\ast}, \bm x_{\ast})
+			\end{align*}
+			\end{tiny}
 
 \end{frame}
 

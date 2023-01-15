@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  14 JAN 2023 14:51
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  15 JAN 2023 10:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1273,13 +1273,13 @@ Missing character: There is no 0 in font nullfont!
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 458.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 504.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 458.
+(Font)              scaled to size 10.52292pt on input line 504.
 LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 458.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 504.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 458.
+(Font)              scaled to size 10.52292pt on input line 504.
  [16
 
 ] (./gp_ucb.toc) [17
@@ -1313,12 +1313,12 @@ Package rerunfilecheck Info: File `gp_ucb.out' has not changed.
 (rerunfilecheck)             Checksum: C5F18282FF2974EB0A64402AB14C93C6;1277.
  ) 
 Here is how much of TeX's memory you used:
- 30204 strings out of 478724
- 622387 string characters out of 5858393
- 872668 words of memory out of 5000000
- 47954 multiletter control sequences out of 15000+600000
+ 30209 strings out of 478724
+ 622549 string characters out of 5858393
+ 874668 words of memory out of 5000000
+ 47959 multiletter control sequences out of 15000+600000
  530987 words of font info for 132 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 128i,13n,122p,435b,662s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,18n,122p,435b,662s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on gp_ucb.dvi (22 pages, 115080 bytes).
+Output written on gp_ucb.dvi (22 pages, 117024 bytes).
