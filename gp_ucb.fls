@@ -1664,7 +1664,13 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssxi8.tfm
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT ./gp_ucb.toc
+INPUT gp_ucb.toc
+INPUT gp_ucb.toc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT ./gp_ucb.toc
+INPUT gp_ucb.toc
+INPUT gp_ucb.toc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT ./Fig/Robot.pdf
 INPUT ./Fig/Robot.pdf
