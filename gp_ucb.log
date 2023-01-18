@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  17 JAN 2023 15:23
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  18 JAN 2023 09:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1178,24 +1178,24 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 7.68799pt on input line 159.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 168.
+(Font)              scaled to size 13.83836pt on input line 169.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 168.
+(Font)              scaled to size 13.83836pt on input line 169.
 
 Missing character: There is no 5 in font nullfont!
-LaTeX Font Info:    Trying to load font information for U+msa on input line 168
+LaTeX Font Info:    Trying to load font information for U+msa on input line 169
 .
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 168
+LaTeX Font Info:    Trying to load font information for U+msb on input line 169
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 168.
+ut line 169.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -1204,24 +1204,24 @@ thkerncmss.
 
 ] (./gp_ucb.toc)
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 177.
+(Font)              scaled to size 11.53198pt on input line 178.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 177.
+(Font)              scaled to size 11.53198pt on input line 178.
  [2
 
 ] (./gp_ucb.toc) [3
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 195.
+(Font)              scaled to size 9.60999pt on input line 196.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 195.
+(Font)              scaled to size 9.60999pt on input line 196.
 File: ./Fig/Robot.pdf Graphic file (type pdf)
 <./Fig/Robot.pdf>
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 3.844pt on input line 195.
+(Font)              scaled to size 3.844pt on input line 196.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 3.844pt on input line 195.
+(Font)              scaled to size 3.844pt on input line 196.
  [4
 
 ]
@@ -1247,13 +1247,13 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 403.
+(Font)              scaled to size 8.64899pt on input line 404.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 403.
+(Font)              scaled to size 8.64899pt on input line 404.
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 
-Overfull \vbox (9.94893pt too high) detected at line 403
+Overfull \vbox (9.94893pt too high) detected at line 404
  []
 
 [10
@@ -1283,13 +1283,13 @@ Missing character: There is no 4 in font nullfont!
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 529.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 530.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 529.
+(Font)              scaled to size 10.52292pt on input line 530.
 LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 529.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 530.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 529.
+(Font)              scaled to size 10.52292pt on input line 530.
  [16
 
 ] (./gp_ucb.toc) [17
@@ -1331,4 +1331,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  128i,20n,122p,435b,780s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on gp_ucb.dvi (22 pages, 121904 bytes).
+Output written on gp_ucb.dvi (22 pages, 121940 bytes).
