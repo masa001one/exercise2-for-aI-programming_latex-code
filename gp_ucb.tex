@@ -280,7 +280,12 @@ $\dag\dag\dag$: Saarland University}
 
 		\begin{block}{貢献}
 			\begin{itemize}
-				\item ガウス過程を用いた最適化問題を解決するためのアルゴリズムを提案
+				\item ガウス過程を用いたベイズ最適化の獲得関数を提案
+				\begin{itemize}
+					\vspace{3pt}
+					\item Gaussian Process Upper Confidence Bound(GP-UCB)
+				\end{itemize}
+				\vspace{9pt}
 				\item 実データ実験において優れた性能を発揮
 			\end{itemize}
 		\end{block}
@@ -343,7 +348,7 @@ $\dag\dag\dag$: Saarland University}
 
 %-------------------
 
-\subsection{ガウス過程}
+\subsection{ガウス過程回帰}
 \begin{frame}{\insertsubsection}
 	\begin{block}{ガウス過程}
 		任意の入力$\{ \bm x_1, \ldots, \bm x_n \}$に対して$\{f(\bm x_1), \ldots, f(\bm x_n)\}$がn次元正規分布に従うなら$f$はガウス過程に従う
@@ -359,7 +364,7 @@ $\dag\dag\dag$: Saarland University}
 		\item $f$の事前分布がガウス過程であると仮定: $f(\bm x) \sim \mathcal{GP}( 0, k(\bm x, \bm x'))$
 		\item 観測データ$(X, \bm y) = \{(\bm x_i, y_i)\}_{i = 1}^t = \mathcal{D}$が与えられた下での事後分布
 	\end{itemize}
-	\begin{footnotesize}	
+	\vspace{-0.2cm}
 	\begin{align*}
 		f({\bm x}_\ast) \mid \mathcal{D}
 			\sim
@@ -376,7 +381,8 @@ $\dag\dag\dag$: Saarland University}
 			\bm k_{\mathcal{D} , {\bm x}_\ast}%}_{\text{posterior variance}}
 			\right)
 	\end{align*}
-	\end{footnotesize}
+	\vspace{-1cm}
+
 	\begin{tiny}
 		\begin{align*}
 			\hspace*{-15mm}

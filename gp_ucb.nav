@@ -33,8 +33,8 @@
 \headcommand {\slideentry {2}{1}{1}{9/9}{問題設定}{0}}
 \headcommand {\beamer@framepages {9}{9}}
 \headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{10}{ガウス過程}}
-\headcommand {\slideentry {2}{2}{1}{10/10}{ガウス過程}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{10}{ガウス過程回帰}}
+\headcommand {\slideentry {2}{2}{1}{10/10}{ガウス過程回帰}{0}}
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\beamer@subsectionpages {10}{10}}
 \headcommand {\beamer@subsectionentry {0}{2}{3}{11}{ガウス過程を用いたベイズ最適化}}
