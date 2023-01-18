@@ -1654,13 +1654,7 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssxi8.tfm
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT ./gp_ucb.toc
-INPUT gp_ucb.toc
-INPUT gp_ucb.toc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
-INPUT ./gp_ucb.toc
-INPUT gp_ucb.toc
-INPUT gp_ucb.toc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT ./Fig/Robot.pdf
 INPUT ./Fig/Robot.pdf
@@ -1675,9 +1669,6 @@ INPUT ./Fig/BO.pdf
 INPUT ./Fig/BO.pdf
 INPUT ./Fig/BO.pdf
 INPUT extractbb -B cropbox -O ./Fig/BO.pdf
-INPUT ./gp_ucb.toc
-INPUT gp_ucb.toc
-INPUT gp_ucb.toc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss9.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
@@ -1705,21 +1696,12 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssxi10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssxi8.tfm
-INPUT ./gp_ucb.toc
-INPUT gp_ucb.toc
-INPUT gp_ucb.toc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT ./gp_ucb.toc
-INPUT gp_ucb.toc
-INPUT gp_ucb.toc
 INPUT ./Fig/Figure4.pdf
 INPUT ./Fig/Figure4.pdf
 INPUT ./Fig/Figure4.pdf
 INPUT extractbb -B cropbox -O ./Fig/Figure4.pdf
-INPUT ./gp_ucb.toc
-INPUT gp_ucb.toc
-INPUT gp_ucb.toc
 OUTPUT gp_ucb.nav
 OUTPUT gp_ucb.toc
 OUTPUT gp_ucb.snm
