@@ -1669,6 +1669,10 @@ INPUT ./Fig/BO.pdf
 INPUT ./Fig/BO.pdf
 INPUT ./Fig/BO.pdf
 INPUT extractbb -B cropbox -O ./Fig/BO.pdf
+INPUT ./Fig/GP.pdf
+INPUT ./Fig/GP.pdf
+INPUT ./Fig/GP.pdf
+INPUT extractbb -B cropbox -O ./Fig/GP.pdf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm

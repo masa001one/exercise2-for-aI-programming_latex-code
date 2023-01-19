@@ -11,16 +11,19 @@ def f(x):
 
 
 # 課題1: ガウスカーネルの定義 (課題.pdfに載っているカーネル関数)
-# 獲得関数の課題と異なり, カーネルパラメータker_var, length_scaleに応じた計算を行う
-# n個の入力x1, m個の入力x2にに対し, カーネル行列を返す
+# n個の入力x1, m個の入力x2にに対し, カーネル行列を返す関数
 # shape=(n,m)のカーネル行列は(i,j)番目の要素に k(x1_i, x2_j) を持つ
 def gauss_kernel(x1, x2, ker_var, length_scale):
     # x1.shape=(n,1)
     # x2.shape=(m,1)
 
     # ヒント: (i,j)番目の要素に (x1_i -x2_j) を持つようなn×m行列を作成してからカーネル行列を計算すると良い
-    x_diff = x1 - x2.flatten()  # shape=(n,m)
-    r = np.square(x_diff)
+    # return ...
+    """
+    回答例
+    """
+    x_diff = x1 - x2.flatten()  # x_diff.shape=(n,m)
+    r = np.square(x_diff)  # r.shape=(n,m)
     return ker_var * np.exp(-r / (2 * length_scale ** 2))
 
 
@@ -63,12 +66,9 @@ def plot_gp(ker_var, length_scale, gp_noise_var, seed):
     # 課題2: x_trainやy_trainなどから事後分布を計算
 
     # カーネル行列などの計算 (課題1で作成したgauss_kernelを用いる)
-    # k =   # [k(x,x_1), k(x,x_2), ..., k(x,x_t)] のベクトル
-    # shape=(n_grid, n_train)
     k = gauss_kernel(x_train, x, ker_var=ker_var, length_scale=length_scale)
-    # K =   # K+σI
-    K = gauss_kernel(x_train, x_train, ker_var=ker_var, length_scale=length_scale) + \
-        gp_noise_var * np.eye(y_train.size)
+    K = gauss_kernel(x_train, x_train, ker_var=ker_var, length_scale=length_scale) + gp_noise_var * np.eye(
+        y_train.size)  # K+σI
 
     K_inv = kernel_inv(K)  # (K+σI)の逆行列
 
@@ -76,16 +76,13 @@ def plot_gp(ker_var, length_scale, gp_noise_var, seed):
     # σ_tの式そのまま当てはめると分散共分散行列が得られる.  (for文などを用いていると違うかも)
     # その対角成分が事後分散となる.
 
-    # mean =   # mean.shape=(n_grid,1)
-    mean = k @ K_inv @ y_train
-    # cov =   # cov.shape=(n_grid, n_grid)
+    mean = k.T @ K_inv @ y_train  # mean.shape=(n_grid,1)
     cov = gauss_kernel(
         x,
         x,
         ker_var=ker_var,
-        length_scale=length_scale) - k.T @ K_inv @ k
-    # var = np.diag(cov)  # 共分散行列の対角成分だけ取り出す. var.shape=(n_grid,1)
-    var = np.diag(cov)
+        length_scale=length_scale) - k.T @ K_inv @ k  # cov.shape=(n_grid, n_grid)
+    var = np.diag(cov)  # 共分散行列の対角成分だけ取り出す. var.shape=(n_grid,1)
 
     # プロット時は1次元の配列の方が扱いやすいのでmean, varを1次元配列に直しておく
     mean = mean.flatten()  # mean.shape=(n_grid, )
@@ -112,7 +109,6 @@ def plot_gp(ker_var, length_scale, gp_noise_var, seed):
         zorder=4,
         label='observed')
 
-    # タイトルやファイル名は適宜変更
     ax.set_title(
         f'ker_var={ker_var:.2f}, ls={length_scale:.2f}, noise_var={gp_noise_var:.2f}')
     ax.set_ylabel(r'$f(x)$')
@@ -135,8 +131,11 @@ def plot_gp(ker_var, length_scale, gp_noise_var, seed):
 
 def main():
     seed = 0
-    # 実行例
-    #plot_gp(ker_var=2, length_scale=0.5, gp_noise_var=1e-2, seed=seed)
+    # plot_gp(ker_var=2, length_scale=0.5, gp_noise_var=1e-2, seed=seed)
+
+    """
+    いろいろなパラメータでの実行例
+    """
     import functools as ft
     default_plot = ft.partial(plot_gp,
                               ker_var=2,

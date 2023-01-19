@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  18 JAN 2023 17:37
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  19 JAN 2023 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1250,7 +1250,10 @@ Missing character: There is no 2 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 [10
 
-] [11
+]
+File: ./Fig/GP.pdf Graphic file (type pdf)
+<./Fig/GP.pdf>
+ [11
 
 ]
 Missing character: There is no 2 in font nullfont!
@@ -1275,13 +1278,13 @@ Missing character: There is no 4 in font nullfont!
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 541.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 544.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 541.
+(Font)              scaled to size 10.52292pt on input line 544.
 LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 541.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 544.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 541.
+(Font)              scaled to size 10.52292pt on input line 544.
  [16
 
 ] (./gp_ucb.toc) [17
@@ -1315,12 +1318,12 @@ Package rerunfilecheck Info: File `gp_ucb.out' has not changed.
 (rerunfilecheck)             Checksum: B57C026A696D98113DF6148A0CB86B87;1309.
  ) 
 Here is how much of TeX's memory you used:
- 30205 strings out of 478724
- 622400 string characters out of 5858393
+ 30210 strings out of 478724
+ 622479 string characters out of 5858393
  881678 words of memory out of 5000000
- 47955 multiletter control sequences out of 15000+600000
+ 47959 multiletter control sequences out of 15000+600000
  530987 words of font info for 132 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  128i,20n,122p,435b,829s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on gp_ucb.dvi (22 pages, 122136 bytes).
+Output written on gp_ucb.dvi (22 pages, 122284 bytes).
