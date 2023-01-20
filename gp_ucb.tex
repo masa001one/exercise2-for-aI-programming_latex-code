@@ -362,23 +362,23 @@ $\dag\dag\dag$: Saarland University}
 \begin{block}{ガウス過程回帰}
 	\begin{itemize}
 		\item $f$の事前分布がガウス過程であると仮定: $f(\bm x) \sim \mathcal{GP}( 0, k(\bm x, \bm x'))$
-		\item 観測データ$(X, \bm y) = \{(\bm x_i, y_i)\}_{i = 1}^t = \mathcal{D}$が与えられた下での事後分布
+		\item 観測データ$(X, \bm y) = \{(\bm x_i, y_i)\}_{i = 1}^t = \mathcal{A}$が与えられた下での事後分布
 	\end{itemize}
 	\vspace{-0.2cm}
 	\begin{align*}
-		f({\bm x}_\ast) \mid \mathcal{D}
+		f({\bm x}_\ast) \mid \mathcal{A}
 			\sim
 			N \left(
 			%\underbrace{
-			\bm k_{\mathcal{D}, {\bm x}_\ast   }^\top
-			K_{\mathcal{D} \mathcal{D}}^{-1}
+			\bm k_{\mathcal{A}, {\bm x}_\ast   }^\top
+			K_{\mathcal{A} \mathcal{A}}^{-1}
 			{\bm y},%}_{\text{posterior mean}}
 			%\underbrace{
 			k_{{\bm x}_\ast {\bm x}_\ast}
 			-
-			\bm k_{\mathcal{D} , {\bm x}_\ast}^\top
-			K_{\mathcal{D} \mathcal{D}}^{-1}
-			\bm k_{\mathcal{D} , {\bm x}_\ast}%}_{\text{posterior variance}}
+			\bm k_{\mathcal{A} , {\bm x}_\ast}^\top
+			K_{\mathcal{A} \mathcal{A}}^{-1}
+			\bm k_{\mathcal{A} , {\bm x}_\ast}%}_{\text{posterior variance}}
 			\right)
 	\end{align*}
 	\vspace{-1cm}
@@ -386,7 +386,7 @@ $\dag\dag\dag$: Saarland University}
 	\begin{tiny}
 		\begin{align*}
 			\hspace*{-15mm}
-			K_{\mathcal{D} \mathcal{D}}
+			K_{\mathcal{A} \mathcal{A}}
 			=
 			\begin{pmatrix}
 				k(\bm x_{ 1}, \bm x_{ 1}) &
@@ -399,7 +399,7 @@ $\dag\dag\dag$: Saarland University}
 				\cdots &
 				k(\bm x_{ t}, \bm x_{t}) 
 			\end{pmatrix},
-			\bm k_{\mathcal{D} ,{\bm x}_\ast}
+			\bm k_{\mathcal{A} ,{\bm x}_\ast}
 			=
 			\begin{pmatrix}
 				k(\bm x_{ 1}, \bm x_\ast) \\
@@ -555,16 +555,24 @@ $\dag\dag\dag$: Saarland University}
 	\begin{itemize}
 		\item 実験手法
 		\begin{itemize}
+			\vspace{5pt}
 			\item variance only
+			\vspace{2pt}
 			\item maximum mean
+			\vspace{2pt}
 			\item Expected Improvement(EI)
+			\vspace{2pt}
 			\item Most Probable Improvement(MPI)
+			\vspace{2pt}
 			\item GP-UCB
 		\end{itemize}
+		\vspace{5pt}
 		\item \alert{Mean Average Regret} を用いた評価
 		\begin{itemize}
-			\item Regret = (真の関数の最大値) - (観測済みデータの最大値)
-			\item Average Regret : 1回の試行中のRegretの平均
+			\item Regret = $\sum_{t=1}^T\{(\mbox{真の関数の最大値}) - (\mbox{観測済みデータの最大値})\}$
+			\vspace{2pt}
+			\item Average Regret : Regretをイテレーション数$T$で割ったもの
+			\vspace{2pt}
 			\item Mean Average Regret : 全試行のAverage Regretの平均
 		\end{itemize}
 	\end{itemize}
@@ -590,6 +598,7 @@ $\dag\dag\dag$: Saarland University}
 		\begin{itemize}
 			\item 357個のセンサーから1ヶ月間午前6時から午前までに通過する車の速度
 			\item $T = 357$, $\sigma^2 = 4.78$, $\delta = 0.1$
+			\item 900回試行
 		\end{itemize}
 	\end{enumerate}
 \end{frame}
@@ -603,7 +612,7 @@ $\dag\dag\dag$: Saarland University}
 		\includegraphics[width=0.90\textwidth]{./Fig/Figure4.pdf}
 	\end{center}
 	\begin{itemize}
-		\item すべての実験結果においてGP-UCBが損失少なく最適化を行なっている
+		\item すべての実験結果においてGP-UCBが小さいリグレットで最適化を行なっている
 		\item 既存手法のEI,MPと比較して同等以上の性能を示した
 	\end{itemize}
 
