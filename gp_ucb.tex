@@ -280,6 +280,7 @@ $\dag\dag\dag$: Saarland University}
 
 		\begin{block}{貢献}
 			\begin{itemize}
+				\vspace{5pt}
 				\item ガウス過程を用いたベイズ最適化の獲得関数を提案
 				\begin{itemize}
 					\vspace{3pt}
@@ -287,6 +288,7 @@ $\dag\dag\dag$: Saarland University}
 				\end{itemize}
 				\vspace{9pt}
 				\item 実データ実験において優れた性能を発揮
+				\vspace{5pt}
 			\end{itemize}
 		\end{block}
 
@@ -356,9 +358,11 @@ $\dag\dag\dag$: Saarland University}
 
 \begin{itemize}
 	\item 関数$f$がガウス過程に従うことを$f(\bm x) \sim \mathcal{GP}(\mu(\bm x), k(\bm x, \bm x'))$
-	\item 平均関数: $\mu(\bm x) = \mathbb{E}[f(\bm x)]$
-	\item 共分散関数: $k(\bm x, \bm x') = \mathbb{E}[(f(\bm x) - \mu(\bm x))(f(\bm x') - \mu(\bm x'))]$
-\end{itemize}
+	\begin{itemize}
+		\item 平均関数: $\mu(\bm x) = \mathbb{E}[f(\bm x)]$
+		\item 共分散関数: $k(\bm x, \bm x') = \mathbb{E}[(f(\bm x) - \mu(\bm x))(f(\bm x') - \mu(\bm x'))]$
+	\end{itemize}
+	\end{itemize}
 \begin{block}{ガウス過程回帰}
 	\begin{itemize}
 		\item $f$の事前分布がガウス過程であると仮定: $f(\bm x) \sim \mathcal{GP}( 0, k(\bm x, \bm x'))$
@@ -424,9 +428,9 @@ $\dag\dag\dag$: Saarland University}
 	\end{center}
 	\begin{itemize}
 		\item $f$にガウス過程事前分布$\mathcal{GP}(0, k(\bm x, \bm x'))$を仮定する
-		\item 訓練データ$(X, \bm y) = \left\{ (\bm x_i, y_i) \right\}_{i=1}^t$に基づき$f$の事後分布を求める
+		\item 訓練データ$(X, \bm y) = \left\{ (\bm x_i, y_i) \right\}_{i=1}^t$に基づき予測モデルを更新する
 		\item 事後分布に基づき\alert{最適な点}を次に観測する
-		\item 観測した$(x_{\rm next}, y_{\rm next})$を訓練データに追加し再び事後分布を求める
+		\item 観測した$(x_{\rm next}, y_{\rm next})$を訓練データに追加し再び予測モデルを更新する
 	\end{itemize}
 
 
