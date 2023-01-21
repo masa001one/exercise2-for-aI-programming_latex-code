@@ -73,6 +73,7 @@
 \definecolor{BrownTOL}{HTML}{666633}
 \definecolor{GreenTOL}{HTML}{228822}
 \definecolor{RedTOL}{HTML}{882222}
+\definecolor{myorange}{HTML}{FF8C00} % 彩度や明度の低いオレンジ（強調色で用いる）
 
 \setbeamercolor{block title}{fg=white, bg=BlueTOL}
 \setbeamercolor{block body}{fg=black, bg=BlueTOL!10!white}
@@ -244,11 +245,13 @@ $\dag\dag\dag$: Saarland University}
 
 	\begin{itemize}
 		\item 多くの実問題はブラックボックス関数最適化と等価
+		\vspace{2pt}
 		\item できるだけ少ない関数評価回数で最適値を見つけたい
 		\begin{itemize}
 			\item 特に関数値を得るコストが高い場合
 		\end{itemize}
-		\item 有効な手法として\alert{ベイズ最適化}がある
+		\vspace{1pt}
+		\item 有効な手法として\textcolor{myorange}{ベイズ最適化}がある
 	\end{itemize}
 	\vspace{10pt}
 	\begin{center}
@@ -334,15 +337,16 @@ $\dag\dag\dag$: Saarland University}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
 		\item 候補入力$\mathcal{X} = \{ \bm x_1, \ldots, \bm x_n \}$が与えられている
-
+		\vspace{1pt}
 		\item 関数$f$を評価して出力$y_i = f(\bm x_i)$を得るにはコストがかかる
-
+		\vspace{1pt}
 		\item できるだけ少ないコストで関数$f$を最大化するパラメータ$\bm x$を求めたい
 		\begin{align*}
 			\bm x^* = \arg \max_{\bm x \in \mathcal{X}} ~ f(\bm x)
 		\end{align*}
 		\begin{itemize}
-			\item ガウス過程は確率分布を用いた複雑で非線形な関数を扱うためのモデルである
+			\item ガウス過程は確率分布を用いた複雑で非線形な関数を扱うためのモデル
+			\vspace{2pt}
 			\item このような複雑で非線形な関数を扱う場合には一般的な最適化手法では解決が困難になることがある
 		\end{itemize}
 	\end{itemize}
@@ -353,13 +357,15 @@ $\dag\dag\dag$: Saarland University}
 \subsection{ガウス過程回帰}
 \begin{frame}{\insertsubsection}
 	\begin{block}{ガウス過程}
-		任意の入力$\{ \bm x_1, \ldots, \bm x_n \}$に対して$\{f(\bm x_1), \ldots, f(\bm x_n)\}$がn次元正規分布に従うなら$f$はガウス過程に従う
+		任意の入力$\{ \bm x_1, \ldots, \bm x_n \}$に対して\\
+		$\{f(\bm x_1), \ldots, f(\bm x_n)\}$がn次元正規分布に従うなら$f$はガウス過程に従う
 	\end{block}
 
 \begin{itemize}
 	\item 関数$f$がガウス過程に従うことを$f(\bm x) \sim \mathcal{GP}(\mu(\bm x), k(\bm x, \bm x'))$
 	\begin{itemize}
 		\item 平均関数: $\mu(\bm x) = \mathbb{E}[f(\bm x)]$
+		\vspace{1pt}
 		\item 共分散関数: $k(\bm x, \bm x') = \mathbb{E}[(f(\bm x) - \mu(\bm x))(f(\bm x') - \mu(\bm x'))]$
 	\end{itemize}
 	\end{itemize}
@@ -423,14 +429,19 @@ $\dag\dag\dag$: Saarland University}
 
 \subsection{ガウス過程を用いたベイズ最適化}
 \begin{frame}{\insertsubsection}
+	\begin{itemize}
+		\vspace{10pt}
+		\item $f(\bm x) \sim \mathcal{GP}(0, k(\bm x, \bm x'))$を仮定する
+	\end{itemize}
 	\begin{center}
 		\includegraphics[width=0.80\textwidth]{./Fig/GP.pdf}
 	\end{center}
 	\begin{itemize}
-		\item $f$にガウス過程事前分布$\mathcal{GP}(0, k(\bm x, \bm x'))$を仮定する
-		\item 訓練データ$\mathcal{D} = (X, \bm y) = \left\{ (\bm x_i, y_i) \right\}_{i=1}^t$に基づき予測モデルを更新する
-		\item 予測モデルに基づき\alert{最適な点}を次に観測する
-		\item 観測した$(x_{\rm next}, y_{\rm next})$を訓練データに追加し再び予測モデルを更新する
+		\item 訓練データ$\mathcal{D} = (X, \bm y) = \left\{ (\bm x_i, y_i) \right\}_{i=1}^t$に基づき予測モデルを更新
+		\vspace{2pt}
+		\item 予測モデルに基づき\textcolor{myorange}{次の点を選ぶ指標を用いて最適な点}を次に観測
+		\vspace{2pt}
+		\item 観測した$(x_{\rm next}, y_{\rm next})$を訓練データに追加し再び予測モデルを更新
 	\end{itemize}
 
 
@@ -453,13 +464,14 @@ $\dag\dag\dag$: Saarland University}
 		\bm x_t = \arg \max_{\bm x} ~ \alpha(\bm x_{t-1})
 	\end{align*}
 	\begin{block}{獲得関数の設計指針}
-		活用と探索のバランスを考慮して設計する
+		\textcolor{myorange}{活用と探索のバランス}を考慮して設計する
 	\end{block}
 	\begin{itemize}
 		\item 活用: 最適解がありそうな点を探索すること
 		\begin{itemize}
 			\item 活用重視のとき局所解に陥りやすい
 		\end{itemize}
+		\vspace{3pt}
 		\item 探索: 未知の領域を探索し新しい知見を得ること
 		\begin{itemize}
 			\item 最適解にたどり着くまでに時間を要する
@@ -475,24 +487,24 @@ $\dag\dag\dag$: Saarland University}
 \begin{frame}{\insertsubsection}
 	\begin{block}{mean only}
 		\begin{align*}
-			\bm x_t = \arg \max_{\bm x} ~ \alert{\mu}_{t-1}(\bm x)
+			\bm x_t = \arg \max_{\bm x} ~ \textcolor{myorange}{\mu}_{t-1}(\bm x)
 		\end{align*}
 	\end{block}
 	\begin{itemize}
 		\item 予測平均が最大となる$\bm x$を選択
 		\begin{itemize}
-			\item[$\Rightarrow$] \alert{活用}中心
+			\item[$\Rightarrow$] \textcolor{myorange}{活用}中心
 		\end{itemize}
 	\end{itemize}
 	\begin{block}{variance only}
 		\begin{align*}
-			\bm x_t = \arg \max_{\bm x} ~ \alert{\sigma}_{t-1}^{\alert{2}}(\bm x)
+			\bm x_t = \arg \max_{\bm x} ~ \textcolor{myorange}{\sigma}_{t-1}^{\textcolor{myorange}{2}}(\bm x)
 		\end{align*}
 	\end{block}
 	\begin{itemize}
 		\item 予測分散が最大となる$\bm x$を選択
 		\begin{itemize}
-			\item[$\Rightarrow$] \alert{探索}中心
+			\item[$\Rightarrow$] \textcolor{myorange}{探索}中心
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -507,7 +519,7 @@ $\dag\dag\dag$: Saarland University}
 	\begin{itemize}
 		\item 探索・活用に特化した手法では最適化がうまくいかない場合が多い
 		\begin{itemize}
-			\item[$\Rightarrow$] 探索と活用のバランスが取れるような手法を提案
+			\item[$\Rightarrow$] \textcolor{myorange}{探索と活用のバランスが取れるような手法}を提案
 		\end{itemize}
 	\end{itemize}
 	\vspace{5pt}
@@ -521,6 +533,7 @@ $\dag\dag\dag$: Saarland University}
 		\item $\beta_t$は，探索の度合いを表す定数
 		\begin{itemize}
 			\item $\beta_t$が小さい $\Rightarrow$ 予測平均の比重が大きくなる $\Rightarrow$ 活用重視
+			\vspace{1pt}
 			\item $\beta_t$が大きい $\Rightarrow$ 予測分散の比重が大きくなる $\Rightarrow$ 探索重視
 		\end{itemize}
 	\end{itemize}
@@ -568,16 +581,22 @@ $\dag\dag\dag$: Saarland University}
 			\vspace{2pt}
 			\item Most Probable Improvement(MPI)
 			\vspace{2pt}
-			\item GP-UCB
+			\item \textcolor{myorange}{GP-UCB}
 		\end{itemize}
-		\vspace{5pt}
-		\item \alert{Mean Average Regret} を用いた評価
+		\vspace{15pt}
+		\item \textcolor{myorange}{Mean Average Regret} を用いた評価
 		\begin{itemize}
-			\item Regret = $\sum_{t=1}^T\{(\mbox{真の関数の最大値}) - (\mbox{観測済みデータの最大値})\}$
+			\item cumulative regret: $R_t = \sum_{t=1}^T\{f(\bm x^*) - f(\bm x^t)\}$
+			\begin{itemize}
+				\vspace{1.5pt}
+				\item $\mbox{評価対象の関数}f\mbox{の最大値}f(\bm x^*)$
+				\vspace{1.5pt}
+				\item $\mbox{時点}t\mbox{において選ばれた関数値}f(\bm x^t)$
+			\end{itemize}
 			\vspace{2pt}
-			\item Average Regret : Regretをイテレーション数$T$で割ったもの
+			\item Average Regret: cumulative regretをイテレーション数$T$で割ったもの
 			\vspace{2pt}
-			\item Mean Average Regret : 全試行のAverage Regretの平均
+			\item \textcolor{myorange}{Mean Average Regret} : 全試行のAverage Regretの平均
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -617,7 +636,7 @@ $\dag\dag\dag$: Saarland University}
 	\end{center}
 	\begin{itemize}
 		\item すべての実験結果においてGP-UCBが小さいリグレットで最適化を行なっている
-		\item 既存手法のEI,MPと比較して同等以上の性能を示した
+		\item \textcolor{myorange}{既存手法のEI,MPと比較して同等以上の性能を示した}
 	\end{itemize}
 
 \end{frame}
@@ -631,12 +650,15 @@ $\dag\dag\dag$: Saarland University}
 
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item GP-UCBというベイズ最適化の獲得関数を新たに提案
+		\item GP-UCBというベイズ最適化の\textcolor{myorange}{獲得関数を新たに提案}
 		\begin{itemize}
+			\vspace{2pt}
 			\item GP-UCBは探索と活用を両立する獲得関数
 		\end{itemize}
-		\item GP-UCBは既存の手法と同等以上の性能を示した
+		\vspace{10pt}
+		\item GP-UCBは\textcolor{myorange}{既存の手法と同等以上の性能}を示した
 		\begin{itemize}
+			\vspace{2pt}
 			\item Mean Average Regretの観点で実データと合成データにおける性能を発揮
 		\end{itemize}
 		% \item We analyze GP-UCB, an intuitive algorithm for GP optimization, when the function is either sampled from a known GP, or has low RKHS norm.
@@ -645,6 +667,12 @@ $\dag\dag\dag$: Saarland University}
 		% \item We evaluate GP-UCB on sensor network data, demonstrating that it compares favorably to ex- isting algorithms for GP optimization.
 	\end{itemize}
 
+\end{frame}
+
+%-------------------
+
+\begin{frame}[noframenumbering]{参考文献}
+	C.K. Williams and C.E. Rasmussen, Gaussian processes for machine learning, vol.2, MIT press Cambridge, MA, 2006.
 \end{frame}
 
 %-------------------
