@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  22 JAN 2023 11:45
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.4.9)  22 JAN 2023 16:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1257,71 +1257,135 @@ lfonts.sty)
 y) (/usr/local/texlive/2022/texmf-dist/tex/latex/here/here.sty)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 145.
+(hyperref)                removing `math shift' on input line 146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 145.
+(hyperref)                removing `superscript' on input line 146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 145.
+(hyperref)                removing `math shift' on input line 146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 145.
+(hyperref)                removing `math shift' on input line 146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 145.
+(hyperref)                removing `superscript' on input line 146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 145.
+(hyperref)                removing `math shift' on input line 146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 145.
+(hyperref)                removing `math shift' on input line 146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 145.
+(hyperref)                removing `superscript' on input line 146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 145.
+(hyperref)                removing `math shift' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@centercr' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightskip' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@flushglue' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\leftskip' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@flushglue' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\finalhyphendemerits' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\parindent' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\parfillskip' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@skip' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 146.
 
 \@quotelevel=\count510
 \@quotereset=\count511
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 161.
+(Font)              scaled to size 10.52292pt on input line 162.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 161.
+(Font)              scaled to size 10.52292pt on input line 162.
 (./gp_ucb.aux)
 \openout1 = `gp_ucb.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
 
 *geometry* detected driver: dvipdfm
 *geometry* verbose mode - [ preamble ] result:
@@ -1356,7 +1420,7 @@ LaTeX Font Info:    ... okay on input line 161.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 161.
+Package hyperref Info: Link coloring OFF on input line 162.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1369,9 +1433,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count512
 )
-LaTeX Info: Redefining \ref on input line 161.
-LaTeX Info: Redefining \pageref on input line 161.
-LaTeX Info: Redefining \nameref on input line 161.
+LaTeX Info: Redefining \ref on input line 162.
+LaTeX Info: Redefining \pageref on input line 162.
+LaTeX Info: Redefining \nameref on input line 162.
  (./gp_ucb.out) (./gp_ucb.out)
 \@outlinefile=\write7
 \openout7 = `gp_ucb.out'.
@@ -1416,62 +1480,62 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'gp_ucb.bbl' not found.
 
 No file gp_ucb.bbl.
-Package biblatex Info: Reference section=0 on input line 161.
-Package biblatex Info: Reference segment=0 on input line 161.
+Package biblatex Info: Reference section=0 on input line 162.
+Package biblatex Info: Reference segment=0 on input line 162.
 (./gp_ucb.nav)
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 161.
+(Font)              scaled to size 5.76599pt on input line 162.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 161.
+(Font)              scaled to size 5.76599pt on input line 162.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 161.
+(Font)              scaled to size 7.68799pt on input line 162.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 161.
+(Font)              scaled to size 7.68799pt on input line 162.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 171.
+(Font)              scaled to size 13.83836pt on input line 173.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 171.
+(Font)              scaled to size 13.83836pt on input line 173.
 
 Missing character: There is no 5 in font nullfont!
-LaTeX Font Info:    Trying to load font information for U+msa on input line 171
+LaTeX Font Info:    Trying to load font information for U+msa on input line 173
 .
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 171
+LaTeX Font Info:    Trying to load font information for U+msb on input line 173
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 171.
+ut line 173.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [1
-
-] (./gp_ucb.toc)
+)
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 180.
+(Font)              scaled to size 11.53198pt on input line 173.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 180.
- [2
+(Font)              scaled to size 11.53198pt on input line 173.
+ [1
+
+] (./gp_ucb.toc) [2
 
 ] (./gp_ucb.toc) [3
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 198.
+(Font)              scaled to size 9.60999pt on input line 200.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 198.
+(Font)              scaled to size 9.60999pt on input line 200.
 File: ./Fig/Robot.pdf Graphic file (type pdf)
 <./Fig/Robot.pdf>
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 3.844pt on input line 198.
+(Font)              scaled to size 3.844pt on input line 200.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 3.844pt on input line 198.
+(Font)              scaled to size 3.844pt on input line 200.
  [4
 
 ]
@@ -1498,22 +1562,26 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no 1 in font nullfont!
+
+Overfull \vbox (6.21906pt too high) detected at line 439
+ []
+
 [10
+
+]
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+[11
 
 ]
 File: ./Fig/GP.pdf Graphic file (type pdf)
 <./Fig/GP.pdf>
 
-Overfull \vbox (5.54079pt too high) detected at line 451
+Overfull \vbox (26.87825pt too high) detected at line 464
  []
 
-[11
-
-]
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 6 in font nullfont!
 [12
 
 ]
@@ -1523,45 +1591,52 @@ Missing character: There is no 3 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 [13
 
-] (./gp_ucb.toc) [14
-
 ]
 Missing character: There is no 4 in font nullfont!
 Missing character: There is no 4 in font nullfont!
-[15
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+[14
+
+] (./gp_ucb.toc) [15
+
+]
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+[16
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 562.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 575.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 562.
+(Font)              scaled to size 10.52292pt on input line 575.
 LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 562.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 575.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 562.
- [16
+(Font)              scaled to size 10.52292pt on input line 575.
+ [17
 
-] (./gp_ucb.toc) [17
+] (./gp_ucb.toc) [18
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 603.
+(Font)              scaled to size 8.64899pt on input line 622.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 603.
- [18
+(Font)              scaled to size 8.64899pt on input line 622.
+ [19
 
-] [19
+] [20
 
 ]
 File: ./Fig/Figure4.pdf Graphic file (type pdf)
 <./Fig/Figure4.pdf>
- [20
+ [21
 
-] (./gp_ucb.toc) [21
-
-] [22
+] (./gp_ucb.toc) [22
 
 ] [23
+
+] [24
 
 ]
 \tf@nav=\write8
@@ -1576,18 +1651,18 @@ File: ./Fig/Figure4.pdf Graphic file (type pdf)
 
 (./gp_ucb.aux)
 Package rerunfilecheck Info: File `gp_ucb.out' has not changed.
-(rerunfilecheck)             Checksum: B57C026A696D98113DF6148A0CB86B87;1309.
+(rerunfilecheck)             Checksum: D78AE368B71217A31AA3BCDBFA3B21AD;1252.
 Package logreq Info: Writing requests to 'gp_ucb.run.xml'.
 \openout1 = `gp_ucb.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37068 strings out of 478724
- 761728 string characters out of 5858393
- 1432679 words of memory out of 5000000
- 54758 multiletter control sequences out of 15000+600000
+ 37073 strings out of 478724
+ 761991 string characters out of 5858393
+ 1432800 words of memory out of 5000000
+ 54763 multiletter control sequences out of 15000+600000
  535172 words of font info for 146 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 128i,20n,122p,739b,848s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,21n,122p,739b,848s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on gp_ucb.dvi (23 pages, 126532 bytes).
+Output written on gp_ucb.dvi (24 pages, 140024 bytes).

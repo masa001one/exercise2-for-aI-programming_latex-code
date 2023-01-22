@@ -142,7 +142,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title[]{Gaussian Process Optimization in the Bandit Setting:\\No Regret and Experimental Design}
 \subtitle{}
-\author[]{Niranjan Srinivas, Andreas Krause$^{\dag}$, Sham Kakade$^{\dag\dag}$, Matthias Seeger$^{\dag\dag\dag}$}
+\author[]{Niranjan Srinivas, Andreas Krause$^{\dag}$, Sham Kakade$^{\dag\dag}$, Matthias Seeger$^{\dag\dag\dag}$
+			\\ \vspace{20pt} \large{\centering{ICML 2020 Test of time Award} \vspace{9pt}}}
 % \date[\today]{\today} %日付を表示
 \date[\today]{} %日付を非表示
 \institute[]{$\dag$: California Institute of Technology\\
@@ -167,6 +168,7 @@ $\dag\dag\dag$: Saarland University}
 \maketitle%タイトル本体
 \thispagestyle{empty}%ヘッダーフッター表示なし
 % \addtocounter{framenumber}{-1}%ページ数カウンタしない
+\vspace{-6pt}
 \centering{Presenter 石倉　雅紀}
 \end{frame}
 
@@ -247,7 +249,7 @@ $\dag\dag\dag$: Saarland University}
 	\begin{itemize}
 		\item 多くの実問題はブラックボックス関数最適化と等価
 		\vspace{2pt}
-		\item できるだけ少ない関数評価回数で最適値を見つけたい
+		\item \textcolor{myorange}{できるだけ少ない関数評価回数で最適値を見つけたい}
 		\begin{itemize}
 			\item 特に関数値を得るコストが高い場合
 		\end{itemize}
@@ -281,20 +283,20 @@ $\dag\dag\dag$: Saarland University}
 \subsection{本論文の貢献}
 
 \begin{frame}{\insertsubsection}
-
-		\begin{block}{貢献}
+	\vspace{20pt}
+	\begin{block}{貢献}
+		\begin{itemize}
+			\vspace{5pt}
+			\item ガウス過程を用いたベイズ最適化の獲得関数を提案
 			\begin{itemize}
-				\vspace{5pt}
-				\item ガウス過程を用いたベイズ最適化の獲得関数を提案
-				\begin{itemize}
-					\vspace{3pt}
-					\item Gaussian Process Upper Confidence Bound(GP-UCB)
-				\end{itemize}
-				\vspace{9pt}
-				\item 実データ実験において優れた性能を発揮
-				\vspace{5pt}
+				\vspace{3pt}
+				\item Gaussian Process Upper Confidence Bound(GP-UCB)
 			\end{itemize}
-		\end{block}
+			\vspace{6pt}
+			\item 実データ実験において優れた性能を発揮
+			\vspace{5pt}
+		\end{itemize}
+	\end{block}
 
 
 		% \begin{itemize}
@@ -348,7 +350,7 @@ $\dag\dag\dag$: Saarland University}
 		\begin{itemize}
 			\item ガウス過程は確率分布を用いた複雑で非線形な関数を扱うためのモデル
 			\vspace{2pt}
-			\item このような複雑で非線形な関数を扱う場合には一般的な最適化手法では解決が困難になることがある
+			\item このような複雑で非線形な関数を扱う場合には一般的な最適化手法では\\解決が困難になることがある
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -394,34 +396,45 @@ $\dag\dag\dag$: Saarland University}
 	\end{align*}
 	\vspace{-1cm}
 
-	\begin{tiny}
-		\begin{align*}
-			\hspace*{-15mm}
-			K_{\mathcal{A} \mathcal{A}}
-			=
-			\begin{pmatrix}
-				k(\bm x_{ 1}, \bm x_{ 1}) &
-				\cdots &
-				k(\bm x_{ 1}, \bm x_{ t}) \\
-				\vdots &
-				\ddots &
-				\vdots \\ 	 
-				k(\bm x_{ t}, \bm x_{ 1}) &
-				\cdots &
-				k(\bm x_{ t}, \bm x_{t}) 
-			\end{pmatrix},
-			\bm k_{\mathcal{A} ,{\bm x}_\ast}
-			=
-			\begin{pmatrix}
-				k(\bm x_{ 1}, \bm x_\ast) \\
-				\vdots \\
-				k(\bm x_{ t}, \bm x_\ast) 
-			\end{pmatrix},		 %
-			k_{{\bm x}_\ast, {\bm x}_\ast}
-			=
-			k(\bm x_{\ast}, \bm x_{\ast})
-		\end{align*}
-	\end{tiny}
+	\begin{onlyenv}<1>
+
+		\begin{tiny}
+			\begin{align*}
+				\hspace*{-15mm}
+				K_{\mathcal{A} \mathcal{A}}
+				=
+				\begin{pmatrix}
+					k(\bm x_{ 1}, \bm x_{ 1}) &
+					\cdots &
+					k(\bm x_{ 1}, \bm x_{ t}) \\
+					\vdots &
+					\ddots &
+					\vdots \\ 	 
+					k(\bm x_{ t}, \bm x_{ 1}) &
+					\cdots &
+					k(\bm x_{ t}, \bm x_{t}) 
+				\end{pmatrix},
+				\bm k_{\mathcal{A} ,{\bm x}_\ast}
+				=
+				\begin{pmatrix}
+					k(\bm x_{ 1}, \bm x_\ast) \\
+					\vdots \\
+					k(\bm x_{ t}, \bm x_\ast) 
+				\end{pmatrix},		 %
+				k_{{\bm x}_\ast, {\bm x}_\ast}
+				=
+				k(\bm x_{\ast}, \bm x_{\ast})
+			\end{align*}
+		\end{tiny}
+	\end{onlyenv}
+
+	\begin{onlyenv}<2>
+		\begin{itemize}
+			\vspace{18pt}
+			\centering{\item[$\Rightarrow$] \textcolor{myorange}{解析的に}事後分布のパラメータが求まる}
+			\vspace{18pt}
+		\end{itemize}
+	\end{onlyenv}
 \end{block}
 \end{frame}
 
@@ -549,7 +562,7 @@ $\dag\dag\dag$: Saarland University}
 	\label{alg:gpucb}
 	\begin{algorithmic}
 		\Require Input space $\mathcal{D}$; GP Prior $\mu_0 = 0$, $\sigma_0$, $k$
-		\For{\texttt{$t = 1, 2,\ldots $}}			\State Choose $\bm x_t = \arg \max_{\bm x \in \mathcal{D}} ~ \mu_{t-1}(\bm x) + \sqrt{\beta_t} \sigma_{t-1}(\bm x)$
+		\For{\texttt{$t = 1, 2,\ldots $}}			\State \textcolor{myorange}{Choose $\bm x_t = \arg \max_{\bm x \in \mathcal{D}} ~ \mu_{t-1}(\bm x) + \sqrt{\beta_t} \sigma_{t-1}(\bm x)$}
 			\State Sample $y_t \gets f(\bm x_t) + \varepsilon_t$
 			\State Perform Bayesian update to obtaion $\mu_t$ and $\sigma_t$
 		\EndFor
@@ -579,8 +592,14 @@ $\dag\dag\dag$: Saarland University}
 			\item maximum mean
 			\vspace{2pt}
 			\item Expected Improvement(EI)
+			\begin{itemize}
+				\item 目的関数の改善量の期待値を最大化する指標
+			\end{itemize}
 			\vspace{2pt}
 			\item Most Probable Improvement(MPI)
+			\begin{itemize}
+				\item 目的関数が改善する確率が高い点を選択する指標
+			\end{itemize}
 			\vspace{2pt}
 			\item \textcolor{myorange}{GP-UCB}
 		\end{itemize}
@@ -647,13 +666,9 @@ $\dag\dag\dag$: Saarland University}
 %-------------------
 \section{まとめ}
 
-%-------------------
-
-\subsection{結論}
-
-\begin{frame}{\insertsubsection}
+\begin{frame}{\insertsection}
 	\begin{itemize}
-		\item GP-UCBというベイズ最適化の\textcolor{myorange}{獲得関数を新たに提案}
+		\item GP-UCBという\textcolor{myorange}{ベイズ最適化の獲得関数を新たに提案}
 		\begin{itemize}
 			\vspace{2pt}
 			\item GP-UCBは探索と活用を両立する獲得関数
