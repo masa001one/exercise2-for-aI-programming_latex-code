@@ -25,7 +25,7 @@
 %% bibtex 群
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % biblatex．標準のバックエンドはbiber
-%\usepackage{biblatex}
+\usepackage{biblatex}
 % bibtexのファイル
 % \addbibresource{mybib.bib}
 % 参考文献のインデックスを文字列で表示
@@ -144,6 +144,7 @@
 \subtitle{}
 \author[]{Niranjan Srinivas, Andreas Krause$^{\dag}$, Sham Kakade$^{\dag\dag}$, Matthias Seeger$^{\dag\dag\dag}$}
 % \date[\today]{\today} %日付を表示
+\date[\today]{} %日付を非表示
 \institute[]{$\dag$: California Institute of Technology\\
 $\dag\dag$: University of Pennsylvania\\
 $\dag\dag\dag$: Saarland University}
@@ -611,12 +612,14 @@ $\dag\dag\dag$: Saarland University}
 			\item $T = 1000$, $\sigma^2 = 0.025$, $\delta = 0.1$
 			\item 30回試行
 		\end{itemize}
+		\vspace{5pt}
 		\item 温度データ
 		\begin{itemize}
 			\item 46個のセンサーから1分間隔で5日以上計測された気温
 			\item $T = 46$, $\sigma^2 = 0.5$, $\delta = 0.1$
 			\item 2000回試行
 		\end{itemize}
+		\vspace{5pt}
 		\item 交通データ
 		\begin{itemize}
 			\item 357個のセンサーから1ヶ月間午前6時から午前までに通過する車の速度
@@ -671,8 +674,20 @@ $\dag\dag\dag$: Saarland University}
 
 %-------------------
 
+\setbeamertemplate{footline}{} % フッターを消す
 \begin{frame}[noframenumbering]{参考文献}
-	C.K. Williams and C.E. Rasmussen, Gaussian processes for machine learning, vol.2, MIT press Cambridge, MA, 2006.
+	\begin{thebibliography}{}
+		\setbeamertemplate{bibliography item}[book]
+		\bibitem[Mockus, 1989]{Mockus1989}
+		Mockus, J. Bayesian Approach to Global Optimization. Kluwer Academic Publishers, 1989.
+
+		\setbeamertemplate{bibliography item}[inbook]
+		\bibitem[Mockus et~al., 1978]{Mockus1978}
+		Mockus, J., Tiesis, V., and Zilinskas, A. Toward Global Optimization, volume 2, chapter Bayesian Methods for Seeking the Extremum, pp. 117–128. 1978.
+
+		\setbeamertemplate{bibliography item}[book]
+		\bibitem[Williams and Rasmussen, 2006]{Williams2006}
+		C.K. Williams and C.E. Rasmussen, Gaussian processes for machine learning, vol.2, MIT press Cambridge, MA, 2006.		\end{thebibliography}		
 \end{frame}
 
 %-------------------
