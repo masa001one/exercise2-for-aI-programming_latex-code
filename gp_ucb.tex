@@ -188,7 +188,7 @@ $\dag\dag\dag$: Saarland University}
 \subsection{背景}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
-		\item 目的関数に対する最適変数探索問題として定式化できるものも多い
+		\item 目的関数に対する最適変数探索問題として定式化できる問題を考える
 		\begin{itemize}
 			\item 耐久性の高いロボットの開発
 		\end{itemize}
@@ -247,7 +247,7 @@ $\dag\dag\dag$: Saarland University}
 %		\end{itemize}
 
 	\begin{itemize}
-		\item 多くの実問題はブラックボックス関数最適化と等価
+		\item ブラックボックス関数を最適化する問題を考える
 		\vspace{2pt}
 		\item \textcolor{myorange}{できるだけ少ない関数評価回数で最適値を見つけたい}
 		\begin{itemize}
@@ -339,19 +339,16 @@ $\dag\dag\dag$: Saarland University}
 \subsection{問題設定}
 \begin{frame}{\insertsubsection}
 	\begin{itemize}
+		\vspace{20pt}
 		\item 候補入力$\mathcal{X} = \{ \bm x_1, \ldots, \bm x_n \}$が与えられている
-		\vspace{1pt}
+		\vspace{9pt}
 		\item 関数$f$を評価して出力$y_i = f(\bm x_i)$を得るにはコストがかかる
-		\vspace{1pt}
-		\item できるだけ少ないコストで関数$f$を最大化するパラメータ$\bm x$を求めたい
+		\vspace{9pt}
+		\item \textcolor{myorange}{できるだけ少ないコスト}で\\
+  \vspace{2pt}\textcolor{myorange}{ブラックボックス関数$f$を最大化するパラメータ$\bm x$}を求めたい
 		\begin{align*}
 			\bm x^* = \arg \max_{\bm x \in \mathcal{X}} ~ f(\bm x)
 		\end{align*}
-		\begin{itemize}
-			\item ガウス過程は確率分布を用いた複雑で非線形な関数を扱うためのモデル
-			\vspace{2pt}
-			\item このような複雑で非線形な関数を扱う場合には一般的な最適化手法では\\解決が困難になることがある
-		\end{itemize}
 	\end{itemize}
 \end{frame}
 
