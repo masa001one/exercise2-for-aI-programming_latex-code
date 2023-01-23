@@ -1,0 +1,9 @@
+・p.14の色づかい
+・空白の間隔
+・π.6の二つ目のボックスの間隔調整
+
+・Beamer Tips(Titech)
+https://blog.tokor.org/2016/06/04/TeXでプレゼン-LaTeX-Beamerを使う人のためのTips集/
+
+・
+・p14の着目してほしい箇所に丸をつける？
